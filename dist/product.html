@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20220611051616" />
+  <link rel="stylesheet" href="css/normalize.css?_v=20220611051616" />
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&_v=20220611051616"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&_v=20220611051616"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&_v=20220611051616"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220611051616"
+  />
+  <!-- переменная title из параметров include -->
+  <title>Карточка товара</title>
+
+  <!-- https://www.chartjs.org/docs/latest/configuration/ -->
+  <!-- https://quickchart.io/documentation/chart-js/custom-pie-doughnut-chart-labels/ -->
+</head>
+
+  <body>
+    <header class="header">
+  <div class="header-top">
+  <div class="header-top__logo-container">
+    <picture><source srcset="img/logo.webp" type="image/webp"><img class="lazy header-top__logo" src="img/logo.jpg" alt="logo" /></picture>
+  </div>
+
+  <!-- header-top__logo -->
+  <div class="header-top__place">
+    <img class="lazy" src="img/header-icons/place-point.svg" alt="point" />
+
+    <div>
+      <h3>Шоу-рум студия дизайна</h3>
+      <p>на севере Москвы<br />рядом с Леруа и ОБИ</p>
+    </div>
+  </div>
+  <!-- header-top__place -->
+
+  <div class="header-top__phone">
+    <img class="lazy" src="img/header-icons/call-icon.svg" alt="point" />
+    <div>
+      <a href="tel:+79250463125">+7 (925) 046 31 25</a>
+      <p>Обратный звонок</p>
+    </div>
+  </div>
+  <!-- header-top__phone -->
+
+  <div class="header-top__connection">
+    <a href="tel:+7(495)0463199" class="header_connection-icon"
+      ><img class="lazy" src="img/header-icons/mobile.svg" alt="phone" /></a
+    ><a href="#" class="header_connection-icon"
+      ><img
+        class="lazy"
+        src="img/header-icons/whatsapp-icon.svg"
+        alt="whatsapp" /></a
+    ><a href="#" class="header_connection-icon"
+      ><img class="lazy" src="img/header-icons/viber.svg" alt="viber" /></a
+    ><a href="#" class="header_connection-icon"
+      ><img class="lazy" src="img/header-icons/e-mail.svg" alt="mail"
+    /></a>
+  </div>
+  <!-- header-top__connection -->
+
+  <div class="header-top__goods">
+    <div class="header-top__cart-block">
+      <img class="lazy" src="img/header-icons/shopping-cart.svg" alt="cart" />
+
+      <div>
+        <a href="#">Корзина (0)</a>
+        <p>Доставка от 0 ₽</p>
+      </div>
+    </div>
+    <div class="header-top__primary-goods">
+      <img class="lazy" src="img/header-icons/like.svg" alt="liked goods" />
+
+      <div>
+        <a href="#">Избранное (0)</a>
+      </div>
+    </div>
+  </div>
+  <!-- header-top__primary-goods -->
+</div>
+
+  <nav class="header-menuline">
+  <button class="open-menu"><span></span><span></span><span></span></button>
+
+  <button class="header-menuline__section">Мебель</button
+  ><button class="header-menuline__section">Плитка для ванной</button
+  ><button class="header-menuline__section">Сантехника</button
+  ><button class="header-menuline__section">Сопутствующие товары</button
+  ><button class="header-menuline__section">
+    О компании
+    <div class="dropdown-content">
+      <a href="#">О фирме</a>
+      <a href="#">О плитке</a>
+      <a href="#">О дизайне</a>
+      <a href="#">Услуги</a>
+      <a href="#">Новости</a>
+      <a href="#">Статьи</a>
+      <a href="#">Контакты</a>
+    </div></button
+  ><button class="header-menuline__section">
+    Клиентам
+    <div class="dropdown-content">
+      <a href="#">Оплата</a>
+      <a href="#">Доставка</a>
+      <a href="#">Возврат</a>
+      <a href="#">Гарантии</a>
+      <a href="#">Самовывоз</a>
+      <a href="#">Бонусы</a>
+      <a href="#">3D-визуализация</a>
+    </div>
+  </button>
+
+  <form action="" class="header-menuline__section">
+    <input type="text" placeholder="Поиск..." />
+    <button type="submit">
+      <img class="lazy" src="img/header-icons/search-icon.svg" alt="search" />
+    </button>
+  </form>
+</nav>
+<div class="header-menuline-underline">
+  <div class="main-menu hidden">
+    <div class="main-menu__body">
+      <nav>
+        <h3>Назначение</h3>
+        <ul>
+          <li><a href="#">Ванная</a></li>
+          <li><a href="#">Полы</a></li>
+          <li><a href="#">Кухня</a></li>
+          <li><a href="#">Мозаика/ бассейны</a></li>
+          <li><a href="#">Ступени</a></li>
+          <li><a href="#">Общественные и жилые пространства</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>материал</h3>
+        <ul>
+          <li><a href="#">Плитка керамическая</a></li>
+          <li><a href="#">Керамогранит</a></li>
+          <li><a href="#">Мозаика</a></li>
+          <li><a href="#">Ступени</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Цена</h3>
+        <ul>
+          <li><a href="#">Недорогая до 1 т.р. </a></li>
+          <li><a href="#">Средняя 1-2 т.р </a></li>
+          <li><a href="#">Дорогая от 2 т.р.</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Стиль</h3>
+        <ul>
+          <li><a href="#">Модерн/Хайтек </a></li>
+          <li><a href="#">Лофт/Минимализм</a></li>
+          <li><a href="#">Классика</a></li>
+          <li><a href="#">Прованс/Кантри </a></li>
+          <li><a href="#">Тераццо</a></li>
+          <li><a href="#">Восточный</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Имитация</h3>
+        <ul>
+          <li><a href="#">Под мрамор </a></li>
+          <li><a href="#">Под бетон </a></li>
+          <li><a href="#">Под дерево</a></li>
+          <li><a href="#">Под кожу </a></li>
+          <li><a href="#">Под кирпич</a></li>
+          <li><a href="#">Под мозаику </a></li>
+          <li><a href="#">Под штукатурку</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Имитация</h3>
+        <ul>
+          <li><a href="#">Растения</a></li>
+          <li><a href="#">Животные</a></li>
+          <li><a href="#">Люди</a></li>
+          <li><a href="#">С панно</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Цвет</h3>
+        <ul>
+          <li><a href="#">Бежевый</a></li>
+          <li><a href="#">Кремовый</a></li>
+          <li><a href="#">Коричневый</a></li>
+          <li><a href="#">Серый</a></li>
+          <li><a href="#">Графитовый</a></li>
+          <li><a href="#">Синий</a></li>
+          <li><a href="#">Голубой</a></li>
+          <li><a href="#">Бирюзовый</a></li>
+          <li><a href="#">Бежевый</a></li>
+          <li><a href="#">Бежевый</a></li>
+          <li><a href="#">Бежевый</a></li>
+          <li><a href="#">Бежевый</a></li>
+          <li><a href="#">Бежевый</a></li>
+          <li><a href="#">Бежевый</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Размер</h3>
+        <ul>
+          <li><a href="#">Мелкий</a></li>
+          <li><a href="#">Средний</a></li>
+          <li><a href="#">Крупный</a></li>
+          <li><a href="#">10×10</a></li>
+          <li><a href="#">10×20</a></li>
+          <li><a href="#">10×30</a></li>
+          <li><a href="#">25×50</a></li>
+          <li><a href="#">20×60</a></li>
+          <li><a href="#">30×60</a></li>
+          <li><a href="#">45×45</a></li>
+          <li><a href="#">60×60</a></li>
+          <li><a href="#">60×120</a></li>
+          <li><a href="#">Бежевый</a></li>
+          <li><a href="#">Бежевый</a></li>
+        </ul>
+        <button class="more several">
+          <span>Свой</span>
+        </button>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Поверхность</h3>
+        <ul>
+          <li><a href="#">Рельефная</a></li>
+          <li><a href="#">Глянцевая</a></li>
+          <li><a href="#">Противоскользящая</a></li>
+          <li><a href="#">Матовая</a></li>
+          <li><a href="#">Полированная</a></li>
+          <li><a href="#">3D-объемная</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Страна</h3>
+        <ul>
+          <li><a href="#">Германия</a></li>
+          <li><a href="#">Испания</a></li>
+          <li><a href="#">Италия</a></li>
+          <li><a href="#">Китай</a></li>
+          <li><a href="#">Польша</a></li>
+          <li><a href="#">Португалия</a></li>
+          <li><a href="#">Россия</a></li>
+          <li><a href="#"> Россия-Италия</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Форма</h3>
+        <ul>
+          <li><a href="#">Кабанчик </a></li>
+          <li><a href="#">Шестиугольник</a></li>
+          <li><a href="#">Восьмиугольник</a></li>
+          <li><a href="#">Квадрат</a></li>
+          <li><a href="#">Прямоугольник</a></li>
+          <li><a href="#">Шеврон</a></li>
+          <li><a href="#">Круг</a></li>
+          <li><a href="#"> Ромб</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Элементы</h3>
+        <ul>
+          <li><a href="#">Настенная </a></li>
+          <li><a href="#">Напольная</a></li>
+          <li><a href="#">Декор, панно</a></li>
+          <li><a href="#"> Бордюр, карандаш</a></li>
+          <li><a href="#">Плинтус</a></li>
+          <li><a href="#">Мозаика</a></li>
+          <li><a href="#">Ступени</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+    </div>
+
+    <div class="main-menu__preview">
+      <picture><source srcset="img/Marazzi.webp" type="image/webp"><img class="lazy" src="img/Marazzi.jpg" alt="img" /></picture>
+      <p>Kerama Marazzi (Керама Марацци) Абингтон /Марацци-Рус/</p>
+    </div>
+  </div>
+</div>
+
+  <div class="header-searchline">
+  <button class="header-searchline-open">
+    Произвоители
+    <img src="img/arrows/more-arrow.svg" alt="more" />
+  </button>
+  <div class="header-searchline__dropdown">
+    <p>Производители:</p>
+    <a href="#" class="header-searchline__item">0-9</a>
+    <a href="#" class="header-searchline__item">A</a>
+    <a href="#" class="header-searchline__item">B</a>
+    <a href="#" class="header-searchline__item">C</a>
+    <a href="#" class="header-searchline__item">D</a>
+    <a href="#" class="header-searchline__item">E</a>
+    <a href="#" class="header-searchline__item">F</a>
+    <a href="#" class="header-searchline__item">G</a>
+    <a href="#" class="header-searchline__item">H</a>
+    <a href="#" class="header-searchline__item">I</a>
+    <a href="#" class="header-searchline__item">J</a>
+    <a href="#" class="header-searchline__item">K</a>
+    <a href="#" class="header-searchline__item">L</a>
+    <a href="#" class="header-searchline__item">M</a>
+    <a href="#" class="header-searchline__item">N</a>
+    <a href="#" class="header-searchline__item">O</a>
+    <a href="#" class="header-searchline__item">P</a>
+    <a href="#" class="header-searchline__item">R</a>
+    <a href="#" class="header-searchline__item">S</a>
+    <a href="#" class="header-searchline__item">T</a>
+    <a href="#" class="header-searchline__item">U</a>
+    <a href="#" class="header-searchline__item">V</a>
+    <a href="#" class="header-searchline__item">W</a>
+    <a href="#" class="header-searchline__item">X</a>
+    <a href="#" class="header-searchline__item">Y</a>
+    <a href="#" class="header-searchline__item">Z</a>
+    <a href="#" class="header-searchline__item">А-Я</a>
+  </div>
+</div>
+
+</header>
+ <main class="main bg-white pb-80">
+  <div class="container">
+    <aside class="page-top p-sm-10">
+      <nav class="story-pages">
+        <a href="#"> <img src="img/header-icons/to-home.svg" alt="home" /> </a>
+        &nbsp;/&nbsp;
+        <a href="#">Каталог плитки</a>
+        &nbsp;/&nbsp;
+        <a href="#">Для ванной</a>
+        &nbsp;/&nbsp;
+        <a href="#">Керама Марацци</a>
+        &nbsp;/&nbsp;
+        <a href="#">Главная</a>
+      </nav>
+    </aside>
+
+    <section class="product-info">
+      <h1 class="page-title mobile">Абингтон (Керама Марацци)</h1>
+
+      <div class="product-image">
+        <div class="catalog__block__sale-card">
+          <div class="catalog__block__sale-images ones">
+            <img
+              class="lazy image-item"
+              src="img/goods/goods-1.jpg"
+              alt="sale-img"
+            />
+            <div class="buttons-block">
+              <button></button><button></button>
+              <button>
+                <p>выбрать подарок</p>
+                <div>
+                  <img
+                    class="lazy"
+                    src="img/sales/present.png"
+                    alt="present"
+                  />
+                </div>
+              </button>
+              <button>
+                <p>есть образцы</p>
+                <div>
+                  <img
+                    class="lazy"
+                    src="img/sales/examples.png"
+                    alt="examples"
+                  />
+                </div>
+              </button>
+              <button>
+                <p>есть видео</p>
+                <div>
+                  <picture><source srcset="img/sales/video.webp" type="image/webp"><img class="lazy" src="img/sales/video.png" alt="video" /></picture>
+                </div>
+              </button>
+              <button>
+                <p>распродажа</p>
+                <div>
+                  <img
+                    class="lazy"
+                    src="img/sales/sale-ticket.png"
+                    alt="sale-ticket"
+                  />
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- ./catalog__block__sale-card -->
+      </div>
+      <!-- ./product-image -->
+      <div class="product-features">
+        <h1 class="page-title">Абингтон (Керама Марацци)</h1>
+        <div class="product-features__grades">
+          <div class="rating-mini">
+            <span class="active"></span>
+            <span class="active"></span>
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+          </div>
+          <span class="product-features__grades__reviews">1 отзыв</span>
+          <button class="product-features__grades__to-favourite">
+            <img src="img/like-icon.svg" alt="like" />
+            В избранное
+          </button>
+        </div>
+        <div class="product-features__table">
+          <p>Артикул</p>
+          <p>000000000</p>
+          <p>Коллекция</p>
+          <p>Абингтон</p>
+          <p>Товар</p>
+          <p>наименование товара</p>
+          <p>Назначение</p>
+          <p>Керамогранит</p>
+          <p>Размер</p>
+          <p>20x120</p>
+        </div>
+        <a href="#" class="all-characters">Все характеристики</a>
+      </div>
+      <!-- ./product-features -->
+      <div class="product-cost">
+        <div class="product-cost__container">
+          <p class="product-cost__title">Цена:</p>
+          <p>от 100 000 ₽/шт</p>
+
+          <div class="product-cost__number">
+            <button class="product-cost__number-less">-</button>
+            <input type="number" />
+            <button class="product-cost__number-more">+</button>
+          </div>
+          <div class="product-cost__type">
+            <button data-cost-type="things" class="catalog__dropdown-active">
+              шт.
+            </button>
+            <button data-cost-type="meters" class="">кв.м.</button>
+            <button data-cost-type="boxes" class="">коробка</button>
+          </div>
+        </div>
+
+        <div class="product-cost__container">
+          <p class="product-cost__title">Общая стоимость:</p>
+          <p class="product-cost__price">100 000 ₽</p>
+          <button class="catalog__block__sale-tocart">В корзину</button>
+        </div>
+
+        <div class="product-cost__warning">
+          <span>i</span>
+          <p>
+            Минимальная сумма заказа составляет 10000₽. Докупки принимаются
+            только по заказам, размещенным ранее в нашем магазине.
+          </p>
+          <a href="#">Почему?</a>
+        </div>
+      </div>
+
+      <!-- ./product-cost -->
+    </section>
+
+    <section class="reasons">
+      <h2 class="reasons-title">8 причин обратиться к нам в поисках плитки</h2>
+
+      <div class="reasons-list">
+        <div class="reasons-list__item">
+          <picture><source srcset="img/reasons-icons/reason-1.webp" type="image/webp"><img src="img/reasons-icons/reason-1.png" alt="reason" /></picture>
+          <h3>Надежность и профессионализм</h3>
+          <p>
+            Имеем большие знания и опыт продаж керамической плитки, сантехники и
+            аксессуаров.Ведем профессиональную деятельность с 2009 года.
+          </p>
+        </div>
+        <!-- ./reasons-list__item -->
+        <div class="reasons-list__item">
+          <picture><source srcset="img/reasons-icons/reason-2.webp" type="image/webp"><img src="img/reasons-icons/reason-2.png" alt="reason" /></picture>
+          <h3>Удобное расположение магазина</h3>
+          <p>
+            на севере москвы рядом с МКАД вблизи крупных гипермаркетов Леруа и
+            ОБИ. Ленинградское или Новокуркинское шоссе.
+          </p>
+        </div>
+        <!-- ./reasons-list__item -->
+        <div class="reasons-list__item">
+          <picture><source srcset="img/reasons-icons/reason-3.webp" type="image/webp"><img src="img/reasons-icons/reason-3.png" alt="reason" /></picture>
+          <h3>Помощь с дизайном</h3>
+          <p>
+            Подскажем как правильно и красиво оформить ванную комнату, предложим
+            несколько вариантов дизайна.
+          </p>
+        </div>
+        <!-- ./reasons-list__item -->
+        <div class="reasons-list__item">
+          <picture><source srcset="img/reasons-icons/reason-4.webp" type="image/webp"><img src="img/reasons-icons/reason-4.png" alt="reason" /></picture>
+          <h3>Экономия денег</h3>
+          <p>
+            Посоветуем на чем можно сэкономить. Точно рассчитаем необходимое
+            количество материала.
+          </p>
+        </div>
+        <!-- ./reasons-list__item -->
+        <div class="reasons-list__item">
+          <picture><source srcset="img/reasons-icons/reason-5.webp" type="image/webp"><img src="img/reasons-icons/reason-5.png" alt="reason" /></picture>
+          <h3>Без бюрократии</h3>
+          <p>
+            Вам не нужно заполнять массу заявлений и доверенностей, для того
+            чтобы получить или вернуть товар. Вам будет достаточно сделать один
+            звонок, чтобы оперативно решить вопрос.
+          </p>
+        </div>
+        <!-- ./reasons-list__item -->
+        <div class="reasons-list__item">
+          <picture><source srcset="img/reasons-icons/reason-6.webp" type="image/webp"><img src="img/reasons-icons/reason-6.png" alt="reason" /></picture>
+          <h3>100% гарантия сохранности ваших денег</h3>
+          <p>
+            Вы можете оплатить заказ после его получения, если вы из Москвы и
+            МО.
+          </p>
+        </div>
+        <!-- ./reasons-list__item -->
+        <div class="reasons-list__item">
+          <picture><source srcset="img/reasons-icons/reason-7.webp" type="image/webp"><img src="img/reasons-icons/reason-7.png" alt="reason" /></picture>
+          <h3>Персональный менеджер</h3>
+          <p>
+            С вами будет личный менеджер, который будет помогать решать вопросы.
+          </p>
+        </div>
+        <!-- ./reasons-list__item -->
+        <div class="reasons-list__item">
+          <picture><source srcset="img/reasons-icons/reason-8.webp" type="image/webp"><img src="img/reasons-icons/reason-8.png" alt="reason" /></picture>
+          <h3>Оптимально подобранный ассортимент магазина</h3>
+          <p>
+            В нашем шоу руме представлены коллекции от лучших отечественных
+            производителей. Ничего лишнего - только самые востребованные
+            коллекции и новинки.
+          </p>
+        </div>
+        <!-- ./reasons-list__item -->
+      </div>
+      <!-- ./reasons-list -->
+    </section>
+
+    <section class="catalog__block drops-block pb-0">
+      <div class="catalog__block__head">
+        <div class="catalog__dropdown mb-sm-0">
+          <button data-list="description" class="catalog__dropdown-active">
+            Характеристики и описание
+          </button>
+          <button data-list="delivery">Условия доставки</button>
+          <button data-list="reviews">Отзывы</button>
+        </div>
+      </div>
+      <!-- ./catalog__block__head -->
+
+      <div
+        data-list="description"
+        class="catalog__block__sales-list dropdown-item"
+      >
+        <div class="details">
+          <div class="details__characters">
+            <h4 class="details__title">Характеристики</h4>
+            <div class="details__characters__list">
+              <div class="details__characters__item">
+                <span
+                  >Производитель<button
+                    class="details__characters__item-warning"
+                  >
+                    i
+                  </button>
+                </span>
+                <a href="#">Керама Марацци</a>
+              </div>
+              <!-- ./details__characters__item -->
+              <div class="details__characters__item">
+                <span>Страна </span>
+                <span>Россия</span>
+              </div>
+              <!-- ./details__characters__item -->
+              <div class="details__characters__item">
+                <span>Применение </span>
+                <span>Керамогранит</span>
+              </div>
+              <!-- ./details__characters__item -->
+              <div class="details__characters__item">
+                <span>Поверхность </span>
+                <span>Матовая</span>
+              </div>
+              <!-- ./details__characters__item -->
+              <div class="details__characters__item">
+                <span
+                  >Имитация<button class="details__characters__item-warning">
+                    i
+                  </button>
+                </span>
+                <span>под мрамор</span>
+              </div>
+              <!-- ./details__characters__item -->
+              <div class="details__characters__item">
+                <span
+                  >Стиль<button class="details__characters__item-warning">
+                    i
+                  </button>
+                </span>
+                <span>Античный</span>
+              </div>
+              <!-- ./details__characters__item -->
+              <div class="details__characters__item">
+                <span>Цвет </span>
+                <span>Черный, белый, красный</span>
+              </div>
+              <!-- ./details__characters__item -->
+              <div class="details__characters__item">
+                <span>Форма </span>
+                <span>Прямоугольник</span>
+              </div>
+              <!-- ./details__characters__item -->
+              <div class="details__characters__item">
+                <span
+                  >Назначение<button class="details__characters__item-warning">
+                    i
+                  </button>
+                </span>
+                <span>для ванной, для кухни</span>
+              </div>
+              <!-- ./details__characters__item -->
+              <div class="details__characters__item">
+                <span
+                  >Элемент<button class="details__characters__item-warning">
+                    i
+                  </button>
+                </span>
+                <span>настенная, бордюр</span>
+              </div>
+              <!-- ./details__characters__item -->
+              <div class="details__characters__item">
+                <span>Тема дизайна </span>
+                <span>Флора</span>
+              </div>
+              <!-- ./details__characters__item -->
+            </div>
+            <!-- ./details__characters__list -->
+          </div>
+          <!-- ./details__characters -->
+          <div class="details__description">
+            <h4 class="details__title">Описание</h4>
+            <p class="details__description-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum massa consectetur diam mauris. Pulvinar condimentum
+              fringilla vivamus sit ullamcorper mattis vel ornare. Velit neque
+              nunc, in non blandit est arcu tristique in. Nullam suspendisse
+              nulla libero, interdum porttitor dignissim convallis.
+            </p>
+          </div>
+          <!-- ./details__description -->
+        </div>
+      </div>
+      <!-- ./dropdown-item -->
+      <div
+        data-list="delivery"
+        class="catalog__block__sales-list dropdown-item"
+      >
+        <div class="details">
+          <div class="details__characters">
+            <h4 class="details__title">Условия доставки</h4>
+            <p class="details__description-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum massa consectetur diam mauris. Pulvinar condimentum
+              fringilla vivamus sit ullamcorper mattis vel ornare. Velit neque
+              nunc, in non blandit est arcu tristique in. Nullam suspendisse
+              nulla libero, interdum porttitor dignissim convallis.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div data-list="reviews" class="catalog__block__sales-list dropdown-item">
+        <div class="details product-reviews">
+          <h4 class="product-reviews details__title">Отзывы(4)</h4>
+          <!-- ./title -->
+          <div class="product-reviews__table">
+            <div class="product-reviews__cell">
+              <div class="product-reviews__person">
+                <picture><source srcset="img/review-avatar.webp" type="image/webp"><img src="img/review-avatar.jpg" alt="avatar" /></picture>
+                <span class="product-reviews__name">Иван Ивнов</span>
+                <span class="product-reviews__date">29.10.2021</span>
+                <div class="rating-mini">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <p class="product-reviews__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum massa consectetur diam mauris. Pulvinar condimentum
+                fringilla vivamus sit.
+              </p>
+              <div class="product-reviews__images">
+                <picture><source srcset="img/Marazzi.webp" type="image/webp"><img src="img/Marazzi.jpg" alt="img" /></picture>
+                <picture><source srcset="img/Marazzi.webp" type="image/webp"><img src="img/Marazzi.jpg" alt="img" /></picture>
+                <picture><source srcset="img/Marazzi.webp" type="image/webp"><img src="img/Marazzi.jpg" alt="img" /></picture>
+              </div>
+            </div>
+            <!-- ./product-reviwes__cell -->
+            <div class="product-reviews__cell">
+              <div class="product-reviews__person">
+                <picture><source srcset="img/review-avatar.webp" type="image/webp"><img src="img/review-avatar.jpg" alt="avatar" /></picture>
+                <span class="product-reviews__name">Иван Ивнов</span>
+                <span class="product-reviews__date">29.10.2021</span>
+                <div class="rating-mini">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <p class="product-reviews__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum massa consectetur diam mauris. Pulvinar condimentum
+                fringilla vivamus sit.
+              </p>
+              <div class="product-reviews__images">
+                <picture><source srcset="img/Marazzi.webp" type="image/webp"><img src="img/Marazzi.jpg" alt="img" /></picture>
+                <picture><source srcset="img/Marazzi.webp" type="image/webp"><img src="img/Marazzi.jpg" alt="img" /></picture>
+                <picture><source srcset="img/Marazzi.webp" type="image/webp"><img src="img/Marazzi.jpg" alt="img" /></picture>
+              </div>
+            </div>
+            <!-- ./product-reviwes__cell -->
+            <div class="product-reviews__cell">
+              <div class="product-reviews__person">
+                <picture><source srcset="img/review-avatar.webp" type="image/webp"><img src="img/review-avatar.jpg" alt="avatar" /></picture>
+                <span class="product-reviews__name">Иван Ивнов</span>
+                <span class="product-reviews__date">29.10.2021</span>
+                <div class="rating-mini">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <p class="product-reviews__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum massa consectetur diam mauris. Pulvinar condimentum
+                fringilla vivamus sit.
+              </p>
+              <div class="product-reviews__images">
+                <picture><source srcset="img/Marazzi.webp" type="image/webp"><img src="img/Marazzi.jpg" alt="img" /></picture>
+                <picture><source srcset="img/Marazzi.webp" type="image/webp"><img src="img/Marazzi.jpg" alt="img" /></picture>
+                <picture><source srcset="img/Marazzi.webp" type="image/webp"><img src="img/Marazzi.jpg" alt="img" /></picture>
+              </div>
+            </div>
+            <!-- ./product-reviwes__cell -->
+          </div>
+          <!-- ./product-reviwes__table -->
+          <button class="product-reviews__report">Оставить отзыв</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog__block pt-0 pb-0">
+      <h3 class="collection-subtitle">Другие товары коллекции</h3>
+
+      <div data-list="goods" class="catalog__block__sales-list">
+        <div class="catalog__block__sale-card">
+          <div class="catalog__block__sale-images ones">
+            <img
+              class="lazy image-item entered loading"
+              src="img/goods/goods-1.jpg"
+              alt="sale-img"
+              data-ll-status="loading"
+            />
+            <div class="buttons-block">
+              <button>
+                <img
+                  class="lazy entered loading"
+                  src="img/sales/like.png"
+                  alt="like"
+                  data-ll-status="loading"
+                />
+              </button>
+              <button>
+                <img
+                  class="lazy entered loading"
+                  src="img/sales/scales.png"
+                  alt="scales"
+                  data-ll-status="loading"
+                />
+              </button>
+              <!-- ./right part -->
+              <button>
+                <p>выбрать подарок</p>
+                <div>
+                  <img
+                    class="lazy entered loading"
+                    src="img/sales/present.png"
+                    alt="present"
+                    data-ll-status="loading"
+                  />
+                </div>
+              </button>
+              <button>
+                <p>есть образцы</p>
+                <div>
+                  <img
+                    class="lazy entered loading"
+                    src="img/sales/examples.png"
+                    alt="examples"
+                    data-ll-status="loading"
+                  />
+                </div>
+              </button>
+              <button>
+                <p>есть видео</p>
+                <div>
+                  <img
+                    class="lazy entered loading"
+                    src="img/sales/video.png"
+                    alt="video"
+                    data-ll-status="loading"
+                  />
+                </div>
+              </button>
+              <button>
+                <p>распродажа</p>
+                <div>
+                  <img
+                    class="lazy entered loading"
+                    src="img/sales/sale-ticket.png"
+                    alt="sale-ticket"
+                    data-ll-status="loading"
+                  />
+                </div>
+              </button>
+            </div>
+          </div>
+          <!-- ./catalog__block__sale-images -->
+          <div class="catalog__block__sale-name">
+            <img
+              class="lazy entered loading"
+              src="img/sales/flag.svg"
+              alt="russia"
+              data-ll-status="loading"
+            />
+            <a href="#" id="sale1-1">Абингтон (Керама Марацци)</a>
+          </div>
+          <!-- ./catalog__block__sale-name -->
+          <div class="catalog__block__sale-cost">
+            <span>от 100 000 ₽/м2</span>
+            <span class="previous-sale">от 200 000 ₽/м2</span>
+          </div>
+          <!-- ./catalog__block__sale-cost -->
+          <button class="catalog__block__sale-tocart">В корзину</button>
+        </div>
+        <!-- ./catalog__block__sale-card -->
+        <div class="catalog__block__sale-card">
+          <div class="catalog__block__sale-images ones">
+            <img
+              class="lazy image-item entered loading"
+              src="img/goods/goods-2.jpg"
+              alt="sale-img"
+              data-ll-status="loading"
+            />
+            <div class="buttons-block">
+              <button>
+                <img
+                  class="lazy entered loading"
+                  src="img/sales/like.png"
+                  alt="like"
+                  data-ll-status="loading"
+                />
+              </button>
+              <button>
+                <img
+                  class="lazy entered loading"
+                  src="img/sales/scales.png"
+                  alt="scales"
+                  data-ll-status="loading"
+                />
+              </button>
+              <!-- ./right part -->
+              <button>
+                <p>выбрать подарок</p>
+                <div>
+                  <img
+                    class="lazy entered loading"
+                    src="img/sales/present.png"
+                    alt="present"
+                    data-ll-status="loading"
+                  />
+                </div>
+              </button>
+              <button>
+                <p>есть образцы</p>
+                <div>
+                  <img
+                    class="lazy entered loading"
+                    src="img/sales/examples.png"
+                    alt="examples"
+                    data-ll-status="loading"
+                  />
+                </div>
+              </button>
+              <button>
+                <p>есть видео</p>
+                <div>
+                  <img
+                    class="lazy entered loading"
+                    src="img/sales/video.png"
+                    alt="video"
+                    data-ll-status="loading"
+                  />
+                </div>
+              </button>
+              <button>
+                <p>распродажа</p>
+                <div>
+                  <img
+                    class="lazy entered loading"
+                    src="img/sales/sale-ticket.png"
+                    alt="sale-ticket"
+                    data-ll-status="loading"
+                  />
+                </div>
+              </button>
+            </div>
+          </div>
+          <!-- ./catalog__block__sale-images -->
+          <div class="catalog__block__sale-name">
+            <img
+              class="lazy entered loading"
+              src="img/sales/flag.svg"
+              alt="russia"
+              data-ll-status="loading"
+            />
+            <a href="#" id="sale1-1">Абингтон (Керама Марацци)</a>
+          </div>
+          <!-- ./catalog__block__sale-name -->
+          <div class="catalog__block__sale-cost">
+            <span>от 100 000 ₽/м2</span>
+            <span class="previous-sale">от 200 000 ₽/м2</span>
+          </div>
+          <!-- ./catalog__block__sale-cost -->
+          <button class="catalog__block__sale-tocart">В корзину</button>
+        </div>
+        <!-- ./catalog__block__sale-card -->
+        <div class="catalog__block__sale-card">
+          <div class="catalog__block__sale-images ones">
+            <img
+              class="lazy image-item entered loading"
+              src="img/goods/goods-3.jpg"
+              alt="sale-img"
+              data-ll-status="loading"
+            />
+            <div class="buttons-block">
+              <button>
+                <img
+                  class="lazy entered loading"
+                  src="img/sales/like.png"
+                  alt="like"
+                  data-ll-status="loading"
+                />
+              </button>
+              <button>
+                <img
+                  class="lazy entered loading"
+                  src="img/sales/scales.png"
+                  alt="scales"
+                  data-ll-status="loading"
+                />
+              </button>
+              <!-- ./right part -->
+              <button>
+                <p>выбрать подарок</p>
+                <div>
+                  <img
+                    class="lazy entered loading"
+                    src="img/sales/present.png"
+                    alt="present"
+                    data-ll-status="loading"
+                  />
+                </div>
+              </button>
+              <button>
+                <p>есть образцы</p>
+                <div>
+                  <img
+                    class="lazy entered loading"
+                    src="img/sales/examples.png"
+                    alt="examples"
+                    data-ll-status="loading"
+                  />
+                </div>
+              </button>
+              <button>
+                <p>есть видео</p>
+                <div>
+                  <img
+                    class="lazy entered loading"
+                    src="img/sales/video.png"
+                    alt="video"
+                    data-ll-status="loading"
+                  />
+                </div>
+              </button>
+              <button>
+                <p>распродажа</p>
+                <div>
+                  <img
+                    class="lazy entered loading"
+                    src="img/sales/sale-ticket.png"
+                    alt="sale-ticket"
+                    data-ll-status="loading"
+                  />
+                </div>
+              </button>
+            </div>
+          </div>
+          <!-- ./catalog__block__sale-images -->
+          <div class="catalog__block__sale-name">
+            <img
+              class="lazy entered loading"
+              src="img/sales/flag.svg"
+              alt="russia"
+              data-ll-status="loading"
+            />
+            <a href="#" id="sale1-1">Абингтон (Керама Марацци)</a>
+          </div>
+          <!-- ./catalog__block__sale-name -->
+          <div class="catalog__block__sale-cost">
+            <span>от 100 000 ₽/м2</span>
+            <span class="previous-sale">от 200 000 ₽/м2</span>
+          </div>
+          <!-- ./catalog__block__sale-cost -->
+          <button class="catalog__block__sale-tocart">В корзину</button>
+        </div>
+        <!-- ./catalog__block__sale-card -->
+        <div class="catalog__block__sale-card">
+          <div class="catalog__block__sale-images ones">
+            <img
+              class="lazy image-item entered loading"
+              src="img/goods/goods-4.jpg"
+              alt="sale-img"
+              data-ll-status="loading"
+            />
+            <div class="buttons-block">
+              <button>
+                <img
+                  class="lazy entered loading"
+                  src="img/sales/like.png"
+                  alt="like"
+                  data-ll-status="loading"
+                />
+              </button>
+              <button>
+                <img
+                  class="lazy entered loading"
+                  src="img/sales/scales.png"
+                  alt="scales"
+                  data-ll-status="loading"
+                />
+              </button>
+              <!-- ./right part -->
+              <button>
+                <p>выбрать подарок</p>
+                <div>
+                  <img
+                    class="lazy entered loading"
+                    src="img/sales/present.png"
+                    alt="present"
+                    data-ll-status="loading"
+                  />
+                </div>
+              </button>
+              <button>
+                <p>есть образцы</p>
+                <div>
+                  <img
+                    class="lazy entered loading"
+                    src="img/sales/examples.png"
+                    alt="examples"
+                    data-ll-status="loading"
+                  />
+                </div>
+              </button>
+              <button>
+                <p>есть видео</p>
+                <div>
+                  <img
+                    class="lazy entered loading"
+                    src="img/sales/video.png"
+                    alt="video"
+                    data-ll-status="loading"
+                  />
+                </div>
+              </button>
+              <button>
+                <p>распродажа</p>
+                <div>
+                  <img
+                    class="lazy entered loading"
+                    src="img/sales/sale-ticket.png"
+                    alt="sale-ticket"
+                    data-ll-status="loading"
+                  />
+                </div>
+              </button>
+            </div>
+          </div>
+          <!-- ./catalog__block__sale-images -->
+          <div class="catalog__block__sale-name">
+            <img
+              class="lazy entered loading"
+              src="img/sales/flag.svg"
+              alt="russia"
+              data-ll-status="loading"
+            />
+            <a href="#" id="sale1-1">Абингтон (Керама Марацци)</a>
+          </div>
+          <!-- ./catalog__block__sale-name -->
+          <div class="catalog__block__sale-cost">
+            <span>от 100 000 ₽/м2</span>
+            <span class="previous-sale">от 200 000 ₽/м2</span>
+          </div>
+          <!-- ./catalog__block__sale-cost -->
+          <button class="catalog__block__sale-tocart">В корзину</button>
+        </div>
+        <!-- ./catalog__block__sale-card -->
+      </div>
+    </section>
+
+    <section class="catalog__block pt-0 pb-0 mb-0">
+      <h3 class="collection-subtitle">Ранее вы смотрели</h3>
+      <div data-list="sales" class="catalog__block__sales-list">
+        <div class="catalog__block__sale-card">
+          <div class="catalog__block__sale-images">
+            <img
+              class="lazy image-item entered loading"
+              src="img/sales/sale1-1.jpg"
+              alt="sale-img"
+              data-ll-status="loading"
+            />
+            <img
+              class="image-item hidden lazy entered loading"
+              src="img/sales/sale1-2.jpg"
+              alt="sale-img"
+              data-ll-status="loading"
+            />
+            <img
+              class="image-item hidden lazy entered loading"
+              src="img/sales/sale1-3.jpg"
+              alt="sale-img"
+              data-ll-status="loading"
+            />
+            <img
+              class="image-item hidden lazy entered loading"
+              src="img/sales/sale1-4.jpg"
+              alt="sale-img"
+              data-ll-status="loading"
+            />
+            <div class="buttons-block">
+              <button>
+                <img
+                  class="lazy entered loading"
+                  src="img/sales/like.png"
+                  alt="like"
+                  data-ll-status="loading"
+                />
+              </button>
+              <button>
+                <img
+                  class="lazy entered loading"
+                  src="img/sales/scales.png"
+                  alt="scales"
+                  data-ll-status="loading"
+                />
+              </button>
+              <!-- ./right part -->
+              <button>
+                <p>выбрать подарок</p>
+                <div>
+                  <img
+                    class="lazy entered loading"
+                    src="img/sales/present.png"
+                    alt="present"
+                    data-ll-status="loading"
+                  />
+                </div>
+              </button>
+              <button>
+                <p>есть образцы</p>
+                <div>
+                  <img
+                    class="lazy entered loading"
+                    src="img/sales/examples.png"
+                    alt="examples"
+                    data-ll-status="loading"
+                  />
+                </div>
+              </button>
+              <button>
+                <p>есть видео</p>
+                <div>
+                  <img
+                    class="lazy entered loading"
+                    src="img/sales/video.png"
+                    alt="video"
+                    data-ll-status="loading"
+                  />
+                </div>
+              </button>
+              <button>
+                <p>распродажа</p>
+                <div>
+                  <img
+                    class="lazy entered loading"
+                    src="img/sales/sale-ticket.png"
+                    alt="sale-ticket"
+                    data-ll-status="loading"
+                  />
+                </div>
+              </button>
+            </div>
+            <div class="items-track">
+              <button class="sale-img-btn">
+                <img
+                  class="lazy entered loading"
+                  src="img/sales/sale1-1.jpg"
+                  alt="image-button"
+                  data-ll-status="loading"
+                />
+              </button>
+              <button class="sale-img-btn">
+                <img
+                  class="lazy entered loading"
+                  src="img/sales/sale1-2.jpg"
+                  alt="image-button"
+                  data-ll-status="loading"
+                />
+              </button>
+              <button class="sale-img-btn">
+                <img
+                  class="lazy entered loading"
+                  src="img/sales/sale1-3.jpg"
+                  alt="image-button"
+                  data-ll-status="loading"
+                />
+              </button>
+              <button class="sale-img-btn">
+                <img
+                  class="lazy entered loading"
+                  src="img/sales/sale1-4.jpg"
+                  alt="image-button"
+                  data-ll-status="loading"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="catalog__block__sale-name">
+            <img
+              class="lazy entered loading"
+              src="img/sales/flag.svg"
+              alt="russia"
+              data-ll-status="loading"
+            />
+            <a href="#" id="sale1-1">Абингтон (Керама Марацци)</a>
+          </div>
+          <div class="catalog__block__sale-cost">
+            <span>от 100 000 ₽/м2</span>
+            <span class="previous-sale">от 200 000 ₽/м2</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+    <footer class="footer">
+  <nav class="footer__logo-container">
+    <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.jpg" alt="logo" class="lazy footer__logo" /></picture>
+    <a href="#">Политика конфиденциальности</a>
+    <a href="#">Разработка сайта</a>
+  </nav>
+  <nav>
+    <h3>О компании</h3>
+    <a href="#">О фирме</a>
+    <a href="#">О плитке</a>
+    <a href="#">О дизайне</a>
+    <a href="#">Услуги</a>
+    <a href="#">Новости</a>
+    <a href="#">Статьи</a>
+    <a href="#">Контакты</a>
+  </nav>
+  <nav>
+    <h3>Клиентам</h3>
+    <a href="#">Оплата</a>
+    <a href="#">Доставка</a>
+    <a href="#">Возврат</a>
+    <a href="#">Гарантии</a>
+    <a href="#">Самовывоз</a>
+    <a href="#">Бонусы</a>
+    <a href="#">3D-визуализация</a>
+  </nav>
+  <nav>
+    <h3>Товары</h3>
+    <a href="#">Плитка</a>
+    <a href="#">Мебель для ванной</a>
+    <a href="#">Сантехника</a>
+    <a href="#">Сопутствующие товары</a>
+  </nav>
+
+  <nav class="footer__contacts">
+    <div class="header-top__connection double">
+      <a href="tel:+7(495)0463199" class="header_connection-icon"
+        ><img class="lazy" src="img/header-icons/mobile.svg" alt="phone" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img
+          class="lazy"
+          src="img/header-icons/whatsapp-icon.svg"
+          alt="whatsapp" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img class="lazy" src="img/header-icons/viber.svg" alt="viber" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img class="lazy" src="img/header-icons/e-mail.svg" alt="mail"
+      /></a>
+    </div>
+    <div class="header-top__phone">
+      <img class="lazy" src="img/header-icons/call-icon.svg" alt="point" />
+      <div>
+        <a href="tel:+79250463125">+7 (925) 046 31 25</a>
+        <p>Обратная связь</p>
+      </div>
+    </div>
+
+    <div class="header-top__phone">
+      <img class="lazy" src="img/footer-icons/mail-purple.svg" alt="point" />
+      <div>
+        <a href="mailto:plitka-tut@list.ru">plitka-tut@list.ru</a>
+      </div>
+    </div>
+
+    <div class="header-top__connection">
+      <a href="tel:+7(495)0463199" class="header_connection-icon"
+        ><img
+          class="lazy"
+          src="img/footer-icons/youtube.svg"
+          alt="youtube" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img class="lazy" src="img/footer-icons/vk.svg" alt="vk" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img class="lazy" src="img/footer-icons/insta.svg" alt="insta" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img class="lazy" src="img/footer-icons/facebook.svg" alt="face"
+      /></a>
+    </div>
+  </nav>
+</footer>
+ <script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20220611051616"></script>
+<!--Load the AJAX API-->
+<!-- <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script> -->
+<!-- jQuery and circleType -->
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220611051616"></script>
+    <script src="js/circletype.min.js?_v=20220611051616"></script> -->
+<!-- lazy load -->
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.2/dist/lazyload.min.js?_v=20220611051616"></script>
+<!-- Swiper -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220611051616"></script>
+<!-- app -->
+<script src="js/app.min.js?_v=20220611051616"></script>
+
+  </body>
+</html>

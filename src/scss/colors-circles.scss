@@ -1,0 +1,187 @@
+// <div class="color-circle__list">
+// <div class="color-circle four-elements">
+//   <div class="wrap">
+//     <a href="#">сиреневый</a>
+//     <a href="#">розовый</a>
+//     <a href="#">лиловый</a>
+//     <a href="#" style="color: white">фуксия</a>
+//     <a href="#">Розовая гамма цветов</a>
+//   </div>
+// </div>
+
+// <div class="color-circle four-elements">
+//   <div class="wrap">
+//     <a href="#" style="background-color: #f6f6cd">бежевый</a>
+//     <a href="#" style="background-color: #ac7434">котто</a>
+//     <a href="#" style="background-color: #fff6e5">кремовый</a>
+//     <a href="#" style="color: white; background-color: #964b00"
+//       >коричневый</a
+//     >
+//     <a href="#">Тёплая гамма цветов</a>
+//   </div>
+// </div>
+
+// <div class="color-circle three-elements">
+//   <div class="wrap">
+//     <a href="#" style="color: white; background-color: #ff0000"
+//       >красный</a
+//     >
+//     <a href="#" style="background-color: white">белый</a>
+//     <a href="#" style="color: white; background-color: black">черный</a>
+//     <a href="#">Контрастная гамма цветов</a>
+//   </div>
+// </div>
+// </div>
+
+.color-circle {
+  width: 512px;
+  height: 512px;
+  margin-right: 28px;
+
+  &__list {
+    display: flex;
+  }
+
+  .wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    // margin: 0 auto;
+    background-color: #e7e7e7;
+    border-radius: 50%;
+    // transform: scale(1) translateZ(0px);
+    // overflow: hidden;
+    opacity: 1;
+  }
+  a {
+    font-weight: 600;
+    font-size: 10px;
+    color: #2b2c31;
+    text-decoration: none;
+    //=================
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    //=================
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 49%;
+    height: 49%;
+    overflow: hidden;
+    background: white;
+
+    &:hover {
+      background-color: #97ffa8;
+    }
+    // transform: scale(1) translatez(0px);
+  }
+
+  &.four-elements {
+    a:nth-child(1) {
+      background-color: #c8a2c8;
+      border-radius: 100% 0 0 0;
+      transform-origin: 110% 110%;
+      span {
+        // transform: rotate(-45deg);
+      }
+    }
+
+    a:nth-child(2) {
+      background-color: #f754e1;
+      border-radius: 0 100% 0 0;
+      left: 50.5%;
+      transform-origin: -10% 110%;
+    }
+
+    a:nth-child(3) {
+      background-color: #ffc0cb;
+      border-radius: 0 0 0 100%;
+      top: 50.5%;
+      transform-origin: 110% -10%;
+    }
+
+    a:nth-child(4) {
+      background-color: #8b00ff;
+      border-radius: 0 0 100% 0;
+      top: 50.5%;
+      left: 50.5%;
+      transform-origin: -10% -10%;
+
+      span {
+        // transform: rotate(135deg);
+      }
+    }
+
+    a:nth-child(5) {
+      font-weight: 400;
+
+      width: 55%;
+      height: 55%;
+      left: 22.5%;
+      top: 22.5%;
+      border-radius: 50%;
+      background: #e7e7e7;
+    }
+  }
+
+  &.three-elements {
+    .wrap {
+      display: flex;
+      overflow: hidden;
+    }
+    a:nth-child(1) {
+      position: relative;
+      // border-radius: 100% 0 0 0;
+      height: 100%;
+      transform-origin: 110% 110%;
+      span {
+        position: absolute;
+        left: 48%;
+        top: 22%;
+      }
+    }
+
+    a:nth-child(2) {
+      position: relative;
+
+      height: 100%;
+      // border-radius: 0 100% 0 0;
+      // left: 50.5%;
+      transform-origin: -10% 110%;
+      span {
+        position: absolute;
+        left: 48%;
+        top: 22%;
+      }
+    }
+
+    a:nth-child(3) {
+      // position: relative;
+      // border-radius: 0 0 0 100%;
+      width: 100%;
+      height: 100%;
+      top: 50%;
+      // transform-origin: center;
+      // transform: rotate(-45deg);
+      // skew(13deg)
+      span {
+        position: absolute;
+        top: 30%;
+        left: 57%;
+      }
+    }
+
+    a:nth-child(4) {
+      font-weight: 400;
+      width: 55%;
+      height: 55%;
+      left: 22.5%;
+      top: 22.5%;
+      border-radius: 50%;
+      // display: none;
+      background: #e7e7e7;
+    }
+  }
+}

@@ -1,0 +1,129 @@
+.footer {
+  padding: 40px 98px 42px 28px;
+  background: $footer-bg;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+  @media (max-width: 1050px) {
+    flex-wrap: wrap;
+    padding: 40px 28px;
+  }
+  @media (max-width: 490px) {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 490px) {
+      align-items: center;
+    }
+
+    &.footer__logo-container {
+      //   height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @media (max-width: 1050px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+
+      img {
+        margin-bottom: auto;
+
+        @media (max-width: 1050px) {
+          width: 250px;
+          margin: auto;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &.footer__contacts {
+      @media (max-width: 1050px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      @media (max-width: 630px) {
+        margin-top: 15px;
+      }
+    }
+
+    h3 {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 120%;
+      color: #ffffff;
+      margin-bottom: 18px;
+
+      @media (max-width: 490px) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+
+    a {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+      color: #ffffff;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+
+    .header-top__phone {
+      margin-bottom: 35px;
+      justify-content: flex-end;
+
+      @media (max-width: 580px) {
+        display: flex;
+        margin-bottom: 15px;
+      }
+      a {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+      }
+      p {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+      }
+    }
+
+    .header-top__connection.double {
+      display: none;
+      @media (max-width: 950px) {
+        display: flex;
+      }
+    }
+    .header-top__connection {
+      a {
+        margin-right: 30px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      @media (max-width: 950px) {
+        display: flex;
+        a {
+          margin-right: 30px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

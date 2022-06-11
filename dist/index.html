@@ -1,0 +1,1745 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20220611051616" />
+  <link rel="stylesheet" href="css/normalize.css?_v=20220611051616" />
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&_v=20220611051616"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&_v=20220611051616"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&_v=20220611051616"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220611051616"
+  />
+  <!-- переменная title из параметров include -->
+  <title>Главная</title>
+
+  <!-- https://www.chartjs.org/docs/latest/configuration/ -->
+  <!-- https://quickchart.io/documentation/chart-js/custom-pie-doughnut-chart-labels/ -->
+</head>
+
+  <body>
+    <header class="header">
+  <div class="header-top">
+  <div class="header-top__logo-container">
+    <picture><source srcset="img/logo.webp" type="image/webp"><img class="lazy header-top__logo" src="img/logo.jpg" alt="logo" /></picture>
+  </div>
+
+  <!-- header-top__logo -->
+  <div class="header-top__place">
+    <img class="lazy" src="img/header-icons/place-point.svg" alt="point" />
+
+    <div>
+      <h3>Шоу-рум студия дизайна</h3>
+      <p>на севере Москвы<br />рядом с Леруа и ОБИ</p>
+    </div>
+  </div>
+  <!-- header-top__place -->
+
+  <div class="header-top__phone">
+    <img class="lazy" src="img/header-icons/call-icon.svg" alt="point" />
+    <div>
+      <a href="tel:+79250463125">+7 (925) 046 31 25</a>
+      <p>Обратный звонок</p>
+    </div>
+  </div>
+  <!-- header-top__phone -->
+
+  <div class="header-top__connection">
+    <a href="tel:+7(495)0463199" class="header_connection-icon"
+      ><img class="lazy" src="img/header-icons/mobile.svg" alt="phone" /></a
+    ><a href="#" class="header_connection-icon"
+      ><img
+        class="lazy"
+        src="img/header-icons/whatsapp-icon.svg"
+        alt="whatsapp" /></a
+    ><a href="#" class="header_connection-icon"
+      ><img class="lazy" src="img/header-icons/viber.svg" alt="viber" /></a
+    ><a href="#" class="header_connection-icon"
+      ><img class="lazy" src="img/header-icons/e-mail.svg" alt="mail"
+    /></a>
+  </div>
+  <!-- header-top__connection -->
+
+  <div class="header-top__goods">
+    <div class="header-top__cart-block">
+      <img class="lazy" src="img/header-icons/shopping-cart.svg" alt="cart" />
+
+      <div>
+        <a href="#">Корзина (0)</a>
+        <p>Доставка от 0 ₽</p>
+      </div>
+    </div>
+    <div class="header-top__primary-goods">
+      <img class="lazy" src="img/header-icons/like.svg" alt="liked goods" />
+
+      <div>
+        <a href="#">Избранное (0)</a>
+      </div>
+    </div>
+  </div>
+  <!-- header-top__primary-goods -->
+</div>
+
+  <nav class="header-menuline">
+  <button class="open-menu"><span></span><span></span><span></span></button>
+
+  <button class="header-menuline__section">Мебель</button
+  ><button class="header-menuline__section">Плитка для ванной</button
+  ><button class="header-menuline__section">Сантехника</button
+  ><button class="header-menuline__section">Сопутствующие товары</button
+  ><button class="header-menuline__section">
+    О компании
+    <div class="dropdown-content">
+      <a href="#">О фирме</a>
+      <a href="#">О плитке</a>
+      <a href="#">О дизайне</a>
+      <a href="#">Услуги</a>
+      <a href="#">Новости</a>
+      <a href="#">Статьи</a>
+      <a href="#">Контакты</a>
+    </div></button
+  ><button class="header-menuline__section">
+    Клиентам
+    <div class="dropdown-content">
+      <a href="#">Оплата</a>
+      <a href="#">Доставка</a>
+      <a href="#">Возврат</a>
+      <a href="#">Гарантии</a>
+      <a href="#">Самовывоз</a>
+      <a href="#">Бонусы</a>
+      <a href="#">3D-визуализация</a>
+    </div>
+  </button>
+
+  <form action="" class="header-menuline__section">
+    <input type="text" placeholder="Поиск..." />
+    <button type="submit">
+      <img class="lazy" src="img/header-icons/search-icon.svg" alt="search" />
+    </button>
+  </form>
+</nav>
+<div class="header-menuline-underline">
+  <div class="main-menu hidden">
+    <div class="main-menu__body">
+      <nav>
+        <h3>Назначение</h3>
+        <ul>
+          <li><a href="#">Ванная</a></li>
+          <li><a href="#">Полы</a></li>
+          <li><a href="#">Кухня</a></li>
+          <li><a href="#">Мозаика/ бассейны</a></li>
+          <li><a href="#">Ступени</a></li>
+          <li><a href="#">Общественные и жилые пространства</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>материал</h3>
+        <ul>
+          <li><a href="#">Плитка керамическая</a></li>
+          <li><a href="#">Керамогранит</a></li>
+          <li><a href="#">Мозаика</a></li>
+          <li><a href="#">Ступени</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Цена</h3>
+        <ul>
+          <li><a href="#">Недорогая до 1 т.р. </a></li>
+          <li><a href="#">Средняя 1-2 т.р </a></li>
+          <li><a href="#">Дорогая от 2 т.р.</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Стиль</h3>
+        <ul>
+          <li><a href="#">Модерн/Хайтек </a></li>
+          <li><a href="#">Лофт/Минимализм</a></li>
+          <li><a href="#">Классика</a></li>
+          <li><a href="#">Прованс/Кантри </a></li>
+          <li><a href="#">Тераццо</a></li>
+          <li><a href="#">Восточный</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Имитация</h3>
+        <ul>
+          <li><a href="#">Под мрамор </a></li>
+          <li><a href="#">Под бетон </a></li>
+          <li><a href="#">Под дерево</a></li>
+          <li><a href="#">Под кожу </a></li>
+          <li><a href="#">Под кирпич</a></li>
+          <li><a href="#">Под мозаику </a></li>
+          <li><a href="#">Под штукатурку</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Имитация</h3>
+        <ul>
+          <li><a href="#">Растения</a></li>
+          <li><a href="#">Животные</a></li>
+          <li><a href="#">Люди</a></li>
+          <li><a href="#">С панно</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Цвет</h3>
+        <ul>
+          <li><a href="#">Бежевый</a></li>
+          <li><a href="#">Кремовый</a></li>
+          <li><a href="#">Коричневый</a></li>
+          <li><a href="#">Серый</a></li>
+          <li><a href="#">Графитовый</a></li>
+          <li><a href="#">Синий</a></li>
+          <li><a href="#">Голубой</a></li>
+          <li><a href="#">Бирюзовый</a></li>
+          <li><a href="#">Бежевый</a></li>
+          <li><a href="#">Бежевый</a></li>
+          <li><a href="#">Бежевый</a></li>
+          <li><a href="#">Бежевый</a></li>
+          <li><a href="#">Бежевый</a></li>
+          <li><a href="#">Бежевый</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Размер</h3>
+        <ul>
+          <li><a href="#">Мелкий</a></li>
+          <li><a href="#">Средний</a></li>
+          <li><a href="#">Крупный</a></li>
+          <li><a href="#">10×10</a></li>
+          <li><a href="#">10×20</a></li>
+          <li><a href="#">10×30</a></li>
+          <li><a href="#">25×50</a></li>
+          <li><a href="#">20×60</a></li>
+          <li><a href="#">30×60</a></li>
+          <li><a href="#">45×45</a></li>
+          <li><a href="#">60×60</a></li>
+          <li><a href="#">60×120</a></li>
+          <li><a href="#">Бежевый</a></li>
+          <li><a href="#">Бежевый</a></li>
+        </ul>
+        <button class="more several">
+          <span>Свой</span>
+        </button>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Поверхность</h3>
+        <ul>
+          <li><a href="#">Рельефная</a></li>
+          <li><a href="#">Глянцевая</a></li>
+          <li><a href="#">Противоскользящая</a></li>
+          <li><a href="#">Матовая</a></li>
+          <li><a href="#">Полированная</a></li>
+          <li><a href="#">3D-объемная</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Страна</h3>
+        <ul>
+          <li><a href="#">Германия</a></li>
+          <li><a href="#">Испания</a></li>
+          <li><a href="#">Италия</a></li>
+          <li><a href="#">Китай</a></li>
+          <li><a href="#">Польша</a></li>
+          <li><a href="#">Португалия</a></li>
+          <li><a href="#">Россия</a></li>
+          <li><a href="#"> Россия-Италия</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Форма</h3>
+        <ul>
+          <li><a href="#">Кабанчик </a></li>
+          <li><a href="#">Шестиугольник</a></li>
+          <li><a href="#">Восьмиугольник</a></li>
+          <li><a href="#">Квадрат</a></li>
+          <li><a href="#">Прямоугольник</a></li>
+          <li><a href="#">Шеврон</a></li>
+          <li><a href="#">Круг</a></li>
+          <li><a href="#"> Ромб</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Элементы</h3>
+        <ul>
+          <li><a href="#">Настенная </a></li>
+          <li><a href="#">Напольная</a></li>
+          <li><a href="#">Декор, панно</a></li>
+          <li><a href="#"> Бордюр, карандаш</a></li>
+          <li><a href="#">Плинтус</a></li>
+          <li><a href="#">Мозаика</a></li>
+          <li><a href="#">Ступени</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+    </div>
+
+    <div class="main-menu__preview">
+      <picture><source srcset="img/Marazzi.webp" type="image/webp"><img class="lazy" src="img/Marazzi.jpg" alt="img" /></picture>
+      <p>Kerama Marazzi (Керама Марацци) Абингтон /Марацци-Рус/</p>
+    </div>
+  </div>
+</div>
+
+  <div class="header-searchline">
+  <button class="header-searchline-open">
+    Произвоители
+    <img src="img/arrows/more-arrow.svg" alt="more" />
+  </button>
+  <div class="header-searchline__dropdown">
+    <p>Производители:</p>
+    <a href="#" class="header-searchline__item">0-9</a>
+    <a href="#" class="header-searchline__item">A</a>
+    <a href="#" class="header-searchline__item">B</a>
+    <a href="#" class="header-searchline__item">C</a>
+    <a href="#" class="header-searchline__item">D</a>
+    <a href="#" class="header-searchline__item">E</a>
+    <a href="#" class="header-searchline__item">F</a>
+    <a href="#" class="header-searchline__item">G</a>
+    <a href="#" class="header-searchline__item">H</a>
+    <a href="#" class="header-searchline__item">I</a>
+    <a href="#" class="header-searchline__item">J</a>
+    <a href="#" class="header-searchline__item">K</a>
+    <a href="#" class="header-searchline__item">L</a>
+    <a href="#" class="header-searchline__item">M</a>
+    <a href="#" class="header-searchline__item">N</a>
+    <a href="#" class="header-searchline__item">O</a>
+    <a href="#" class="header-searchline__item">P</a>
+    <a href="#" class="header-searchline__item">R</a>
+    <a href="#" class="header-searchline__item">S</a>
+    <a href="#" class="header-searchline__item">T</a>
+    <a href="#" class="header-searchline__item">U</a>
+    <a href="#" class="header-searchline__item">V</a>
+    <a href="#" class="header-searchline__item">W</a>
+    <a href="#" class="header-searchline__item">X</a>
+    <a href="#" class="header-searchline__item">Y</a>
+    <a href="#" class="header-searchline__item">Z</a>
+    <a href="#" class="header-searchline__item">А-Я</a>
+  </div>
+</div>
+
+</header>
+ <main class="main">
+  <div class="container">
+    <div class="title-feature">
+  <div class="title-feature__slider swiper">
+    <div class="swiper-wrapper">
+      <div class="title-feature__slider-item swiper-slide">
+        <div class="slide__description">
+          <h2 class="slide__title">лучшие коллеции плитки</h2>
+
+          <p class="slide__subtitle">
+            Покупайте онлайн в нашем интернет-магазине.
+          </p>
+
+          <a href="#">Перейти в каталог</a>
+        </div>
+
+        <picture><source srcset="img/slider-img.webp" type="image/webp"><img src="img/slider-img.png" alt="img" class="lazy slide__img" /></picture>
+      </div>
+      <!-- ./swiper-slide -->
+
+      <div class="title-feature__slider-item swiper-slide">
+        <div class="slide__description">
+          <h2 class="slide__title">лучшие коллеции плитки</h2>
+          <p class="slide__subtitle">
+            Покупайте онлайн в нашем интернет-магазине.
+          </p>
+          <a href="#">Перейти в каталог</a>
+        </div>
+        <picture><source srcset="img/slider-img.webp" type="image/webp"><img src="img/slider-img.jpg" alt="img" class="lazy slide__img" /></picture>
+      </div>
+      <!-- ./swiper-slide -->
+
+      <div class="title-feature__slider-item swiper-slide">
+        <div class="slide__description">
+          <h2 class="slide__title">лучшие коллеции плитки</h2>
+          <p class="slide__subtitle">
+            Покупайте онлайн в нашем интернет-магазине.
+          </p>
+          <a href="#">Перейти в каталог</a>
+        </div>
+        <picture><source srcset="img/slider-img.webp" type="image/webp"><img src="img/slider-img.jpg" alt="img" class="lazy slide__img" /></picture>
+      </div>
+      <!-- ./swiper-slide -->
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- ./swiper -->
+  <div class="preview">
+    <picture><source srcset="img/bathroom.webp" type="image/webp"><img src="img/bathroom.png" alt="img" class="lazy" /></picture>
+    <div class="preview-description">
+      <h2 class="preview-description__title"><span>ЗD</span> визуализация</h2>
+      <p class="preview-description__subtitle">
+        Узнайте как будет выглядеть ваш интерьер перед покупкой плитки.
+      </p>
+      <a href="#" class="preview-description__more">Подробнее</a>
+    </div>
+  </div>
+  <!-- ./preview -->
+</div>
+<!-- ./title-feature -->
+ <h2 class="catalog__title" id="catalogtitle">Каталог плитки</h2>
+<section class="catalog__block">
+  <div class="catalog__block__head no-column">
+    <p>По назначению</p>
+    <button class="catalog__block__more">Развернуть</button>
+  </div>
+  <div class="catalog__block__body">
+    <div class="catalog__block__cell">
+      <a href="#" class="catalog__block__item">
+        <img
+          class="lazy"
+          src="img/destination-catalog/destination-1.png"
+          alt="dest"
+        />
+        <p>Ванная</p>
+      </a>
+      <!-- ./catalog__block__item -->
+    </div>
+    <div class="catalog__block__cell">
+      <a href="#" class="catalog__block__item">
+        <img
+          class="lazy"
+          src="img/destination-catalog/destination-6.png"
+          alt="dest"
+        />
+        <p>Общественные и жилые пространства</p>
+      </a>
+      <!-- ./catalog__block__item -->
+    </div>
+    <div class="catalog__block__cell">
+      <a href="#" class="catalog__block__item">
+        <img
+          class="lazy"
+          src="img/destination-catalog/destination-2.png"
+          alt="dest"
+        />
+        <p>пол</p>
+      </a>
+      <!-- ./catalog__block__item -->
+    </div>
+    <div class="catalog__block__cell">
+      <a href="#" class="catalog__block__item">
+        <img
+          class="lazy"
+          src="img/destination-catalog/destination-3.png"
+          alt="dest"
+        />
+        <p>Кухня (на фартук)</p>
+      </a>
+      <!-- ./catalog__block__item -->
+    </div>
+    <div class="catalog__block__cell">
+      <a href="#" class="catalog__block__item">
+        <img
+          class="lazy"
+          src="img/destination-catalog/destination-4.png"
+          alt="dest"
+        />
+        <p>мозаика/Бассейны</p>
+      </a>
+      <!-- ./catalog__block__item -->
+    </div>
+    <div class="catalog__block__cell">
+      <a href="#" class="catalog__block__item">
+        <img
+          class="lazy"
+          src="img/destination-catalog/destination-5.png"
+          alt="dest"
+        />
+        <p>Ступени</p>
+      </a>
+      <!-- ./catalog__block__item -->
+    </div>
+  </div>
+</section>
+<!-- ./destination -->
+
+<section class="catalog__block">
+  <div class="catalog__block__head no-column">
+    <div class="catalog__dropdown">
+      <button class="catalog__dropdown-active">По назначению</button>
+      <button>По имитации</button>
+      <button>По теме дизайна</button>
+    </div>
+    <button class="catalog__block__more">Развернуть</button>
+  </div>
+  <!-- ./catalog__block__head -->
+  <div class="catalog__block__body">
+    <div class="catalog__block__cell">
+      <a href="#" class="catalog__block__item">
+        <picture><source srcset="img/design-catalog/design-1.webp" type="image/webp"><img class="lazy" src="img/design-catalog/design-1.jpg" alt="design" /></picture>
+        <p>Лофт/Минимализм</p>
+      </a>
+      <!-- ./catalog__block__item -->
+    </div>
+    <!-- ./catalog__block__cell -->
+
+    <div class="catalog__block__cell">
+      <a href="#" class="catalog__block__item">
+        <picture><source srcset="img/design-catalog/design-2.webp" type="image/webp"><img class="lazy" src="img/design-catalog/design-2.jpg" alt="design" /></picture>
+        <p>Пэтчворк</p>
+      </a>
+      <!-- ./catalog__block__item -->
+    </div>
+    <!-- ./catalog__block__cell -->
+    <div class="catalog__block__cell">
+      <a href="#" class="catalog__block__item">
+        <picture><source srcset="img/design-catalog/design-3.webp" type="image/webp"><img class="lazy" src="img/design-catalog/design-3.jpg" alt="design" /></picture>
+        <p>Тераццо</p>
+      </a>
+      <!-- ./catalog__block__item -->
+    </div>
+    <!-- ./catalog__block__cell -->
+    <div class="catalog__block__cell">
+      <a href="#" class="catalog__block__item">
+        <picture><source srcset="img/design-catalog/design-4.webp" type="image/webp"><img class="lazy" src="img/design-catalog/design-4.jpg" alt="design" /></picture>
+        <p>Антик</p>
+      </a>
+      <!-- ./catalog__block__item -->
+    </div>
+    <!-- ./catalog__block__cell -->
+    <div class="catalog__block__cell">
+      <a href="#" class="catalog__block__item">
+        <picture><source srcset="img/design-catalog/design-5.webp" type="image/webp"><img class="lazy" src="img/design-catalog/design-5.jpg" alt="design" /></picture>
+        <p>Ар-деко</p>
+      </a>
+      <!-- ./catalog__block__item -->
+    </div>
+    <!-- ./catalog__block__cell -->
+    <div class="catalog__block__cell">
+      <a href="#" class="catalog__block__item">
+        <picture><source srcset="img/design-catalog/design-6.webp" type="image/webp"><img class="lazy" src="img/design-catalog/design-6.jpg" alt="design" /></picture>
+        <p>Восточный</p>
+      </a>
+      <!-- ./catalog__block__item -->
+    </div>
+    <!-- ./catalog__block__cell -->
+    <div class="catalog__block__cell">
+      <a href="#" class="catalog__block__item">
+        <picture><source srcset="img/design-catalog/design-7.webp" type="image/webp"><img class="lazy" src="img/design-catalog/design-7.jpg" alt="design" /></picture>
+        <p>Модерн/Хайтек</p>
+      </a>
+      <!-- ./catalog__block__item -->
+    </div>
+    <!-- ./catalog__block__cell -->
+    <div class="catalog__block__cell">
+      <a href="#" class="catalog__block__item">
+        <picture><source srcset="img/design-catalog/design-8.webp" type="image/webp"><img class="lazy" src="img/design-catalog/design-8.jpg" alt="design" /></picture>
+        <p>Прованс/Кантри</p>
+      </a>
+      <!-- ./catalog__block__item -->
+    </div>
+    <!-- ./catalog__block__cell -->
+    <div class="catalog__block__cell">
+      <a href="#" class="catalog__block__item">
+        <picture><source srcset="img/design-catalog/design-9.webp" type="image/webp"><img class="lazy" src="img/design-catalog/design-9.jpg" alt="design" /></picture>
+        <p>Рококо</p>
+      </a>
+      <!-- ./catalog__block__item -->
+    </div>
+    <!-- ./catalog__block__cell -->
+    <div class="catalog__block__cell">
+      <a href="#" class="catalog__block__item">
+        <img
+          class="lazy"
+          src="img/design-catalog/design-10.jpg"
+          alt="design"
+        />
+        <p>Классика</p>
+      </a>
+      <!-- ./catalog__block__item -->
+    </div>
+    <!-- ./catalog__block__cell -->
+  </div>
+  <!-- ./catalog__block__body -->
+</section>
+<!-- ./categories -->
+
+<section class="catalog__block colors__block">
+  <div class="colors__block__body">
+    <div class="catalog__block__head">
+      <p>По цветовому сочетанию</p>
+    </div>
+    <!-- ./head -->
+    <div class="colors__block__list">
+      <div class="colors__block__item">
+        <div class="colors__block__item_img">
+          <picture><source srcset="img/color-icon/color-1.webp" type="image/webp"><img class="lazy" src="img/color-icon/color-1.png" alt="color" /></picture>
+        </div>
+        <div>
+          <a href="#">вся гамма</a>
+          <a href="#">серый</a>
+          <a href="#">графит</a>
+        </div>
+      </div>
+      <!-- ./colors__block__item -->
+      <div class="colors__block__item">
+        <div class="colors__block__item_img">
+          <picture><source srcset="img/color-icon/color-2.webp" type="image/webp"><img class="lazy" src="img/color-icon/color-2.png" alt="color" /></picture>
+        </div>
+        <div class="">
+          <a href="#">вся гамма</a>
+          <a href="#">кремовый</a>
+          <a href="#">бежевый</a>
+          <a href="#">корричневый</a>
+          <a href="#">котто</a>
+        </div>
+      </div>
+      <!-- ./colors__block__item -->
+      <div class="colors__block__item">
+        <div class="colors__block__item_img">
+          <picture><source srcset="img/color-icon/color-2.webp" type="image/webp"><img class="lazy" src="img/color-icon/color-2.png" alt="color" /></picture>
+        </div>
+        <div>
+          <a href="#">вся гамма</a>
+          <a href="#">розовый</a>
+          <a href="#">сиреневый</a>
+          <a href="#">фиолетовый</a>
+          <a href="#">фуксия</a>
+        </div>
+      </div>
+      <!-- ./colors__block__item -->
+      <div class="colors__block__item">
+        <div class="colors__block__item_img">
+          <picture><source srcset="img/color-icon/color-3.webp" type="image/webp"><img class="lazy" src="img/color-icon/color-3.png" alt="color" /></picture>
+        </div>
+        <div>
+          <a href="#">вся гамма</a>
+          <a href="#">голубой</a>
+          <a href="#">синий</a>
+        </div>
+      </div>
+      <!-- ./colors__block__item -->
+      <div class="colors__block__item">
+        <div class="colors__block__item_img">
+          <picture><source srcset="img/color-icon/color-4.webp" type="image/webp"><img class="lazy" src="img/color-icon/color-4.png" alt="color" /></picture>
+        </div>
+        <div>
+          <a href="#">вся гамма</a>
+          <a href="#">бирюзовый</a>
+          <a href="#">аквамарин</a>
+          <a href="#">зеленый</a>
+        </div>
+      </div>
+      <!-- ./colors__block__item -->
+      <div class="colors__block__item">
+        <div class="colors__block__item_img">
+          <picture><source srcset="img/color-icon/color-5.webp" type="image/webp"><img class="lazy" src="img/color-icon/color-5.png" alt="color" /></picture>
+        </div>
+        <div>
+          <a href="#">вся гамма</a>
+          <a href="#">красный</a>
+          <a href="#">черный</a>
+          <a href="#">белый</a>
+        </div>
+      </div>
+      <!-- ./colors__block__item -->
+      <div class="colors__block__item">
+        <div class="colors__block__item_img">
+          <picture><source srcset="img/color-icon/color-6.webp" type="image/webp"><img class="lazy" src="img/color-icon/color-6.png" alt="color" /></picture>
+        </div>
+        <div>
+          <a href="#">вся гамма</a>
+          <a href="#">желтый</a>
+          <a href="#">золотистый</a>
+          <a href="#">серебро</a>
+        </div>
+      </div>
+      <!-- ./colors__block__item -->
+      <div class="colors__block__item">
+        <div class="colors__block__item_img">
+          <picture><source srcset="img/color-icon/color-7.webp" type="image/webp"><img class="lazy" src="img/color-icon/color-7.png" alt="color" /></picture>
+        </div>
+        <div>
+          <a href="#">мультиколор</a>
+        </div>
+      </div>
+
+      <!-- <div class="color-circle">
+        <canvas id="myChart"></canvas> -->
+      <!-- </div> -->
+
+      <!-- ./colors__block__item -->
+    </div>
+  </div>
+  <div class="colors__block__preview">
+    <picture><source srcset="img/colors-block-img.webp" type="image/webp"><img class="lazy" src="img/colors-block-img.jpg" alt="color-preview" /></picture>
+  </div>
+</section>
+<!-- ./colors -->
+
+<section class="catalog__block no-bg">
+  <div class="catalog__block__head no-column">
+    <p>По производителю</p>
+    <a href="#" class="catalog__block__more">Все производители</a>
+  </div>
+
+  <div class="catalog__block__firms">
+    <div class="catalog__block__firm">
+      <picture><source srcset="img/firms/firm-1.webp" type="image/webp"><img class="lazy" src="img/firms/firm-1.png" alt="firm" /></picture>
+      <p>Название производителя в 2 строки</p>
+    </div>
+    <div class="catalog__block__firm">
+      <picture><source srcset="img/firms/firm-2.webp" type="image/webp"><img class="lazy" src="img/firms/firm-2.png" alt="firm" /></picture>
+      <p>Название производителя в 2 строки</p>
+    </div>
+    <div class="catalog__block__firm">
+      <picture><source srcset="img/firms/firm-3.webp" type="image/webp"><img class="lazy" src="img/firms/firm-3.png" alt="firm" /></picture>
+      <p>Название производителя в 2 строки</p>
+    </div>
+    <div class="catalog__block__firm">
+      <picture><source srcset="img/firms/firm-4.webp" type="image/webp"><img class="lazy" src="img/firms/firm-4.png" alt="firm" /></picture>
+      <p>Название производителя в 2 строки</p>
+    </div>
+    <div class="catalog__block__firm">
+      <picture><source srcset="img/firms/firm-5.webp" type="image/webp"><img class="lazy" src="img/firms/firm-5.png" alt="firm" /></picture>
+      <p>Название производителя в 2 строки</p>
+    </div>
+    <div class="catalog__block__firm">
+      <picture><source srcset="img/firms/firm-6.webp" type="image/webp"><img class="lazy" src="img/firms/firm-6.png" alt="firm" /></picture>
+      <p>Название производителя в 2 строки</p>
+    </div>
+    <div class="catalog__block__firm">
+      <picture><source srcset="img/firms/firm-7.webp" type="image/webp"><img class="lazy" src="img/firms/firm-7.png" alt="firm" /></picture>
+      <p>Название производителя в 2 строки</p>
+    </div>
+    <div class="catalog__block__firm">
+      <picture><source srcset="img/firms/firm-8.webp" type="image/webp"><img class="lazy" src="img/firms/firm-8.png" alt="firm" /></picture>
+      <p>Название производителя в 2 строки</p>
+    </div>
+    <div class="catalog__block__firm">
+      <picture><source srcset="img/firms/firm-9.webp" type="image/webp"><img class="lazy" src="img/firms/firm-9.png" alt="firm" /></picture>
+      <p>Название производителя в 2 строки</p>
+    </div>
+    <div class="catalog__block__firm">
+      <picture><source srcset="img/firms/firm-10.webp" type="image/webp"><img class="lazy" src="img/firms/firm-10.png" alt="firm" /></picture>
+      <p>Название производителя в 2 строки</p>
+    </div>
+    <div class="catalog__block__firm">
+      <picture><source srcset="img/firms/firm-11.webp" type="image/webp"><img class="lazy" src="img/firms/firm-11.png" alt="firm" /></picture>
+      <p>Название производителя в 2 строки</p>
+    </div>
+    <div class="catalog__block__firm">
+      <picture><source srcset="img/firms/firm-12.webp" type="image/webp"><img class="lazy" src="img/firms/firm-12.png" alt="firm" /></picture>
+      <p>Название производителя в 2 строки</p>
+    </div>
+  </div>
+  <!-- ./catalog__block__firms -->
+</section>
+
+<section class="catalog__block plr-28">
+  <div class="catalog__block__sales drops-block">
+    <div class="catalog__block__head no-column">
+      <div class="catalog__dropdown">
+        <button data-list="sales" class="catalog__dropdown-active">
+          Распродажи
+        </button>
+        <button data-list="promo">Акции</button>
+      </div>
+      <div class="review__changer">
+        <button class="review__changer-previous">
+          <img
+            src="img/arrows/review__changer-arrow.png"
+            alt="previous"
+          /></button
+        ><button class="review__changer-next">
+          <img
+            class="lazy"
+            src="img/arrows/review__changer-arrow.png"
+            alt="previous"
+          />
+        </button>
+      </div>
+    </div>
+    <!-- ./catalog__block__head -->
+
+    <div data-list="sales" class="catalog__block__sales-list">
+      <div class="catalog__block__sale-card">
+        <div class="catalog__block__sale-images">
+          <img
+            class="lazy image-item"
+            src="img/sales/sale1-1.jpg"
+            alt="sale-img"
+          />
+          <img
+            class="image-item hidden"
+            src="img/sales/sale1-2.jpg"
+            alt="sale-img"
+          />
+          <img
+            class="image-item hidden"
+            src="img/sales/sale1-3.jpg"
+            alt="sale-img"
+          />
+          <img
+            class="image-item hidden"
+            src="img/sales/sale1-4.jpg"
+            alt="sale-img"
+          />
+          <div class="buttons-block">
+            <button>
+              <picture><source srcset="img/sales/like.webp" type="image/webp"><img class="lazy" src="img/sales/like.png" alt="like" /></picture>
+            </button>
+            <button>
+              <picture><source srcset="img/sales/scales.webp" type="image/webp"><img class="lazy" src="img/sales/scales.png" alt="scales" /></picture>
+            </button>
+            <!-- ./right part -->
+            <button>
+              <p>выбрать подарок</p>
+              <div>
+                <picture><source srcset="img/sales/present.webp" type="image/webp"><img class="lazy" src="img/sales/present.png" alt="present" /></picture>
+              </div>
+            </button>
+            <button>
+              <p>есть образцы</p>
+              <div>
+                <img
+                  class="lazy"
+                  src="img/sales/examples.png"
+                  alt="examples"
+                />
+              </div>
+            </button>
+            <button>
+              <p>есть видео</p>
+              <div>
+                <picture><source srcset="img/sales/video.webp" type="image/webp"><img class="lazy" src="img/sales/video.png" alt="video" /></picture>
+              </div>
+            </button>
+            <button>
+              <p>распродажа</p>
+              <div>
+                <img
+                  class="lazy"
+                  src="img/sales/sale-ticket.png"
+                  alt="sale-ticket"
+                />
+              </div>
+            </button>
+          </div>
+          <div class="items-track">
+            <button class="sale-img-btn">
+              <img
+                class="lazy"
+                src="img/sales/sale1-1.jpg"
+                alt="image-button"
+              />
+            </button>
+            <button class="sale-img-btn">
+              <img
+                class="lazy"
+                src="img/sales/sale1-2.jpg"
+                alt="image-button"
+              />
+            </button>
+            <button class="sale-img-btn">
+              <img
+                class="lazy"
+                src="img/sales/sale1-3.jpg"
+                alt="image-button"
+              />
+            </button>
+            <button class="sale-img-btn">
+              <img
+                class="lazy"
+                src="img/sales/sale1-4.jpg"
+                alt="image-button"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="catalog__block__sale-name">
+          <img class="lazy" src="img/sales/flag.svg" alt="russia" />
+          <a href="#" id="sale1-1">Абингтон (Керама Марацци)</a>
+        </div>
+        <div class="catalog__block__sale-cost">
+          <span>от 100 000 ₽/м2</span>
+          <span class="previous-sale">от 200 000 ₽/м2</span>
+        </div>
+      </div>
+      <div class="catalog__block__sale-card">
+        <div class="catalog__block__sale-images">
+          <img
+            class="lazy image-item"
+            src="img/sales/sale1-1.jpg"
+            alt="sale-img"
+          />
+          <img
+            class="image-item hidden"
+            src="img/sales/sale1-2.jpg"
+            alt="sale-img"
+          />
+          <img
+            class="image-item hidden"
+            src="img/sales/sale1-3.jpg"
+            alt="sale-img"
+          />
+          <img
+            class="image-item hidden"
+            src="img/sales/sale1-4.jpg"
+            alt="sale-img"
+          />
+          <div class="buttons-block">
+            <button>
+              <picture><source srcset="img/sales/like.webp" type="image/webp"><img class="lazy" src="img/sales/like.png" alt="like" /></picture>
+            </button>
+            <button>
+              <picture><source srcset="img/sales/scales.webp" type="image/webp"><img class="lazy" src="img/sales/scales.png" alt="scales" /></picture>
+            </button>
+            <!-- ./right part -->
+            <button>
+              <p>выбрать подарок</p>
+              <div>
+                <picture><source srcset="img/sales/present.webp" type="image/webp"><img class="lazy" src="img/sales/present.png" alt="present" /></picture>
+              </div>
+            </button>
+            <button>
+              <p>есть образцы</p>
+              <div>
+                <img
+                  class="lazy"
+                  src="img/sales/examples.png"
+                  alt="examples"
+                />
+              </div>
+            </button>
+            <button>
+              <p>есть видео</p>
+              <div>
+                <picture><source srcset="img/sales/video.webp" type="image/webp"><img class="lazy" src="img/sales/video.png" alt="video" /></picture>
+              </div>
+            </button>
+            <button>
+              <p>распродажа</p>
+              <div>
+                <img
+                  class="lazy"
+                  src="img/sales/sale-ticket.png"
+                  alt="sale-ticket"
+                />
+              </div>
+            </button>
+          </div>
+          <div class="items-track">
+            <button class="sale-img-btn">
+              <img
+                class="lazy"
+                src="img/sales/sale1-1.jpg"
+                alt="image-button"
+              />
+            </button>
+            <button class="sale-img-btn">
+              <img
+                class="lazy"
+                src="img/sales/sale1-2.jpg"
+                alt="image-button"
+              />
+            </button>
+            <button class="sale-img-btn">
+              <img
+                class="lazy"
+                src="img/sales/sale1-3.jpg"
+                alt="image-button"
+              />
+            </button>
+            <button class="sale-img-btn">
+              <img
+                class="lazy"
+                src="img/sales/sale1-4.jpg"
+                alt="image-button"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="catalog__block__sale-name">
+          <img class="lazy" src="img/sales/flag.svg" alt="russia" />
+          <a href="#" id="sale1-1">Абингтон (Керама Марацци)</a>
+        </div>
+        <div class="catalog__block__sale-cost">
+          <span>от 100 000 ₽/м2</span>
+          <span class="previous-sale">от 200 000 ₽/м2</span>
+        </div>
+      </div>
+      <div class="catalog__block__sale-card">
+        <div class="catalog__block__sale-images">
+          <img
+            class="lazy image-item"
+            src="img/sales/sale1-1.jpg"
+            alt="sale-img"
+          />
+          <img
+            class="image-item hidden"
+            src="img/sales/sale1-2.jpg"
+            alt="sale-img"
+          />
+          <img
+            class="image-item hidden"
+            src="img/sales/sale1-3.jpg"
+            alt="sale-img"
+          />
+          <img
+            class="image-item hidden"
+            src="img/sales/sale1-4.jpg"
+            alt="sale-img"
+          />
+          <div class="buttons-block">
+            <button>
+              <picture><source srcset="img/sales/like.webp" type="image/webp"><img class="lazy" src="img/sales/like.png" alt="like" /></picture>
+            </button>
+            <button>
+              <picture><source srcset="img/sales/scales.webp" type="image/webp"><img class="lazy" src="img/sales/scales.png" alt="scales" /></picture>
+            </button>
+            <!-- ./right part -->
+            <button>
+              <p>выбрать подарок</p>
+              <div>
+                <picture><source srcset="img/sales/present.webp" type="image/webp"><img class="lazy" src="img/sales/present.png" alt="present" /></picture>
+              </div>
+            </button>
+            <button>
+              <p>есть образцы</p>
+              <div>
+                <img
+                  class="lazy"
+                  src="img/sales/examples.png"
+                  alt="examples"
+                />
+              </div>
+            </button>
+            <button>
+              <p>есть видео</p>
+              <div>
+                <picture><source srcset="img/sales/video.webp" type="image/webp"><img class="lazy" src="img/sales/video.png" alt="video" /></picture>
+              </div>
+            </button>
+            <button>
+              <p>распродажа</p>
+              <div>
+                <img
+                  class="lazy"
+                  src="img/sales/sale-ticket.png"
+                  alt="sale-ticket"
+                />
+              </div>
+            </button>
+          </div>
+          <div class="items-track">
+            <button class="sale-img-btn">
+              <img
+                class="lazy"
+                src="img/sales/sale1-1.jpg"
+                alt="image-button"
+              />
+            </button>
+            <button class="sale-img-btn">
+              <img
+                class="lazy"
+                src="img/sales/sale1-2.jpg"
+                alt="image-button"
+              />
+            </button>
+            <button class="sale-img-btn">
+              <img
+                class="lazy"
+                src="img/sales/sale1-3.jpg"
+                alt="image-button"
+              />
+            </button>
+            <button class="sale-img-btn">
+              <img
+                class="lazy"
+                src="img/sales/sale1-4.jpg"
+                alt="image-button"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="catalog__block__sale-name">
+          <img class="lazy" src="img/sales/flag.svg" alt="russia" />
+          <a href="#" id="sale1-1">Абингтон (Керама Марацци)</a>
+        </div>
+        <div class="catalog__block__sale-cost">
+          <span>от 100 000 ₽/м2</span>
+          <span class="previous-sale">от 200 000 ₽/м2</span>
+        </div>
+      </div>
+      <div class="catalog__block__sale-card">
+        <div class="catalog__block__sale-images">
+          <img
+            class="lazy image-item"
+            src="img/sales/sale1-1.jpg"
+            alt="sale-img"
+          />
+          <img
+            class="image-item hidden"
+            src="img/sales/sale1-2.jpg"
+            alt="sale-img"
+          />
+          <img
+            class="image-item hidden"
+            src="img/sales/sale1-3.jpg"
+            alt="sale-img"
+          />
+          <img
+            class="image-item hidden"
+            src="img/sales/sale1-4.jpg"
+            alt="sale-img"
+          />
+          <div class="buttons-block">
+            <button>
+              <picture><source srcset="img/sales/like.webp" type="image/webp"><img class="lazy" src="img/sales/like.png" alt="like" /></picture>
+            </button>
+            <button>
+              <picture><source srcset="img/sales/scales.webp" type="image/webp"><img class="lazy" src="img/sales/scales.png" alt="scales" /></picture>
+            </button>
+            <!-- ./right part -->
+            <button>
+              <p>выбрать подарок</p>
+              <div>
+                <picture><source srcset="img/sales/present.webp" type="image/webp"><img class="lazy" src="img/sales/present.png" alt="present" /></picture>
+              </div>
+            </button>
+            <button>
+              <p>есть образцы</p>
+              <div>
+                <img
+                  class="lazy"
+                  src="img/sales/examples.png"
+                  alt="examples"
+                />
+              </div>
+            </button>
+            <button>
+              <p>есть видео</p>
+              <div>
+                <picture><source srcset="img/sales/video.webp" type="image/webp"><img class="lazy" src="img/sales/video.png" alt="video" /></picture>
+              </div>
+            </button>
+            <button>
+              <p>распродажа</p>
+              <div>
+                <img
+                  class="lazy"
+                  src="img/sales/sale-ticket.png"
+                  alt="sale-ticket"
+                />
+              </div>
+            </button>
+          </div>
+          <div class="items-track">
+            <button class="sale-img-btn">
+              <img
+                class="lazy"
+                src="img/sales/sale1-1.jpg"
+                alt="image-button"
+              />
+            </button>
+            <button class="sale-img-btn">
+              <img
+                class="lazy"
+                src="img/sales/sale1-2.jpg"
+                alt="image-button"
+              />
+            </button>
+            <button class="sale-img-btn">
+              <img
+                class="lazy"
+                src="img/sales/sale1-3.jpg"
+                alt="image-button"
+              />
+            </button>
+            <button class="sale-img-btn">
+              <img
+                class="lazy"
+                src="img/sales/sale1-4.jpg"
+                alt="image-button"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="catalog__block__sale-name">
+          <img class="lazy" src="img/sales/flag.svg" alt="russia" />
+          <a href="#" id="sale1-1">Абингтон (Керама Марацци)</a>
+        </div>
+        <div class="catalog__block__sale-cost">
+          <span>от 100 000 ₽/м2</span>
+          <span class="previous-sale">от 200 000 ₽/м2</span>
+        </div>
+      </div>
+    </div>
+    <div data-list="promo" class="catalog__block__sales-list"></div>
+  </div>
+
+  <h2 class="catalog__title">Наши услуги</h2>
+
+  <div class="catalog__block__service">
+    <div class="catalog__block__service-item">
+      <div class="preview">
+        <picture><source srcset="img/bathroom.webp" type="image/webp"><img class="lazy" src="img/bathroom.png" alt="img" /></picture>
+        <div class="preview-description">
+          <h2 class="preview-description__title">
+            <span>ЗD</span> визуализация
+          </h2>
+          <p class="preview-description__subtitle">
+            Узнайте как будет выглядеть ваш интерьер перед покупкой плитки.
+          </p>
+          <a href="#" class="preview-description__more">Подробнее</a>
+        </div>
+      </div>
+      <!-- ./preview -->
+    </div>
+    <!-- ./catalog__block__service-item -->
+
+    <a class="catalog__block__service-item">
+      <picture><source srcset="img/photo.webp" type="image/webp"><img class="lazy" src="img/photo.png" alt="photo" /></picture>
+    </a>
+    <!-- ./catalog__block__service-item -->
+
+    <a class="catalog__block__service-item">
+      <picture><source srcset="img/photo.webp" type="image/webp"><img class="lazy" src="img/photo.png" alt="photo" /></picture>
+    </a>
+    <!-- ./catalog__block__service-item -->
+  </div>
+  <div class="catalog__block__news">
+    <div class="catalog__block__head no-column">
+      <div class="catalog__dropdown">
+        <button class="catalog__dropdown-active">Новости</button>
+        <button>Статьи</button>
+      </div>
+      <button class="catalog__block__more">Все новости</button>
+    </div>
+    <!-- ./catalog__block__head -->
+    <div class="catalog__block__news__list">
+      <div class="catalog__block__news__card">
+        <picture><source srcset="img/news/news-1.webp" type="image/webp"><img class="lazy" src="img/news/news-1.jpg" alt="img" /></picture>
+        <p>22.07.2021</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+          similique consectetur excepturi sed corporis omnis velit animi
+          incidunt asperiores quod?
+        </p>
+      </div>
+      <!-- ./catalog__block__news__card -->
+      <div class="catalog__block__news__card">
+        <picture><source srcset="img/news/news-2.webp" type="image/webp"><img class="lazy" src="img/news/news-2.jpg" alt="img" /></picture>
+        <p>22.07.2021</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+          similique consectetur excepturi sed corporis omnis velit animi
+          incidunt asperiores quod?
+        </p>
+      </div>
+      <!-- ./catalog__block__news__card -->
+      <div class="catalog__block__news__card">
+        <picture><source srcset="img/news/news-3.webp" type="image/webp"><img class="lazy" src="img/news/news-3.jpg" alt="img" /></picture>
+        <p>22.07.2021</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+          similique consectetur excepturi sed corporis omnis velit animi
+          incidunt asperiores quod?
+        </p>
+      </div>
+      <!-- ./catalog__block__news__card -->
+      <div class="catalog__block__news__card">
+        <picture><source srcset="img/news/news-4.webp" type="image/webp"><img class="lazy" src="img/news/news-4.jpg" alt="img" /></picture>
+        <p>22.07.2021</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+          similique consectetur excepturi sed corporis omnis velit animi
+          incidunt asperiores quod?
+        </p>
+      </div>
+      <!-- ./catalog__block__news__card -->
+    </div>
+    <!-- ./catalog__block__news__list -->
+  </div>
+</section>
+
+    <div class="review">
+  <div class="catalog__block__head no-column">
+    <h3>Отзывы</h3>
+    <a href="#" class="catalog__block__more">Читать все</a>
+    <div class="review__changer">
+      <button class="review__changer-previous">
+        <img
+          class="lazy"
+          src="img/arrows/review__changer-arrow.png"
+          alt="previous"
+        /></button
+      ><button class="review__changer-next">
+        <img
+          class="lazy"
+          src="img/arrows/review__changer-arrow.png"
+          alt="previous"
+        />
+      </button>
+    </div>
+  </div>
+  <div class="review__track">
+    <div class="review__content">
+      <div class="review-slider__changer">
+        <button id="project-btn">Проект</button>
+        <button class="review-slider__changer-active" id="total-btn">
+          Итог
+        </button>
+      </div>
+      <!-- ./POS ABSOLUTE -->
+      <div
+        class="review-slider title-feature__slider swiper review-slider-hidden"
+        id="slider-project"
+      >
+        <div class="swiper-wrapper">
+          <div class="title-feature__slider-item swiper-slide">
+            <img
+              src="img/review-slider.jpg"
+              alt="img"
+              class="lazy slide__img"
+            />
+          </div>
+          <!-- ./swiper-slide -->
+          <div class="title-feature__slider-item swiper-slide">
+            <img
+              src="img/review-slider.jpg"
+              alt="img"
+              class="lazy slide__img"
+            />
+          </div>
+          <!-- ./swiper-slide -->
+          <div class="title-feature__slider-item swiper-slide">
+            <img
+              src="img/review-slider.jpg"
+              alt="img"
+              class="lazy slide__img"
+            />
+          </div>
+          <!-- ./swiper-slide -->
+          <div class="title-feature__slider-item swiper-slide">
+            <img
+              src="img/review-slider.jpg"
+              alt="img"
+              class="lazy slide__img"
+            />
+          </div>
+          <!-- ./swiper-slide -->
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- ./SLIDER -->
+      <div class="review-slider title-feature__slider swiper" id="slider-total">
+        <div class="swiper-wrapper">
+          <div class="title-feature__slider-item swiper-slide">
+            <img
+              src="img/review-slider.jpg"
+              alt="img"
+              class="lazy slide__img"
+            />
+          </div>
+          <!-- ./swiper-slide -->
+          <div class="title-feature__slider-item swiper-slide">
+            <img
+              src="img/review-slider.jpg"
+              alt="img"
+              class="lazy slide__img"
+            />
+          </div>
+          <!-- ./swiper-slide -->
+          <div class="title-feature__slider-item swiper-slide">
+            <img
+              src="img/review-slider.jpg"
+              alt="img"
+              class="lazy slide__img"
+            />
+          </div>
+          <!-- ./swiper-slide -->
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- ./SLIDER -->
+
+      <div class="review__body">
+        <div class="review__person">
+          <picture><source srcset="img/review-avatar.webp" type="image/webp"><img class="lazy" src="img/review-avatar.jpg" alt="avatar" /></picture>
+          <p class="review__person__name">Анна Верещагина</p>
+          <p class="review__person__work-name">Ванная с коллекцией Stones</p>
+        </div>
+        <div class="review__text">
+          <p>
+            Не жалею потраченного времени...не ожидала что так просто можно
+            решить вопрос не только с плиткой, но и с дизайном. Была во многих
+            магазинах, но только запуталась. Здесь оказалось все просто и
+            понятно. Дизайнер подсказал пару стандартных приемов оформления,
+            которые визуально сделали ванную более просторной.<br />
+            Спасибо большое.
+          </p>
+          <a href="#">Читать подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="review__content">
+      <div class="review-slider__changer">
+        <button id="project-btn">Проект</button>
+        <button class="review-slider__changer-active" id="total-btn">
+          Итог
+        </button>
+      </div>
+      <!-- ./POS ABSOLUTE -->
+      <div
+        class="review-slider title-feature__slider swiper review-slider-hidden"
+        id="slider-project"
+      >
+        <div class="swiper-wrapper">
+          <div class="title-feature__slider-item swiper-slide">
+            <img
+              src="img/review-slider.jpg"
+              alt="img"
+              class="lazy slide__img"
+            />
+          </div>
+          <!-- ./swiper-slide -->
+          <div class="title-feature__slider-item swiper-slide">
+            <img
+              src="img/review-slider.jpg"
+              alt="img"
+              class="lazy slide__img"
+            />
+          </div>
+          <!-- ./swiper-slide -->
+          <div class="title-feature__slider-item swiper-slide">
+            <img
+              src="img/review-slider.jpg"
+              alt="img"
+              class="lazy slide__img"
+            />
+          </div>
+          <!-- ./swiper-slide -->
+          <div class="title-feature__slider-item swiper-slide">
+            <img
+              src="img/review-slider.jpg"
+              alt="img"
+              class="lazy slide__img"
+            />
+          </div>
+          <!-- ./swiper-slide -->
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- ./SLIDER -->
+      <div class="review-slider title-feature__slider swiper" id="slider-total">
+        <div class="swiper-wrapper">
+          <div class="title-feature__slider-item swiper-slide">
+            <img
+              src="img/review-slider.jpg"
+              alt="img"
+              class="lazy slide__img"
+            />
+          </div>
+          <!-- ./swiper-slide -->
+          <div class="title-feature__slider-item swiper-slide">
+            <img
+              src="img/review-slider.jpg"
+              alt="img"
+              class="lazy slide__img"
+            />
+          </div>
+          <!-- ./swiper-slide -->
+          <div class="title-feature__slider-item swiper-slide">
+            <img
+              src="img/review-slider.jpg"
+              alt="img"
+              class="lazy slide__img"
+            />
+          </div>
+          <!-- ./swiper-slide -->
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- ./SLIDER -->
+
+      <div class="review__body">
+        <div class="review__person">
+          <picture><source srcset="img/review-avatar.webp" type="image/webp"><img class="lazy" src="img/review-avatar.jpg" alt="avatar" /></picture>
+          <p class="review__person__name">Иван Иванов</p>
+          <p class="review__person__work-name">Ванная с коллекцией Stones</p>
+        </div>
+        <div class="review__text">
+          <p>Все круто, слов нет!</p>
+          <a href="#">Читать подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="review__content">
+      <div class="review-slider__changer">
+        <button id="project-btn">Проект</button>
+        <button class="review-slider__changer-active" id="total-btn">
+          Итог
+        </button>
+      </div>
+      <!-- ./POS ABSOLUTE -->
+      <div
+        class="review-slider title-feature__slider swiper review-slider-hidden"
+        id="slider-project"
+      >
+        <div class="swiper-wrapper">
+          <div class="title-feature__slider-item swiper-slide">
+            <img
+              src="img/review-slider.jpg"
+              alt="img"
+              class="lazy slide__img"
+            />
+          </div>
+          <!-- ./swiper-slide -->
+          <div class="title-feature__slider-item swiper-slide">
+            <img
+              src="img/review-slider.jpg"
+              alt="img"
+              class="lazy slide__img"
+            />
+          </div>
+          <!-- ./swiper-slide -->
+          <div class="title-feature__slider-item swiper-slide">
+            <img
+              src="img/review-slider.jpg"
+              alt="img"
+              class="lazy slide__img"
+            />
+          </div>
+          <!-- ./swiper-slide -->
+          <div class="title-feature__slider-item swiper-slide">
+            <img
+              src="img/review-slider.jpg"
+              alt="img"
+              class="lazy slide__img"
+            />
+          </div>
+          <!-- ./swiper-slide -->
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- ./SLIDER -->
+      <div class="review-slider title-feature__slider swiper" id="slider-total">
+        <div class="swiper-wrapper">
+          <div class="title-feature__slider-item swiper-slide">
+            <img
+              src="img/review-slider.jpg"
+              alt="img"
+              class="lazy slide__img"
+            />
+          </div>
+          <!-- ./swiper-slide -->
+          <div class="title-feature__slider-item swiper-slide">
+            <img
+              src="img/review-slider.jpg"
+              alt="img"
+              class="lazy slide__img"
+            />
+          </div>
+          <!-- ./swiper-slide -->
+          <div class="title-feature__slider-item swiper-slide">
+            <img
+              src="img/review-slider.jpg"
+              alt="img"
+              class="lazy slide__img"
+            />
+          </div>
+          <!-- ./swiper-slide -->
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- ./SLIDER -->
+
+      <div class="review__body">
+        <div class="review__person">
+          <picture><source srcset="img/review-avatar.webp" type="image/webp"><img src="img/review-avatar.jpg" alt="avatar" class="lazy" /></picture>
+          <p class="review__person__name">Петр Петров</p>
+          <p class="review__person__work-name">Ванная с коллекцией Stones</p>
+        </div>
+        <div class="review__text">
+          <p>Наконец-то есть царская ванная</p>
+          <a href="#">Читать подробнее</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</main>
+
+    <footer class="footer">
+  <nav class="footer__logo-container">
+    <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.jpg" alt="logo" class="lazy footer__logo" /></picture>
+    <a href="#">Политика конфиденциальности</a>
+    <a href="#">Разработка сайта</a>
+  </nav>
+  <nav>
+    <h3>О компании</h3>
+    <a href="#">О фирме</a>
+    <a href="#">О плитке</a>
+    <a href="#">О дизайне</a>
+    <a href="#">Услуги</a>
+    <a href="#">Новости</a>
+    <a href="#">Статьи</a>
+    <a href="#">Контакты</a>
+  </nav>
+  <nav>
+    <h3>Клиентам</h3>
+    <a href="#">Оплата</a>
+    <a href="#">Доставка</a>
+    <a href="#">Возврат</a>
+    <a href="#">Гарантии</a>
+    <a href="#">Самовывоз</a>
+    <a href="#">Бонусы</a>
+    <a href="#">3D-визуализация</a>
+  </nav>
+  <nav>
+    <h3>Товары</h3>
+    <a href="#">Плитка</a>
+    <a href="#">Мебель для ванной</a>
+    <a href="#">Сантехника</a>
+    <a href="#">Сопутствующие товары</a>
+  </nav>
+
+  <nav class="footer__contacts">
+    <div class="header-top__connection double">
+      <a href="tel:+7(495)0463199" class="header_connection-icon"
+        ><img class="lazy" src="img/header-icons/mobile.svg" alt="phone" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img
+          class="lazy"
+          src="img/header-icons/whatsapp-icon.svg"
+          alt="whatsapp" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img class="lazy" src="img/header-icons/viber.svg" alt="viber" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img class="lazy" src="img/header-icons/e-mail.svg" alt="mail"
+      /></a>
+    </div>
+    <div class="header-top__phone">
+      <img class="lazy" src="img/header-icons/call-icon.svg" alt="point" />
+      <div>
+        <a href="tel:+79250463125">+7 (925) 046 31 25</a>
+        <p>Обратная связь</p>
+      </div>
+    </div>
+
+    <div class="header-top__phone">
+      <img class="lazy" src="img/footer-icons/mail-purple.svg" alt="point" />
+      <div>
+        <a href="mailto:plitka-tut@list.ru">plitka-tut@list.ru</a>
+      </div>
+    </div>
+
+    <div class="header-top__connection">
+      <a href="tel:+7(495)0463199" class="header_connection-icon"
+        ><img
+          class="lazy"
+          src="img/footer-icons/youtube.svg"
+          alt="youtube" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img class="lazy" src="img/footer-icons/vk.svg" alt="vk" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img class="lazy" src="img/footer-icons/insta.svg" alt="insta" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img class="lazy" src="img/footer-icons/facebook.svg" alt="face"
+      /></a>
+    </div>
+  </nav>
+</footer>
+ <script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20220611051616"></script>
+<!--Load the AJAX API-->
+<!-- <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script> -->
+<!-- jQuery and circleType -->
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220611051616"></script>
+    <script src="js/circletype.min.js?_v=20220611051616"></script> -->
+<!-- lazy load -->
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.2/dist/lazyload.min.js?_v=20220611051616"></script>
+<!-- Swiper -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220611051616"></script>
+<!-- app -->
+<script src="js/app.min.js?_v=20220611051616"></script>
+
+  </body>
+</html>
