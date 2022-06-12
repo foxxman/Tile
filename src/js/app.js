@@ -3,6 +3,8 @@ import * as reviewSliders from "./modules/review-sliders.js";
 import * as saleSliders from "./modules/sale-sliders.js";
 import * as catalogsMenus from "./modules/catalogs-dropdown.js";
 import * as productCounter from "./modules/product-counter.js";
+import * as zoomImg from "./modules/zoom-img.js";
+import * as zoomSlider from "./modules/zoom-slider.js";
 // import * as catalogsMenus from "./modules/catalogs-dropdown.js";
 import * as collapsesBlocks from "./modules/collapses.js";
 
@@ -51,4 +53,6 @@ saleSliders.activateSaleSliders();
 catalogsMenus.activateCatalogs();
 // ================================================
 collapsesBlocks.initCollapses();
-productCounter.activateProductCounter()
+productCounter.activateProductCounter();
+zoomImg.activateZoom();
+zoomSlider.activateZoomSliders();

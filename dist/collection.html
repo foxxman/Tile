@@ -26,7 +26,7 @@
   />
 
   <!-- переменная title из параметров include -->
-  <title>Карточка товара</title>
+  <title>Карточка коллекции</title>
 
   <!-- https://www.chartjs.org/docs/latest/configuration/ -->
   <!-- https://quickchart.io/documentation/chart-js/custom-pie-doughnut-chart-labels/ -->
@@ -392,10 +392,12 @@
 </div>
 
 </header>
- <main class="main bg-white pb-80">
+ 
+    
+    <main class="main bg-white pb-80">
   <div class="container">
     <aside class="page-top p-sm-10">
-      <nav class="story-pages">
+      <nav class="story-pages double-mb">
         <a href="#"> <img src="img/header-icons/to-home.svg" alt="home" /> </a>
         &nbsp;/&nbsp;
         <a href="#">Каталог плитки</a>
@@ -408,59 +410,78 @@
       </nav>
     </aside>
 
-    <section class="product-info">
+    <section class="product-info two-col">
       <h1 class="page-title mobile">Абингтон (Керама Марацци)</h1>
 
       <div class="product-image">
-        <div class="catalog__block__sale-card">
-          <div class="catalog__block__sale-images ones">
-            <img
-              class="lazy image-item"
-              src="img/goods/goods-1.jpg"
-              alt="sale-img"
-            />
-            <div class="buttons-block">
-              <button></button><button></button>
-              <button>
-                <p>выбрать подарок</p>
-                <div>
-                  <img
-                    class="lazy"
-                    src="img/sales/present.png"
-                    alt="present"
-                  />
-                </div>
-              </button>
-              <button>
-                <p>есть образцы</p>
-                <div>
-                  <img
-                    class="lazy"
-                    src="img/sales/examples.png"
-                    alt="examples"
-                  />
-                </div>
-              </button>
-              <button>
-                <p>есть видео</p>
-                <div>
-                  <picture><source srcset="img/sales/video.webp" type="image/webp"><img class="lazy" src="img/sales/video.png" alt="video" /></picture>
-                </div>
-              </button>
-              <button>
-                <p>распродажа</p>
-                <div>
-                  <img
-                    class="lazy"
-                    src="img/sales/sale-ticket.png"
-                    alt="sale-ticket"
-                  />
-                </div>
-              </button>
+        <div data-zoom-slider class="zoom-slider">
+          <div class="zoom-slider__topbar">
+            <button>
+              <p>выбрать подарок</p>
+              <div>
+                <picture><source srcset="img/sales/present.webp" type="image/webp"><img class="lazy" src="img/sales/present.png" alt="present" /></picture>
+              </div>
+            </button>
+            <button>
+              <p>есть образцы</p>
+              <div>
+                <picture><source srcset="img/sales/examples.webp" type="image/webp"><img class="lazy" src="img/sales/examples.png" alt="examples" /></picture>
+              </div>
+            </button>
+            <button>
+              <p>есть видео</p>
+              <div>
+                <picture><source srcset="img/sales/video.webp" type="image/webp"><img class="lazy" src="img/sales/video.png" alt="video" /></picture>
+              </div>
+            </button>
+            <button>
+              <p>распродажа</p>
+              <div>
+                <img
+                  class="lazy"
+                  src="img/sales/sale-ticket.png"
+                  alt="sale-ticket"
+                />
+              </div>
+            </button>
+          </div>
+          <!-- ./zoom-slider__topbar -->
+          <div data-zoom-content class="zoom-slider__content">
+            <div data-zoom-order="1" class="magnify-wrapper">
+              <picture><source srcset="img/sales/sale1-1.webp" type="image/webp"><img class="lazy" src="img/sales/sale1-1.jpg" alt="sale-img" /></picture>
+              <div class="large-img"></div>
+            </div>
+            <div data-zoom-order="2" class="magnify-wrapper hidden">
+              <picture><source srcset="img/sales/sale1-2.webp" type="image/webp"><img class="lazy" src="img/sales/sale1-2.jpg" alt="sale-img" /></picture>
+              <div class="large-img"></div>
+            </div>
+            <div data-zoom-order="3" class="magnify-wrapper hidden">
+              <picture><source srcset="img/sales/sale1-3.webp" type="image/webp"><img class="lazy" src="img/sales/sale1-3.jpg" alt="sale-img" /></picture>
+              <div class="large-img"></div>
+            </div>
+            <div data-zoom-order="4" class="magnify-wrapper hidden">
+              <picture><source srcset="img/sales/sale1-4.webp" type="image/webp"><img class="lazy" src="img/sales/sale1-4.jpg" alt="sale-img" /></picture>
+              <div class="large-img"></div>
             </div>
           </div>
+          <!-- ./zoom-slider__content -->
+          <div data-zoom-list class="zoom-slider__items-list">
+            <button data-zoom-order="1" class="zoom-slider__items-btn">
+              <picture><source srcset="img/sales/sale1-1.webp" type="image/webp"><img class="lazy" src="img/sales/sale1-1.jpg" alt="sale-img" /></picture>
+            </button>
+            <button data-zoom-order="2" class="zoom-slider__items-btn">
+              <picture><source srcset="img/sales/sale1-2.webp" type="image/webp"><img class="lazy" src="img/sales/sale1-2.jpg" alt="sale-img" /></picture>
+            </button>
+            <button data-zoom-order="3" class="zoom-slider__items-btn">
+              <picture><source srcset="img/sales/sale1-3.webp" type="image/webp"><img class="lazy" src="img/sales/sale1-3.jpg" alt="sale-img" /></picture>
+            </button>
+            <button data-zoom-order="4" class="zoom-slider__items-btn">
+              <picture><source srcset="img/sales/sale1-4.webp" type="image/webp"><img class="lazy" src="img/sales/sale1-4.jpg" alt="sale-img" /></picture>
+            </button>
+          </div>
+          <!-- ./zoom-slider__items-list -->
         </div>
-        <!-- ./catalog__block__sale-card -->
+        <!-- ./zoom-slider -->
       </div>
       <!-- ./product-image -->
       <div class="product-features">
@@ -480,56 +501,34 @@
           </button>
         </div>
         <div class="product-features__table">
-          <p>Артикул</p>
-          <p>000000000</p>
-          <p>Коллекция</p>
-          <p>Абингтон</p>
-          <p>Товар</p>
-          <p>наименование товара</p>
-          <p>Назначение</p>
-          <p>Керамогранит</p>
-          <p>Размер</p>
-          <p>20x120</p>
+          <p>Производитель</p>
+          <p>Керама Марацци</p>
+          <p>Страна</p>
+          <p>Россия</p>
+          <p>Размеры</p>
+          <p>10×10, 10×20, 10×30, 25×50, 20×60, 30×60</p>
         </div>
         <a href="#" class="all-characters">Все характеристики</a>
+
+        <div class="product-cost">
+          <div class="product-cost__container no-border p-0">
+            <p class="product-cost__price mb-small mt-extra">100 000 ₽</p>
+            <span class="previous-sale ml-0">от 200 000 ₽/м2</span>
+          </div>
+
+          <div class="product-cost__warning">
+            <span>i</span>
+            <p>
+              Минимальная сумма заказа составляет 10000₽. Докупки принимаются
+              только по заказам, размещенным ранее в нашем магазине.
+            </p>
+            <a href="#">Почему?</a>
+          </div>
+        </div>
+
+        <!-- ./product-cost -->
       </div>
       <!-- ./product-features -->
-      <div class="product-cost">
-        <div class="product-cost__container">
-          <p class="product-cost__title">Цена:</p>
-          <p>от 100 000 ₽/шт</p>
-
-          <div class="product-cost__number">
-            <button class="product-cost__number-less">-</button>
-            <input type="number" />
-            <button class="product-cost__number-more">+</button>
-          </div>
-          <div class="product-cost__type">
-            <button data-cost-type="things" class="catalog__dropdown-active">
-              шт.
-            </button>
-            <button data-cost-type="meters" class="">кв.м.</button>
-            <button data-cost-type="boxes" class="">коробка</button>
-          </div>
-        </div>
-
-        <div class="product-cost__container">
-          <p class="product-cost__title">Общая стоимость:</p>
-          <p class="product-cost__price">100 000 ₽</p>
-          <button class="catalog__block__sale-tocart">В корзину</button>
-        </div>
-
-        <div class="product-cost__warning">
-          <span>i</span>
-          <p>
-            Минимальная сумма заказа составляет 10000₽. Докупки принимаются
-            только по заказам, размещенным ранее в нашем магазине.
-          </p>
-          <a href="#">Почему?</a>
-        </div>
-      </div>
-
-      <!-- ./product-cost -->
     </section>
 
     <section class="reasons">
@@ -615,7 +614,9 @@
 
     <section class="catalog__block drops-block pb-0">
       <div class="catalog__block__head">
-        <div class="catalog__dropdown mb-sm-0">
+        <div class="catalog__dropdown four-elem mb-sm-0">
+          <button data-list="composition">Состав коллекции</button>
+
           <button data-list="description" class="catalog__dropdown-active">
             Характеристики и описание
           </button>
@@ -625,6 +626,482 @@
       </div>
       <!-- ./catalog__block__head -->
 
+      <div
+        data-list="composition"
+        class="catalog__block__sales-list dropdown-item"
+      >
+        <div class="composition-tags">
+          <div class="composition-tags__item active">
+            все типы
+            <button>&#10006;</button>
+          </div>
+          <div class="composition-tags__item">
+            напольная
+            <button>&#10006;</button>
+          </div>
+          <div class="composition-tags__item">
+            бордюр
+            <button>&#10006;</button>
+          </div>
+        </div>
+        <!-- ./composition-tags -->
+        <div class="composition-tags">
+          <div class="composition-tags__item active">
+            все размеры
+            <button>&#10006;</button>
+          </div>
+          <div class="composition-tags__item">
+            20х120
+            <button>&#10006;</button>
+          </div>
+          <div class="composition-tags__item">
+            30x15
+            <button>&#10006;</button>
+          </div>
+        </div>
+        <!-- ./composition-tags -->
+        <div class="composition-line">
+          <div class="catalog__block__sale-card">
+            <div class="catalog__block__sale-images ones">
+              <img
+                class="lazy image-item"
+                src="img/goods/goods-1.jpg"
+                alt="sale-img"
+              />
+              <div class="buttons-block">
+                <button>
+                  <picture><source srcset="img/sales/like.webp" type="image/webp"><img class="lazy" src="img/sales/like.png" alt="like" /></picture>
+                </button>
+                <button>
+                  <picture><source srcset="img/sales/scales.webp" type="image/webp"><img class="lazy" src="img/sales/scales.png" alt="scales" /></picture>
+                </button>
+                <!-- ./right part -->
+                <button>
+                  <p>выбрать подарок</p>
+                  <div>
+                    <img
+                      class="lazy"
+                      src="img/sales/present.png"
+                      alt="present"
+                    />
+                  </div>
+                </button>
+                <button>
+                  <p>есть образцы</p>
+                  <div>
+                    <img
+                      class="lazy"
+                      src="img/sales/examples.png"
+                      alt="examples"
+                    />
+                  </div>
+                </button>
+                <button>
+                  <p>есть видео</p>
+                  <div>
+                    <picture><source srcset="img/sales/video.webp" type="image/webp"><img class="lazy" src="img/sales/video.png" alt="video" /></picture>
+                  </div>
+                </button>
+                <button>
+                  <p>распродажа</p>
+                  <div>
+                    <img
+                      class="lazy"
+                      src="img/sales/sale-ticket.png"
+                      alt="sale-ticket"
+                    />
+                  </div>
+                </button>
+              </div>
+            </div>
+            <!-- ./catalog__block__sale-images -->
+            <p class="collection-vendor">Артикул: 0000000000</p>
+            <div class="catalog__block__sale-name">
+              <img class="lazy" src="img/sales/flag.svg" alt="russia" />
+              <a href="#" id="sale1-1">Абингтон (Керама Марацци)</a>
+            </div>
+            <div class="catalog__block__sale-name">
+              <a href="#" id="sale1-1">Бордюр, 30х5</a>
+            </div>
+            <!-- <a class="collection-title__card mb-10" href="#">Бордюр, 30х5</a> -->
+
+            <!-- ./catalog__block__sale-name -->
+            <div class="catalog__block__sale-cost">
+              <span>от 100 000 ₽/м2</span>
+              <span class="previous-sale">от 200 000 ₽/м2</span>
+            </div>
+            <!-- ./catalog__block__sale-cost -->
+            <button class="catalog__block__sale-tocart">В корзину</button>
+          </div>
+          <!-- ./catalog__block__sale-card -->
+          <div class="catalog__block__sale-card">
+            <div class="catalog__block__sale-images ones">
+              <img
+                class="lazy image-item"
+                src="img/goods/goods-1.jpg"
+                alt="sale-img"
+              />
+              <div class="buttons-block">
+                <button>
+                  <picture><source srcset="img/sales/like.webp" type="image/webp"><img class="lazy" src="img/sales/like.png" alt="like" /></picture>
+                </button>
+                <button>
+                  <picture><source srcset="img/sales/scales.webp" type="image/webp"><img class="lazy" src="img/sales/scales.png" alt="scales" /></picture>
+                </button>
+                <!-- ./right part -->
+                <button>
+                  <p>выбрать подарок</p>
+                  <div>
+                    <img
+                      class="lazy"
+                      src="img/sales/present.png"
+                      alt="present"
+                    />
+                  </div>
+                </button>
+                <button>
+                  <p>есть образцы</p>
+                  <div>
+                    <img
+                      class="lazy"
+                      src="img/sales/examples.png"
+                      alt="examples"
+                    />
+                  </div>
+                </button>
+                <button>
+                  <p>есть видео</p>
+                  <div>
+                    <picture><source srcset="img/sales/video.webp" type="image/webp"><img class="lazy" src="img/sales/video.png" alt="video" /></picture>
+                  </div>
+                </button>
+                <button>
+                  <p>распродажа</p>
+                  <div>
+                    <img
+                      class="lazy"
+                      src="img/sales/sale-ticket.png"
+                      alt="sale-ticket"
+                    />
+                  </div>
+                </button>
+              </div>
+            </div>
+            <!-- ./catalog__block__sale-images -->
+            <p class="collection-vendor">Артикул: 0000000000</p>
+            <div class="catalog__block__sale-name">
+              <img class="lazy" src="img/sales/flag.svg" alt="russia" />
+              <a href="#" id="sale1-1">Абингтон (Керама Марацци)</a>
+            </div>
+            <div class="catalog__block__sale-name">
+              <a href="#" id="sale1-1">Бордюр, 30х5</a>
+            </div>
+            <!-- <a class="collection-title__card mb-10" href="#">Бордюр, 30х5</a> -->
+
+            <!-- ./catalog__block__sale-name -->
+            <div class="catalog__block__sale-cost">
+              <span>от 100 000 ₽/м2</span>
+              <span class="previous-sale">от 200 000 ₽/м2</span>
+            </div>
+            <!-- ./catalog__block__sale-cost -->
+            <button class="catalog__block__sale-tocart">В корзину</button>
+          </div>
+          <!-- ./catalog__block__sale-card -->
+          <div class="catalog__block__sale-card">
+            <div class="catalog__block__sale-images ones">
+              <img
+                class="lazy image-item"
+                src="img/goods/goods-1.jpg"
+                alt="sale-img"
+              />
+              <div class="buttons-block">
+                <button>
+                  <picture><source srcset="img/sales/like.webp" type="image/webp"><img class="lazy" src="img/sales/like.png" alt="like" /></picture>
+                </button>
+                <button>
+                  <picture><source srcset="img/sales/scales.webp" type="image/webp"><img class="lazy" src="img/sales/scales.png" alt="scales" /></picture>
+                </button>
+                <!-- ./right part -->
+                <button>
+                  <p>выбрать подарок</p>
+                  <div>
+                    <img
+                      class="lazy"
+                      src="img/sales/present.png"
+                      alt="present"
+                    />
+                  </div>
+                </button>
+                <button>
+                  <p>есть образцы</p>
+                  <div>
+                    <img
+                      class="lazy"
+                      src="img/sales/examples.png"
+                      alt="examples"
+                    />
+                  </div>
+                </button>
+                <button>
+                  <p>есть видео</p>
+                  <div>
+                    <picture><source srcset="img/sales/video.webp" type="image/webp"><img class="lazy" src="img/sales/video.png" alt="video" /></picture>
+                  </div>
+                </button>
+                <button>
+                  <p>распродажа</p>
+                  <div>
+                    <img
+                      class="lazy"
+                      src="img/sales/sale-ticket.png"
+                      alt="sale-ticket"
+                    />
+                  </div>
+                </button>
+              </div>
+            </div>
+            <!-- ./catalog__block__sale-images -->
+            <p class="collection-vendor">Артикул: 0000000000</p>
+            <div class="catalog__block__sale-name">
+              <img class="lazy" src="img/sales/flag.svg" alt="russia" />
+              <a href="#" id="sale1-1">Абингтон (Керама Марацци)</a>
+            </div>
+            <div class="catalog__block__sale-name">
+              <a href="#" id="sale1-1">Бордюр, 30х5</a>
+            </div>
+            <!-- <a class="collection-title__card mb-10" href="#">Бордюр, 30х5</a> -->
+
+            <!-- ./catalog__block__sale-name -->
+            <div class="catalog__block__sale-cost">
+              <span>от 100 000 ₽/м2</span>
+              <span class="previous-sale">от 200 000 ₽/м2</span>
+            </div>
+            <!-- ./catalog__block__sale-cost -->
+            <button class="catalog__block__sale-tocart">В корзину</button>
+          </div>
+          <!-- ./catalog__block__sale-card -->
+          <div class="catalog__block__sale-card">
+            <div class="catalog__block__sale-images ones">
+              <img
+                class="lazy image-item"
+                src="img/goods/goods-1.jpg"
+                alt="sale-img"
+              />
+              <div class="buttons-block">
+                <button>
+                  <picture><source srcset="img/sales/like.webp" type="image/webp"><img class="lazy" src="img/sales/like.png" alt="like" /></picture>
+                </button>
+                <button>
+                  <picture><source srcset="img/sales/scales.webp" type="image/webp"><img class="lazy" src="img/sales/scales.png" alt="scales" /></picture>
+                </button>
+                <!-- ./right part -->
+                <button>
+                  <p>выбрать подарок</p>
+                  <div>
+                    <img
+                      class="lazy"
+                      src="img/sales/present.png"
+                      alt="present"
+                    />
+                  </div>
+                </button>
+                <button>
+                  <p>есть образцы</p>
+                  <div>
+                    <img
+                      class="lazy"
+                      src="img/sales/examples.png"
+                      alt="examples"
+                    />
+                  </div>
+                </button>
+                <button>
+                  <p>есть видео</p>
+                  <div>
+                    <picture><source srcset="img/sales/video.webp" type="image/webp"><img class="lazy" src="img/sales/video.png" alt="video" /></picture>
+                  </div>
+                </button>
+                <button>
+                  <p>распродажа</p>
+                  <div>
+                    <img
+                      class="lazy"
+                      src="img/sales/sale-ticket.png"
+                      alt="sale-ticket"
+                    />
+                  </div>
+                </button>
+              </div>
+            </div>
+            <!-- ./catalog__block__sale-images -->
+            <p class="collection-vendor">Артикул: 0000000000</p>
+            <div class="catalog__block__sale-name">
+              <img class="lazy" src="img/sales/flag.svg" alt="russia" />
+              <a href="#" id="sale1-1">Абингтон (Керама Марацци)</a>
+            </div>
+            <div class="catalog__block__sale-name">
+              <a href="#" id="sale1-1">Бордюр, 30х5</a>
+            </div>
+            <!-- <a class="collection-title__card mb-10" href="#">Бордюр, 30х5</a> -->
+
+            <!-- ./catalog__block__sale-name -->
+            <div class="catalog__block__sale-cost">
+              <span>от 100 000 ₽/м2</span>
+              <span class="previous-sale">от 200 000 ₽/м2</span>
+            </div>
+            <!-- ./catalog__block__sale-cost -->
+            <button class="catalog__block__sale-tocart">В корзину</button>
+          </div>
+          <!-- ./catalog__block__sale-card -->
+          <div class="catalog__block__sale-card">
+            <div class="catalog__block__sale-images ones">
+              <img
+                class="lazy image-item"
+                src="img/goods/goods-1.jpg"
+                alt="sale-img"
+              />
+              <div class="buttons-block">
+                <button>
+                  <picture><source srcset="img/sales/like.webp" type="image/webp"><img class="lazy" src="img/sales/like.png" alt="like" /></picture>
+                </button>
+                <button>
+                  <picture><source srcset="img/sales/scales.webp" type="image/webp"><img class="lazy" src="img/sales/scales.png" alt="scales" /></picture>
+                </button>
+                <!-- ./right part -->
+                <button>
+                  <p>выбрать подарок</p>
+                  <div>
+                    <img
+                      class="lazy"
+                      src="img/sales/present.png"
+                      alt="present"
+                    />
+                  </div>
+                </button>
+                <button>
+                  <p>есть образцы</p>
+                  <div>
+                    <img
+                      class="lazy"
+                      src="img/sales/examples.png"
+                      alt="examples"
+                    />
+                  </div>
+                </button>
+                <button>
+                  <p>есть видео</p>
+                  <div>
+                    <picture><source srcset="img/sales/video.webp" type="image/webp"><img class="lazy" src="img/sales/video.png" alt="video" /></picture>
+                  </div>
+                </button>
+                <button>
+                  <p>распродажа</p>
+                  <div>
+                    <img
+                      class="lazy"
+                      src="img/sales/sale-ticket.png"
+                      alt="sale-ticket"
+                    />
+                  </div>
+                </button>
+              </div>
+            </div>
+            <!-- ./catalog__block__sale-images -->
+            <p class="collection-vendor">Артикул: 0000000000</p>
+            <div class="catalog__block__sale-name">
+              <img class="lazy" src="img/sales/flag.svg" alt="russia" />
+              <a href="#" id="sale1-1">Абингтон (Керама Марацци)</a>
+            </div>
+            <div class="catalog__block__sale-name">
+              <a href="#" id="sale1-1">Бордюр, 30х5</a>
+            </div>
+            <!-- <a class="collection-title__card mb-10" href="#">Бордюр, 30х5</a> -->
+
+            <!-- ./catalog__block__sale-name -->
+            <div class="catalog__block__sale-cost">
+              <span>от 100 000 ₽/м2</span>
+              <span class="previous-sale">от 200 000 ₽/м2</span>
+            </div>
+            <!-- ./catalog__block__sale-cost -->
+            <button class="catalog__block__sale-tocart">В корзину</button>
+          </div>
+          <!-- ./catalog__block__sale-card -->
+          <div class="catalog__block__sale-card">
+            <div class="catalog__block__sale-images ones">
+              <img
+                class="lazy image-item"
+                src="img/goods/goods-1.jpg"
+                alt="sale-img"
+              />
+              <div class="buttons-block">
+                <button>
+                  <picture><source srcset="img/sales/like.webp" type="image/webp"><img class="lazy" src="img/sales/like.png" alt="like" /></picture>
+                </button>
+                <button>
+                  <picture><source srcset="img/sales/scales.webp" type="image/webp"><img class="lazy" src="img/sales/scales.png" alt="scales" /></picture>
+                </button>
+                <!-- ./right part -->
+                <button>
+                  <p>выбрать подарок</p>
+                  <div>
+                    <img
+                      class="lazy"
+                      src="img/sales/present.png"
+                      alt="present"
+                    />
+                  </div>
+                </button>
+                <button>
+                  <p>есть образцы</p>
+                  <div>
+                    <img
+                      class="lazy"
+                      src="img/sales/examples.png"
+                      alt="examples"
+                    />
+                  </div>
+                </button>
+                <button>
+                  <p>есть видео</p>
+                  <div>
+                    <picture><source srcset="img/sales/video.webp" type="image/webp"><img class="lazy" src="img/sales/video.png" alt="video" /></picture>
+                  </div>
+                </button>
+                <button>
+                  <p>распродажа</p>
+                  <div>
+                    <img
+                      class="lazy"
+                      src="img/sales/sale-ticket.png"
+                      alt="sale-ticket"
+                    />
+                  </div>
+                </button>
+              </div>
+            </div>
+            <!-- ./catalog__block__sale-images -->
+            <p class="collection-vendor">Артикул: 0000000000</p>
+            <div class="catalog__block__sale-name">
+              <img class="lazy" src="img/sales/flag.svg" alt="russia" />
+              <a href="#" id="sale1-1">Абингтон (Керама Марацци)</a>
+            </div>
+            <div class="catalog__block__sale-name">
+              <a href="#" id="sale1-1">Бордюр, 30х5</a>
+            </div>
+            <!-- <a class="collection-title__card mb-10" href="#">Бордюр, 30х5</a> -->
+
+            <!-- ./catalog__block__sale-name -->
+            <div class="catalog__block__sale-cost">
+              <span>от 100 000 ₽/м2</span>
+              <span class="previous-sale">от 200 000 ₽/м2</span>
+            </div>
+            <!-- ./catalog__block__sale-cost -->
+            <button class="catalog__block__sale-tocart">В корзину</button>
+          </div>
+          <!-- ./catalog__block__sale-card -->
+        </div>
+      </div>
+      <!-- ./composition -->
       <div
         data-list="description"
         class="catalog__block__sales-list dropdown-item"
@@ -833,371 +1310,423 @@
     </section>
 
     <section class="catalog__block pt-0 pb-0">
-      <h3 class="collection-subtitle">Другие товары коллекции</h3>
+      <h3 class="collection-subtitle">Другие коллекции производителя</h3>
 
       <div data-list="goods" class="catalog__block__sales-list">
         <div class="catalog__block__sale-card">
-          <div class="catalog__block__sale-images ones">
+          <div class="catalog__block__sale-images">
             <img
-              class="lazy image-item entered loading"
-              src="img/goods/goods-1.jpg"
+              class="lazy image-item"
+              src="img/sales/sale1-1.jpg"
               alt="sale-img"
-              data-ll-status="loading"
+            />
+            <img
+              class="image-item hidden lazy"
+              src="img/sales/sale1-2.jpg"
+              alt="sale-img"
+            />
+            <img
+              class="image-item hidden lazy"
+              src="img/sales/sale1-3.jpg"
+              alt="sale-img"
+            />
+            <img
+              class="image-item hidden lazy"
+              src="img/sales/sale1-4.jpg"
+              alt="sale-img"
             />
             <div class="buttons-block">
               <button>
-                <img
-                  class="lazy entered loading"
-                  src="img/sales/like.png"
-                  alt="like"
-                  data-ll-status="loading"
-                />
+                <picture><source srcset="img/sales/like.webp" type="image/webp"><img class="lazy" src="img/sales/like.png" alt="like" /></picture>
               </button>
               <button>
-                <img
-                  class="lazy entered loading"
-                  src="img/sales/scales.png"
-                  alt="scales"
-                  data-ll-status="loading"
-                />
+                <picture><source srcset="img/sales/scales.webp" type="image/webp"><img class="lazy" src="img/sales/scales.png" alt="scales" /></picture>
               </button>
               <!-- ./right part -->
               <button>
                 <p>выбрать подарок</p>
                 <div>
-                  <img
-                    class="lazy entered loading"
-                    src="img/sales/present.png"
-                    alt="present"
-                    data-ll-status="loading"
-                  />
+                  <picture><source srcset="img/sales/present.webp" type="image/webp"><img class="lazy" src="img/sales/present.png" alt="present" /></picture>
                 </div>
               </button>
               <button>
                 <p>есть образцы</p>
                 <div>
                   <img
-                    class="lazy entered loading"
+                    class="lazy"
                     src="img/sales/examples.png"
                     alt="examples"
-                    data-ll-status="loading"
                   />
                 </div>
               </button>
               <button>
                 <p>есть видео</p>
                 <div>
-                  <img
-                    class="lazy entered loading"
-                    src="img/sales/video.png"
-                    alt="video"
-                    data-ll-status="loading"
-                  />
+                  <picture><source srcset="img/sales/video.webp" type="image/webp"><img class="lazy" src="img/sales/video.png" alt="video" /></picture>
                 </div>
               </button>
               <button>
                 <p>распродажа</p>
                 <div>
                   <img
-                    class="lazy entered loading"
+                    class="lazy"
                     src="img/sales/sale-ticket.png"
                     alt="sale-ticket"
-                    data-ll-status="loading"
                   />
                 </div>
               </button>
             </div>
+            <div class="items-track">
+              <button class="sale-img-btn">
+                <img
+                  class="lazy"
+                  src="img/sales/sale1-1.jpg"
+                  alt="image-button"
+                />
+              </button>
+              <button class="sale-img-btn">
+                <img
+                  class="lazy"
+                  src="img/sales/sale1-2.jpg"
+                  alt="image-button"
+                />
+              </button>
+              <button class="sale-img-btn">
+                <img
+                  class="lazy"
+                  src="img/sales/sale1-3.jpg"
+                  alt="image-button"
+                />
+              </button>
+              <button class="sale-img-btn">
+                <img
+                  class="lazy"
+                  src="img/sales/sale1-4.jpg"
+                  alt="image-button"
+                />
+              </button>
+            </div>
           </div>
-          <!-- ./catalog__block__sale-images -->
           <div class="catalog__block__sale-name">
-            <img
-              class="lazy entered loading"
-              src="img/sales/flag.svg"
-              alt="russia"
-              data-ll-status="loading"
-            />
+            <img class="lazy" src="img/sales/flag.svg" alt="russia" />
             <a href="#" id="sale1-1">Абингтон (Керама Марацци)</a>
           </div>
-          <!-- ./catalog__block__sale-name -->
           <div class="catalog__block__sale-cost">
             <span>от 100 000 ₽/м2</span>
             <span class="previous-sale">от 200 000 ₽/м2</span>
           </div>
-          <!-- ./catalog__block__sale-cost -->
-          <button class="catalog__block__sale-tocart">В корзину</button>
         </div>
         <!-- ./catalog__block__sale-card -->
         <div class="catalog__block__sale-card">
-          <div class="catalog__block__sale-images ones">
+          <div class="catalog__block__sale-images">
             <img
-              class="lazy image-item entered loading"
-              src="img/goods/goods-2.jpg"
+              class="lazy image-item"
+              src="img/sales/sale1-1.jpg"
               alt="sale-img"
-              data-ll-status="loading"
+            />
+            <img
+              class="image-item hidden lazy"
+              src="img/sales/sale1-2.jpg"
+              alt="sale-img"
+            />
+            <img
+              class="image-item hidden lazy"
+              src="img/sales/sale1-3.jpg"
+              alt="sale-img"
+            />
+            <img
+              class="image-item hidden lazy"
+              src="img/sales/sale1-4.jpg"
+              alt="sale-img"
             />
             <div class="buttons-block">
               <button>
-                <img
-                  class="lazy entered loading"
-                  src="img/sales/like.png"
-                  alt="like"
-                  data-ll-status="loading"
-                />
+                <picture><source srcset="img/sales/like.webp" type="image/webp"><img class="lazy" src="img/sales/like.png" alt="like" /></picture>
               </button>
               <button>
-                <img
-                  class="lazy entered loading"
-                  src="img/sales/scales.png"
-                  alt="scales"
-                  data-ll-status="loading"
-                />
+                <picture><source srcset="img/sales/scales.webp" type="image/webp"><img class="lazy" src="img/sales/scales.png" alt="scales" /></picture>
               </button>
               <!-- ./right part -->
               <button>
                 <p>выбрать подарок</p>
                 <div>
-                  <img
-                    class="lazy entered loading"
-                    src="img/sales/present.png"
-                    alt="present"
-                    data-ll-status="loading"
-                  />
+                  <picture><source srcset="img/sales/present.webp" type="image/webp"><img class="lazy" src="img/sales/present.png" alt="present" /></picture>
                 </div>
               </button>
               <button>
                 <p>есть образцы</p>
                 <div>
                   <img
-                    class="lazy entered loading"
+                    class="lazy"
                     src="img/sales/examples.png"
                     alt="examples"
-                    data-ll-status="loading"
                   />
                 </div>
               </button>
               <button>
                 <p>есть видео</p>
                 <div>
-                  <img
-                    class="lazy entered loading"
-                    src="img/sales/video.png"
-                    alt="video"
-                    data-ll-status="loading"
-                  />
+                  <picture><source srcset="img/sales/video.webp" type="image/webp"><img class="lazy" src="img/sales/video.png" alt="video" /></picture>
                 </div>
               </button>
               <button>
                 <p>распродажа</p>
                 <div>
                   <img
-                    class="lazy entered loading"
+                    class="lazy"
                     src="img/sales/sale-ticket.png"
                     alt="sale-ticket"
-                    data-ll-status="loading"
                   />
                 </div>
               </button>
             </div>
+            <div class="items-track">
+              <button class="sale-img-btn">
+                <img
+                  class="lazy"
+                  src="img/sales/sale1-1.jpg"
+                  alt="image-button"
+                />
+              </button>
+              <button class="sale-img-btn">
+                <img
+                  class="lazy"
+                  src="img/sales/sale1-2.jpg"
+                  alt="image-button"
+                />
+              </button>
+              <button class="sale-img-btn">
+                <img
+                  class="lazy"
+                  src="img/sales/sale1-3.jpg"
+                  alt="image-button"
+                />
+              </button>
+              <button class="sale-img-btn">
+                <img
+                  class="lazy"
+                  src="img/sales/sale1-4.jpg"
+                  alt="image-button"
+                />
+              </button>
+            </div>
           </div>
-          <!-- ./catalog__block__sale-images -->
           <div class="catalog__block__sale-name">
-            <img
-              class="lazy entered loading"
-              src="img/sales/flag.svg"
-              alt="russia"
-              data-ll-status="loading"
-            />
+            <img class="lazy" src="img/sales/flag.svg" alt="russia" />
             <a href="#" id="sale1-1">Абингтон (Керама Марацци)</a>
           </div>
-          <!-- ./catalog__block__sale-name -->
           <div class="catalog__block__sale-cost">
             <span>от 100 000 ₽/м2</span>
             <span class="previous-sale">от 200 000 ₽/м2</span>
           </div>
-          <!-- ./catalog__block__sale-cost -->
-          <button class="catalog__block__sale-tocart">В корзину</button>
         </div>
         <!-- ./catalog__block__sale-card -->
         <div class="catalog__block__sale-card">
-          <div class="catalog__block__sale-images ones">
+          <div class="catalog__block__sale-images">
             <img
-              class="lazy image-item entered loading"
-              src="img/goods/goods-3.jpg"
+              class="lazy image-item"
+              src="img/sales/sale1-1.jpg"
               alt="sale-img"
-              data-ll-status="loading"
+            />
+            <img
+              class="image-item hidden lazy"
+              src="img/sales/sale1-2.jpg"
+              alt="sale-img"
+            />
+            <img
+              class="image-item hidden lazy"
+              src="img/sales/sale1-3.jpg"
+              alt="sale-img"
+            />
+            <img
+              class="image-item hidden lazy"
+              src="img/sales/sale1-4.jpg"
+              alt="sale-img"
             />
             <div class="buttons-block">
               <button>
-                <img
-                  class="lazy entered loading"
-                  src="img/sales/like.png"
-                  alt="like"
-                  data-ll-status="loading"
-                />
+                <picture><source srcset="img/sales/like.webp" type="image/webp"><img class="lazy" src="img/sales/like.png" alt="like" /></picture>
               </button>
               <button>
-                <img
-                  class="lazy entered loading"
-                  src="img/sales/scales.png"
-                  alt="scales"
-                  data-ll-status="loading"
-                />
+                <picture><source srcset="img/sales/scales.webp" type="image/webp"><img class="lazy" src="img/sales/scales.png" alt="scales" /></picture>
               </button>
               <!-- ./right part -->
               <button>
                 <p>выбрать подарок</p>
                 <div>
-                  <img
-                    class="lazy entered loading"
-                    src="img/sales/present.png"
-                    alt="present"
-                    data-ll-status="loading"
-                  />
+                  <picture><source srcset="img/sales/present.webp" type="image/webp"><img class="lazy" src="img/sales/present.png" alt="present" /></picture>
                 </div>
               </button>
               <button>
                 <p>есть образцы</p>
                 <div>
                   <img
-                    class="lazy entered loading"
+                    class="lazy"
                     src="img/sales/examples.png"
                     alt="examples"
-                    data-ll-status="loading"
                   />
                 </div>
               </button>
               <button>
                 <p>есть видео</p>
                 <div>
-                  <img
-                    class="lazy entered loading"
-                    src="img/sales/video.png"
-                    alt="video"
-                    data-ll-status="loading"
-                  />
+                  <picture><source srcset="img/sales/video.webp" type="image/webp"><img class="lazy" src="img/sales/video.png" alt="video" /></picture>
                 </div>
               </button>
               <button>
                 <p>распродажа</p>
                 <div>
                   <img
-                    class="lazy entered loading"
+                    class="lazy"
                     src="img/sales/sale-ticket.png"
                     alt="sale-ticket"
-                    data-ll-status="loading"
                   />
                 </div>
               </button>
             </div>
+            <div class="items-track">
+              <button class="sale-img-btn">
+                <img
+                  class="lazy"
+                  src="img/sales/sale1-1.jpg"
+                  alt="image-button"
+                />
+              </button>
+              <button class="sale-img-btn">
+                <img
+                  class="lazy"
+                  src="img/sales/sale1-2.jpg"
+                  alt="image-button"
+                />
+              </button>
+              <button class="sale-img-btn">
+                <img
+                  class="lazy"
+                  src="img/sales/sale1-3.jpg"
+                  alt="image-button"
+                />
+              </button>
+              <button class="sale-img-btn">
+                <img
+                  class="lazy"
+                  src="img/sales/sale1-4.jpg"
+                  alt="image-button"
+                />
+              </button>
+            </div>
           </div>
-          <!-- ./catalog__block__sale-images -->
           <div class="catalog__block__sale-name">
-            <img
-              class="lazy entered loading"
-              src="img/sales/flag.svg"
-              alt="russia"
-              data-ll-status="loading"
-            />
+            <img class="lazy" src="img/sales/flag.svg" alt="russia" />
             <a href="#" id="sale1-1">Абингтон (Керама Марацци)</a>
           </div>
-          <!-- ./catalog__block__sale-name -->
           <div class="catalog__block__sale-cost">
             <span>от 100 000 ₽/м2</span>
             <span class="previous-sale">от 200 000 ₽/м2</span>
           </div>
-          <!-- ./catalog__block__sale-cost -->
-          <button class="catalog__block__sale-tocart">В корзину</button>
         </div>
         <!-- ./catalog__block__sale-card -->
         <div class="catalog__block__sale-card">
-          <div class="catalog__block__sale-images ones">
+          <div class="catalog__block__sale-images">
             <img
-              class="lazy image-item entered loading"
-              src="img/goods/goods-4.jpg"
+              class="lazy image-item"
+              src="img/sales/sale1-1.jpg"
               alt="sale-img"
-              data-ll-status="loading"
+            />
+            <img
+              class="image-item hidden lazy"
+              src="img/sales/sale1-2.jpg"
+              alt="sale-img"
+            />
+            <img
+              class="image-item hidden lazy"
+              src="img/sales/sale1-3.jpg"
+              alt="sale-img"
+            />
+            <img
+              class="image-item hidden lazy"
+              src="img/sales/sale1-4.jpg"
+              alt="sale-img"
             />
             <div class="buttons-block">
               <button>
-                <img
-                  class="lazy entered loading"
-                  src="img/sales/like.png"
-                  alt="like"
-                  data-ll-status="loading"
-                />
+                <picture><source srcset="img/sales/like.webp" type="image/webp"><img class="lazy" src="img/sales/like.png" alt="like" /></picture>
               </button>
               <button>
-                <img
-                  class="lazy entered loading"
-                  src="img/sales/scales.png"
-                  alt="scales"
-                  data-ll-status="loading"
-                />
+                <picture><source srcset="img/sales/scales.webp" type="image/webp"><img class="lazy" src="img/sales/scales.png" alt="scales" /></picture>
               </button>
               <!-- ./right part -->
               <button>
                 <p>выбрать подарок</p>
                 <div>
-                  <img
-                    class="lazy entered loading"
-                    src="img/sales/present.png"
-                    alt="present"
-                    data-ll-status="loading"
-                  />
+                  <picture><source srcset="img/sales/present.webp" type="image/webp"><img class="lazy" src="img/sales/present.png" alt="present" /></picture>
                 </div>
               </button>
               <button>
                 <p>есть образцы</p>
                 <div>
                   <img
-                    class="lazy entered loading"
+                    class="lazy"
                     src="img/sales/examples.png"
                     alt="examples"
-                    data-ll-status="loading"
                   />
                 </div>
               </button>
               <button>
                 <p>есть видео</p>
                 <div>
-                  <img
-                    class="lazy entered loading"
-                    src="img/sales/video.png"
-                    alt="video"
-                    data-ll-status="loading"
-                  />
+                  <picture><source srcset="img/sales/video.webp" type="image/webp"><img class="lazy" src="img/sales/video.png" alt="video" /></picture>
                 </div>
               </button>
               <button>
                 <p>распродажа</p>
                 <div>
                   <img
-                    class="lazy entered loading"
+                    class="lazy"
                     src="img/sales/sale-ticket.png"
                     alt="sale-ticket"
-                    data-ll-status="loading"
                   />
                 </div>
               </button>
             </div>
+            <div class="items-track">
+              <button class="sale-img-btn">
+                <img
+                  class="lazy"
+                  src="img/sales/sale1-1.jpg"
+                  alt="image-button"
+                />
+              </button>
+              <button class="sale-img-btn">
+                <img
+                  class="lazy"
+                  src="img/sales/sale1-2.jpg"
+                  alt="image-button"
+                />
+              </button>
+              <button class="sale-img-btn">
+                <img
+                  class="lazy"
+                  src="img/sales/sale1-3.jpg"
+                  alt="image-button"
+                />
+              </button>
+              <button class="sale-img-btn">
+                <img
+                  class="lazy"
+                  src="img/sales/sale1-4.jpg"
+                  alt="image-button"
+                />
+              </button>
+            </div>
           </div>
-          <!-- ./catalog__block__sale-images -->
           <div class="catalog__block__sale-name">
-            <img
-              class="lazy entered loading"
-              src="img/sales/flag.svg"
-              alt="russia"
-              data-ll-status="loading"
-            />
+            <img class="lazy" src="img/sales/flag.svg" alt="russia" />
             <a href="#" id="sale1-1">Абингтон (Керама Марацци)</a>
           </div>
-          <!-- ./catalog__block__sale-name -->
           <div class="catalog__block__sale-cost">
             <span>от 100 000 ₽/м2</span>
             <span class="previous-sale">от 200 000 ₽/м2</span>
           </div>
-          <!-- ./catalog__block__sale-cost -->
-          <button class="catalog__block__sale-tocart">В корзину</button>
         </div>
         <!-- ./catalog__block__sale-card -->
       </div>
@@ -1209,88 +1738,62 @@
         <div class="catalog__block__sale-card">
           <div class="catalog__block__sale-images">
             <img
-              class="lazy image-item entered loading"
+              class="lazy image-item"
               src="img/sales/sale1-1.jpg"
               alt="sale-img"
-              data-ll-status="loading"
             />
             <img
-              class="image-item hidden lazy entered loading"
+              class="image-item hidden lazy"
               src="img/sales/sale1-2.jpg"
               alt="sale-img"
-              data-ll-status="loading"
             />
             <img
-              class="image-item hidden lazy entered loading"
+              class="image-item hidden lazy"
               src="img/sales/sale1-3.jpg"
               alt="sale-img"
-              data-ll-status="loading"
             />
             <img
-              class="image-item hidden lazy entered loading"
+              class="image-item hidden lazy"
               src="img/sales/sale1-4.jpg"
               alt="sale-img"
-              data-ll-status="loading"
             />
             <div class="buttons-block">
               <button>
-                <img
-                  class="lazy entered loading"
-                  src="img/sales/like.png"
-                  alt="like"
-                  data-ll-status="loading"
-                />
+                <picture><source srcset="img/sales/like.webp" type="image/webp"><img class="lazy" src="img/sales/like.png" alt="like" /></picture>
               </button>
               <button>
-                <img
-                  class="lazy entered loading"
-                  src="img/sales/scales.png"
-                  alt="scales"
-                  data-ll-status="loading"
-                />
+                <picture><source srcset="img/sales/scales.webp" type="image/webp"><img class="lazy" src="img/sales/scales.png" alt="scales" /></picture>
               </button>
               <!-- ./right part -->
               <button>
                 <p>выбрать подарок</p>
                 <div>
-                  <img
-                    class="lazy entered loading"
-                    src="img/sales/present.png"
-                    alt="present"
-                    data-ll-status="loading"
-                  />
+                  <picture><source srcset="img/sales/present.webp" type="image/webp"><img class="lazy" src="img/sales/present.png" alt="present" /></picture>
                 </div>
               </button>
               <button>
                 <p>есть образцы</p>
                 <div>
                   <img
-                    class="lazy entered loading"
+                    class="lazy"
                     src="img/sales/examples.png"
                     alt="examples"
-                    data-ll-status="loading"
                   />
                 </div>
               </button>
               <button>
                 <p>есть видео</p>
                 <div>
-                  <img
-                    class="lazy entered loading"
-                    src="img/sales/video.png"
-                    alt="video"
-                    data-ll-status="loading"
-                  />
+                  <picture><source srcset="img/sales/video.webp" type="image/webp"><img class="lazy" src="img/sales/video.png" alt="video" /></picture>
                 </div>
               </button>
               <button>
                 <p>распродажа</p>
                 <div>
                   <img
-                    class="lazy entered loading"
+                    class="lazy"
                     src="img/sales/sale-ticket.png"
                     alt="sale-ticket"
-                    data-ll-status="loading"
                   />
                 </div>
               </button>
@@ -1298,45 +1801,36 @@
             <div class="items-track">
               <button class="sale-img-btn">
                 <img
-                  class="lazy entered loading"
+                  class="lazy"
                   src="img/sales/sale1-1.jpg"
                   alt="image-button"
-                  data-ll-status="loading"
                 />
               </button>
               <button class="sale-img-btn">
                 <img
-                  class="lazy entered loading"
+                  class="lazy"
                   src="img/sales/sale1-2.jpg"
                   alt="image-button"
-                  data-ll-status="loading"
                 />
               </button>
               <button class="sale-img-btn">
                 <img
-                  class="lazy entered loading"
+                  class="lazy"
                   src="img/sales/sale1-3.jpg"
                   alt="image-button"
-                  data-ll-status="loading"
                 />
               </button>
               <button class="sale-img-btn">
                 <img
-                  class="lazy entered loading"
+                  class="lazy"
                   src="img/sales/sale1-4.jpg"
                   alt="image-button"
-                  data-ll-status="loading"
                 />
               </button>
             </div>
           </div>
           <div class="catalog__block__sale-name">
-            <img
-              class="lazy entered loading"
-              src="img/sales/flag.svg"
-              alt="russia"
-              data-ll-status="loading"
-            />
+            <img class="lazy" src="img/sales/flag.svg" alt="russia" />
             <a href="#" id="sale1-1">Абингтон (Керама Марацци)</a>
           </div>
           <div class="catalog__block__sale-cost">
