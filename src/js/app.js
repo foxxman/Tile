@@ -7,6 +7,7 @@ import * as zoomImg from "./modules/zoom-img.js";
 import * as zoomSlider from "./modules/zoom-slider.js";
 // import * as catalogsMenus from "./modules/catalogs-dropdown.js";
 import * as collapsesBlocks from "./modules/collapses.js";
+import * as accordions from "./modules/accordion.js";
 
 flsFunctions.isWebp();
 // LAZY LOAD====================
@@ -35,12 +36,16 @@ const swiper = new Swiper(".swiper", {
   // Optional parameters
   // direction: "vertical",
   loop: true,
-
+  navigation: {
+    nextEl: ".swiper-next",
+    prevEl: ".swiper-prev",
+  },
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
+
   spaceBetween: 30,
   autoplay: {
     delay: 4000,
@@ -56,3 +61,4 @@ collapsesBlocks.initCollapses();
 productCounter.activateProductCounter();
 zoomImg.activateZoom();
 zoomSlider.activateZoomSliders();
+accordions.activateAccordion();

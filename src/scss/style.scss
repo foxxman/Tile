@@ -71,6 +71,22 @@ input[type="number"] {
 .justify-around {
   justify-content: space-around;
 }
+.justify-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.flex-column-m {
+  @media (max-width: 1080px) {
+    flex-direction: column;
+  }
+}
+.flex-column-reverse-m {
+  @media (max-width: 1080px) {
+    flex-direction: column-reverse;
+  }
+}
 .m-auto {
   margin-left: auto;
   margin-right: auto;
@@ -87,6 +103,10 @@ input[type="number"] {
     padding-left: 10px;
     padding-right: 10px;
   }
+}
+.grid_1-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .pagination {
@@ -109,6 +129,13 @@ input[type="number"] {
       border: 2px solid #e610e3;
       color: #e610e3;
     }
+  }
+}
+
+.section-margin {
+  margin-bottom: 120px;
+  @media (max-width: 500px) {
+    margin-bottom: 60px;
   }
 }
 //=====ПЕРЕМЕННЫЕ=============
