@@ -3194,6 +3194,106 @@
 }
 
 .article {
+  width: 100%;
+  margin-bottom: 114px;
+  img {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  h2 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 120%;
+    color: #2b2c31;
+    margin-bottom: 23px;
+    text-transform: capitalize;
+  }
+  p {
+    font-size: 16px;
+    line-height: 155%;
+    color: #2b2c31;
+    margin-bottom: 40px;
+    .article-more {
+      margin-top: 0;
+    }
+  }
+  q {
+    display: block;
+    margin: auto;
+    border-left: 2px solid #e510e3;
+    padding-left: 14px;
+    margin-top: 40px;
+    margin-bottom: 45px;
+    max-width: 640px;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #2b2c31;
+  }
+  h3 {
+    font-family: "Raleway";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2b2c31;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  ul {
+    padding-left: 22px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 155%;
+    color: #2b2c31;
+    margin-bottom: 20px;
+    li {
+      margin-bottom: 20px;
+    }
+  }
+  ol {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 155%;
+    color: #2b2c31;
+    padding-left: 22px;
+    margin-bottom: 20px;
+  }
+  &-double__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    img {
+      width: 45%;
+    }
+    p {
+      align-self: flex-start;
+      width: 35%;
+      margin-left: 40px;
+      margin-right: auto;
+    }
+    b {
+      display: block;
+      margin-bottom: 15px;
+    }
+    @media (max-width: 650px) {
+      flex-wrap: wrap;
+      img {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 25px;
+      }
+      b,
+      p {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+  }
   &-date {
     font-family: "Raleway";
     font-weight: 200;
@@ -3251,6 +3351,108 @@
       font-size: 20px;
       line-height: 120%;
       color: #2b2c31;
+    }
+  }
+  &-title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+
+    h2 {
+      width: fit-content;
+      border-bottom: 2px solid #e510e3;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+    a {
+      font-family: "Raleway";
+      font-weight: 200;
+      font-size: 16px;
+      line-height: 120%;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: #e610e3;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+  &-topics {
+    width: 100%;
+    border: 1px solid #d7e1e8;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+    h3 {
+      width: fit-content;
+      text-transform: uppercase;
+      margin-right: 19px;
+    }
+    button {
+      font-family: "Raleway";
+      font-weight: 200;
+      font-size: 16px;
+      line-height: 120%;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: #000000;
+      background: none;
+    }
+    ol {
+      width: 100%;
+    }
+    li {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 155%;
+      color: #2b2c31;
+      margin-bottom: 16px;
+      width: fit-content;
+      &.active {
+        border-bottom: 3px solid #e510e3;
+      }
+    }
+    a {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 155%;
+      color: #2b2c31;
+      text-decoration: none;
+    }
+  }
+  &-author {
+    display: grid;
+    grid-template-areas: "i a" "i j";
+    grid-template-columns: 93px;
+    column-gap: 35px;
+    row-gap: 10px;
+
+    img {
+      width: 93px;
+      height: 93px;
+      border-radius: 50%;
+      margin: 0;
+      grid-area: i;
+    }
+    p {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 155%;
+      color: #2b2c31;
+      margin-bottom: 0;
+      grid-area: a;
+      display: flex;
+      align-items: flex-end;
+      &:last-child {
+        grid-area: j;
+        font-family: "Raleway";
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 120%;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #000000;
+        align-items: flex-start;
+      }
     }
   }
 }

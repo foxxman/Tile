@@ -1,0 +1,50 @@
+<main class="main bg-white">
+  <div class="container">
+    <aside class="page-top p-sm-10">
+      <nav class="story-pages">
+        <a href="#"> <img src="@img/header-icons/to-home.svg" alt="home" /> </a>
+        &nbsp;/&nbsp;
+        <a href="#">Каталог плитки</a>
+        &nbsp;/&nbsp;
+        <a href="#">Для ванной</a>
+        &nbsp;/&nbsp;
+        <a href="#">Керама Марацци</a>
+        &nbsp;/&nbsp;
+        <a href="#">Главная</a>
+      </nav>
+    </aside>
+    <h1 class="information-title">Полезная информация</h1>
+
+    <section class="catalog__block drops-block information">
+      <div class="catalog__block__head">
+        <div class="catalog__dropdown mb-sm-0">
+          <button data-list="news" class="catalog__dropdown-active">
+            Новости
+          </button>
+          <button data-list="articles">Статьи</button>
+        </div>
+      </div>
+      <!-- ./catalog__block__head -->
+      <div class="information-content">
+        @@include('_information-news.html',{})
+        <!-- ./dropdown-item -->
+        @@include('_information-full-article.html',{})
+        <!-- ./dropdown-item -->
+
+        <aside class="information-sidebar">
+          @@include('sidebar/search-form.html',{})
+          <div class="information-sidebar__block">
+            @@include('sidebar/rubrics.html',{})
+          </div>
+          <div class="information-sidebar__block">
+            @@include('sidebar/tags.html',{})
+          </div>
+          <div class="information-sidebar__block bg-grey">
+            @@include('sidebar/last-news.html',{})
+          </div>
+        </aside>
+        <!-- ./sidebar -->
+      </div>
+    </section>
+  </div>
+</main>
