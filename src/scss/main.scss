@@ -2980,7 +2980,7 @@
 }
 
 .information {
-  .catalog__block {
+  &.catalog__block {
     margin-bottom: 0;
   }
   .catalog__block__head {
@@ -2988,6 +2988,9 @@
   }
   .catalog__block__sales-list {
     width: 917px;
+    @media (max-width: 1410px) {
+      width: 100%;
+    }
   }
   &-title {
     text-align: center;
@@ -3003,10 +3006,27 @@
   &-sidebar {
     width: 460px;
 
+    @media (max-width: 1410px) {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
     &__block {
       width: 100%;
+
       border: 1px solid #d7e1e8;
       padding: 31px 26px 40px 31px;
+      @media (max-width: 1410px) {
+        width: 30%;
+      }
+      @media (max-width: 1060px) {
+        width: 45%;
+      }
+      @media (max-width: 750px) {
+        width: 100%;
+      }
       margin-bottom: 60px;
       &.bg-grey {
         background: rgba(43, 44, 49, 0.2);
@@ -3058,7 +3078,9 @@
     margin-bottom: 60px;
     border: 1px solid #bcc2cb;
     height: 52px;
-
+    @media (max-width: 1410px) {
+      margin-top: 20px;
+    }
     button {
       height: 100%;
       width: 63px;
@@ -3098,6 +3120,18 @@
     column-gap: 38px;
     row-gap: 60px;
     margin-bottom: 65px;
+    @media (max-width: 740px) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+      row-gap: 30px;
+      margin-bottom: 30px;
+    }
+    @media (max-width: 520px) {
+      grid-template-columns: repeat(1, 1fr);
+      // column-gap: 20px;
+      row-gap: 15px;
+      margin-bottom: 20px;
+    }
   }
   &-pagination {
     display: flex;
@@ -3146,6 +3180,15 @@
         position: relative;
         transform: scale(-1, 1);
       }
+    }
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1410px) {
+      flex-direction: column;
     }
   }
 }
@@ -3250,6 +3293,12 @@
     .article-preview {
       display: flex;
       justify-content: space-between;
+      @media (max-width: 1410px) {
+        justify-content: center;
+      }
+      @media (max-width: 880px) {
+        flex-direction: column-reverse;
+      }
     }
     &-item {
       &__body {
@@ -3262,9 +3311,19 @@
           background-position: center;
           margin-bottom: 21px;
         }
+        @media (max-width: 880px) {
+          width: 100%;
+        }
       }
       &__title {
         max-width: 235px;
+        @media (max-width: 1410px) {
+          margin-left: 20px;
+        }
+        @media (max-width: 880px) {
+          max-width: 100%;
+          margin-left: 0;
+        }
       }
     }
   }
