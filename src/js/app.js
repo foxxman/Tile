@@ -62,3 +62,4 @@ productCounter.activateProductCounter();
 zoomImg.activateZoom();
 zoomSlider.activateZoomSliders();
 accordions.activateAccordion();
+// ===============================
