@@ -3427,6 +3427,9 @@
     column-gap: 35px;
     row-gap: 10px;
 
+    picture {
+      grid-area: i;
+    }
     img {
       width: 93px;
       height: 93px;
