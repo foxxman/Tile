@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20220614185955" />
+  <link rel="stylesheet" href="css/normalize.css?_v=20220614185955" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&_v=20220614185955"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&_v=20220614185955"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&_v=20220614185955"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&_v=20220614185955"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220614185955"
+  />
+
+  <!-- переменная title из параметров include -->
+  <title>Новости</title>
+
+  <!-- https://www.chartjs.org/docs/latest/configuration/ -->
+  <!-- https://quickchart.io/documentation/chart-js/custom-pie-doughnut-chart-labels/ -->
+</head>
+
+  <body>
+    <header class="header">
+  <div class="header-top">
+  <div class="header-top__logo-container">
+    <picture><source srcset="img/logo.webp" type="image/webp"><img class="lazy header-top__logo" src="img/logo.jpg" alt="logo" /></picture>
+  </div>
+
+  <!-- header-top__logo -->
+  <div class="header-top__place">
+    <img class="lazy" src="img/header-icons/place-point.svg" alt="point" />
+
+    <div>
+      <h3>Шоу-рум студия дизайна</h3>
+      <p>на севере Москвы<br />рядом с Леруа и ОБИ</p>
+    </div>
+  </div>
+  <!-- header-top__place -->
+
+  <div class="header-top__phone">
+    <img class="lazy" src="img/header-icons/call-icon.svg" alt="point" />
+    <div>
+      <a href="tel:+79250463125">+7 (925) 046 31 25</a>
+      <p>Обратный звонок</p>
+    </div>
+  </div>
+  <!-- header-top__phone -->
+
+  <div class="header-top__connection">
+    <a href="tel:+7(495)0463199" class="header_connection-icon"
+      ><img class="lazy" src="img/header-icons/mobile.svg" alt="phone" /></a
+    ><a href="#" class="header_connection-icon"
+      ><img
+        class="lazy"
+        src="img/header-icons/whatsapp-icon.svg"
+        alt="whatsapp" /></a
+    ><a href="#" class="header_connection-icon"
+      ><img class="lazy" src="img/header-icons/viber.svg" alt="viber" /></a
+    ><a href="#" class="header_connection-icon"
+      ><img class="lazy" src="img/header-icons/e-mail.svg" alt="mail"
+    /></a>
+  </div>
+  <!-- header-top__connection -->
+
+  <div class="header-top__goods">
+    <div class="header-top__cart-block">
+      <img class="lazy" src="img/header-icons/shopping-cart.svg" alt="cart" />
+
+      <div>
+        <a href="#">Корзина (0)</a>
+        <p>Доставка от 0 ₽</p>
+      </div>
+    </div>
+    <div class="header-top__primary-goods">
+      <img class="lazy" src="img/header-icons/like.svg" alt="liked goods" />
+
+      <div>
+        <a href="#">Избранное (0)</a>
+      </div>
+    </div>
+  </div>
+  <!-- header-top__primary-goods -->
+</div>
+
+  <nav class="header-menuline">
+  <button class="open-menu"><span></span><span></span><span></span></button>
+
+  <button class="header-menuline__section">Мебель</button
+  ><button class="header-menuline__section">Плитка для ванной</button
+  ><button class="header-menuline__section">Сантехника</button
+  ><button class="header-menuline__section">Сопутствующие товары</button
+  ><button class="header-menuline__section">
+    О компании
+    <div class="dropdown-content">
+      <a href="#">О фирме</a>
+      <a href="#">О плитке</a>
+      <a href="#">О дизайне</a>
+      <a href="#">Услуги</a>
+      <a href="#">Новости</a>
+      <a href="#">Статьи</a>
+      <a href="#">Контакты</a>
+    </div></button
+  ><button class="header-menuline__section">
+    Клиентам
+    <div class="dropdown-content">
+      <a href="#">Оплата</a>
+      <a href="#">Доставка</a>
+      <a href="#">Возврат</a>
+      <a href="#">Гарантии</a>
+      <a href="#">Самовывоз</a>
+      <a href="#">Бонусы</a>
+      <a href="#">3D-визуализация</a>
+    </div>
+  </button>
+
+  <form action="" class="header-menuline__section">
+    <input type="text" placeholder="Поиск..." />
+    <button type="submit">
+      <img class="lazy" src="img/header-icons/search-icon.svg" alt="search" />
+    </button>
+  </form>
+</nav>
+<div class="header-menuline-underline">
+  <div class="main-menu hidden">
+    <div class="main-menu__body">
+      <nav>
+        <h3>Назначение</h3>
+        <ul>
+          <li><a href="#">Ванная</a></li>
+          <li><a href="#">Полы</a></li>
+          <li><a href="#">Кухня</a></li>
+          <li><a href="#">Мозаика/ бассейны</a></li>
+          <li><a href="#">Ступени</a></li>
+          <li><a href="#">Общественные и жилые пространства</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>материал</h3>
+        <ul>
+          <li><a href="#">Плитка керамическая</a></li>
+          <li><a href="#">Керамогранит</a></li>
+          <li><a href="#">Мозаика</a></li>
+          <li><a href="#">Ступени</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Цена</h3>
+        <ul>
+          <li><a href="#">Недорогая до 1 т.р. </a></li>
+          <li><a href="#">Средняя 1-2 т.р </a></li>
+          <li><a href="#">Дорогая от 2 т.р.</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Стиль</h3>
+        <ul>
+          <li><a href="#">Модерн/Хайтек </a></li>
+          <li><a href="#">Лофт/Минимализм</a></li>
+          <li><a href="#">Классика</a></li>
+          <li><a href="#">Прованс/Кантри </a></li>
+          <li><a href="#">Тераццо</a></li>
+          <li><a href="#">Восточный</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Имитация</h3>
+        <ul>
+          <li><a href="#">Под мрамор </a></li>
+          <li><a href="#">Под бетон </a></li>
+          <li><a href="#">Под дерево</a></li>
+          <li><a href="#">Под кожу </a></li>
+          <li><a href="#">Под кирпич</a></li>
+          <li><a href="#">Под мозаику </a></li>
+          <li><a href="#">Под штукатурку</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Имитация</h3>
+        <ul>
+          <li><a href="#">Растения</a></li>
+          <li><a href="#">Животные</a></li>
+          <li><a href="#">Люди</a></li>
+          <li><a href="#">С панно</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Цвет</h3>
+        <ul>
+          <li><a href="#">Бежевый</a></li>
+          <li><a href="#">Кремовый</a></li>
+          <li><a href="#">Коричневый</a></li>
+          <li><a href="#">Серый</a></li>
+          <li><a href="#">Графитовый</a></li>
+          <li><a href="#">Синий</a></li>
+          <li><a href="#">Голубой</a></li>
+          <li><a href="#">Бирюзовый</a></li>
+          <li><a href="#">Бежевый</a></li>
+          <li><a href="#">Бежевый</a></li>
+          <li><a href="#">Бежевый</a></li>
+          <li><a href="#">Бежевый</a></li>
+          <li><a href="#">Бежевый</a></li>
+          <li><a href="#">Бежевый</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Размер</h3>
+        <ul>
+          <li><a href="#">Мелкий</a></li>
+          <li><a href="#">Средний</a></li>
+          <li><a href="#">Крупный</a></li>
+          <li><a href="#">10×10</a></li>
+          <li><a href="#">10×20</a></li>
+          <li><a href="#">10×30</a></li>
+          <li><a href="#">25×50</a></li>
+          <li><a href="#">20×60</a></li>
+          <li><a href="#">30×60</a></li>
+          <li><a href="#">45×45</a></li>
+          <li><a href="#">60×60</a></li>
+          <li><a href="#">60×120</a></li>
+          <li><a href="#">Бежевый</a></li>
+          <li><a href="#">Бежевый</a></li>
+        </ul>
+        <button class="more several">
+          <span>Свой</span>
+        </button>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Поверхность</h3>
+        <ul>
+          <li><a href="#">Рельефная</a></li>
+          <li><a href="#">Глянцевая</a></li>
+          <li><a href="#">Противоскользящая</a></li>
+          <li><a href="#">Матовая</a></li>
+          <li><a href="#">Полированная</a></li>
+          <li><a href="#">3D-объемная</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Страна</h3>
+        <ul>
+          <li><a href="#">Германия</a></li>
+          <li><a href="#">Испания</a></li>
+          <li><a href="#">Италия</a></li>
+          <li><a href="#">Китай</a></li>
+          <li><a href="#">Польша</a></li>
+          <li><a href="#">Португалия</a></li>
+          <li><a href="#">Россия</a></li>
+          <li><a href="#"> Россия-Италия</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Форма</h3>
+        <ul>
+          <li><a href="#">Кабанчик </a></li>
+          <li><a href="#">Шестиугольник</a></li>
+          <li><a href="#">Восьмиугольник</a></li>
+          <li><a href="#">Квадрат</a></li>
+          <li><a href="#">Прямоугольник</a></li>
+          <li><a href="#">Шеврон</a></li>
+          <li><a href="#">Круг</a></li>
+          <li><a href="#"> Ромб</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+
+      <nav>
+        <h3>Элементы</h3>
+        <ul>
+          <li><a href="#">Настенная </a></li>
+          <li><a href="#">Напольная</a></li>
+          <li><a href="#">Декор, панно</a></li>
+          <li><a href="#"> Бордюр, карандаш</a></li>
+          <li><a href="#">Плинтус</a></li>
+          <li><a href="#">Мозаика</a></li>
+          <li><a href="#">Ступени</a></li>
+        </ul>
+        <button class="more">
+          <span>Еще</span>
+          <img class="lazy" src="img/header-icons/more-button.svg" alt="" />
+        </button>
+      </nav>
+    </div>
+
+    <div class="main-menu__preview">
+      <picture><source srcset="img/Marazzi.webp" type="image/webp"><img class="lazy" src="img/Marazzi.jpg" alt="img" /></picture>
+      <p>Kerama Marazzi (Керама Марацци) Абингтон /Марацци-Рус/</p>
+    </div>
+  </div>
+</div>
+
+  <div class="header-searchline">
+  <button class="header-searchline-open">
+    Произвоители
+    <img src="img/arrows/more-arrow.svg" alt="more" />
+  </button>
+  <div class="header-searchline__dropdown">
+    <p>Производители:</p>
+    <a href="#" class="header-searchline__item">0-9</a>
+    <a href="#" class="header-searchline__item">A</a>
+    <a href="#" class="header-searchline__item">B</a>
+    <a href="#" class="header-searchline__item">C</a>
+    <a href="#" class="header-searchline__item">D</a>
+    <a href="#" class="header-searchline__item">E</a>
+    <a href="#" class="header-searchline__item">F</a>
+    <a href="#" class="header-searchline__item">G</a>
+    <a href="#" class="header-searchline__item">H</a>
+    <a href="#" class="header-searchline__item">I</a>
+    <a href="#" class="header-searchline__item">J</a>
+    <a href="#" class="header-searchline__item">K</a>
+    <a href="#" class="header-searchline__item">L</a>
+    <a href="#" class="header-searchline__item">M</a>
+    <a href="#" class="header-searchline__item">N</a>
+    <a href="#" class="header-searchline__item">O</a>
+    <a href="#" class="header-searchline__item">P</a>
+    <a href="#" class="header-searchline__item">R</a>
+    <a href="#" class="header-searchline__item">S</a>
+    <a href="#" class="header-searchline__item">T</a>
+    <a href="#" class="header-searchline__item">U</a>
+    <a href="#" class="header-searchline__item">V</a>
+    <a href="#" class="header-searchline__item">W</a>
+    <a href="#" class="header-searchline__item">X</a>
+    <a href="#" class="header-searchline__item">Y</a>
+    <a href="#" class="header-searchline__item">Z</a>
+    <a href="#" class="header-searchline__item">А-Я</a>
+  </div>
+</div>
+
+</header>
+
+    <main class="main bg-white">
+  <div class="container">
+    <aside class="page-top p-sm-10">
+      <nav class="story-pages">
+        <a href="#"> <img src="img/header-icons/to-home.svg" alt="home" /> </a>
+        &nbsp;/&nbsp;
+        <a href="#">Каталог плитки</a>
+        &nbsp;/&nbsp;
+        <a href="#">Для ванной</a>
+        &nbsp;/&nbsp;
+        <a href="#">Керама Марацци</a>
+        &nbsp;/&nbsp;
+        <a href="#">Главная</a>
+      </nav>
+    </aside>
+    <h1 class="information-title">Полезная информация</h1>
+
+    <section class="catalog__block drops-block information">
+      <div class="catalog__block__head">
+        <div class="catalog__dropdown mb-sm-0">
+          <button data-list="news" class="catalog__dropdown-active">
+            Новости
+          </button>
+          <button data-list="articles">Статьи</button>
+        </div>
+      </div>
+      <!-- ./catalog__block__head -->
+      <div class="d-flex justify-between">
+        <div data-list="news" class="catalog__block__sales-list dropdown-item">
+  <article class="information-title__article">
+    <img
+      class="lazyload"
+      src="img/information/title-article__img.jpg"
+      alt="title-img"
+    />
+    <h2>Курс ценных бумаг так же органично вписывается в наши планы</h2>
+    <p class="article-date">22 марта 2022</p>
+    <p class="article-text">
+      Сторонники тоталитаризма в науке рассмотрены исключительно в разрезе
+      маркетинговых и финансовых предпосылок! И нет сомнений, что базовые
+      сценарии поведения пользователей, превозмогая сложившуюся непростую
+      экономическую ситуацию, объединены в целые кластеры...
+      <a href="#" class="article-more">Читать подробнее</a>
+      <q
+        >Сторонники тоталитаризма в науке рассмотрены исключительно в разрезе
+        маркетинговых и финансовых предпосылок! И нет сомнений, что базовые
+        сценарии поведения пользователей, превозмогая ...
+      </q>
+    </p>
+  </article>
+  <!-- ./ information-title__article-->
+  <div class="news-list">
+    <div class="article-preview">
+      <div class="news-list-item__body">
+        <div
+          class="news-list-item__body-img"
+          style="background-image: url('img/information/article1.jpg')"
+        ></div>
+        <!-- image -->
+        <p class="article-text">
+          Сторонники тоталитаризма в науке рассмотрены исключительно в разрезе
+          маркетинговых и финансовых предпосылок! И нет сомнений, что базовые
+          сценарии поведения пользователей ...
+        </p>
+        <a href="#" class="article-more">Показать всю новость</a>
+      </div>
+
+      <div class="news-list-item__title">
+        <h3>
+          Частотность поисковых запросов процветает, как ни в чем не бывало
+        </h3>
+        <p class="article-date">22 марта 2022</p>
+      </div>
+    </div>
+    <!-- ./news-list-item -->
+    <div class="article-preview">
+      <div class="news-list-item__body">
+        <div
+          class="news-list-item__body-img"
+          style="background-image: url('img/information/article1.jpg')"
+        ></div>
+        <!-- image -->
+        <p class="article-text">
+          Сторонники тоталитаризма в науке рассмотрены исключительно в разрезе
+          маркетинговых и финансовых предпосылок! И нет сомнений, что базовые
+          сценарии поведения пользователей ...
+        </p>
+        <a href="#" class="article-more">Показать всю новость</a>
+      </div>
+
+      <div class="news-list-item__title">
+        <h3>
+          Частотность поисковых запросов процветает, как ни в чем не бывало
+        </h3>
+        <p class="article-date">22 марта 2022</p>
+      </div>
+    </div>
+    <!-- ./news-list-item -->
+    <div class="article-preview">
+      <div class="news-list-item__body">
+        <div
+          class="news-list-item__body-img"
+          style="background-image: url('img/information/article1.jpg')"
+        ></div>
+        <!-- image -->
+        <p class="article-text">
+          Сторонники тоталитаризма в науке рассмотрены исключительно в разрезе
+          маркетинговых и финансовых предпосылок! И нет сомнений, что базовые
+          сценарии поведения пользователей ...
+        </p>
+        <a href="#" class="article-more">Показать всю новость</a>
+      </div>
+
+      <div class="news-list-item__title">
+        <h3>
+          Частотность поисковых запросов процветает, как ни в чем не бывало
+        </h3>
+        <p class="article-date">22 марта 2022</p>
+      </div>
+    </div>
+    <!-- ./news-list-item -->
+    <div class="article-preview">
+      <div class="news-list-item__body">
+        <div
+          class="news-list-item__body-img"
+          style="background-image: url('img/information/article1.jpg')"
+        ></div>
+        <!-- image -->
+        <p class="article-text">
+          Сторонники тоталитаризма в науке рассмотрены исключительно в разрезе
+          маркетинговых и финансовых предпосылок! И нет сомнений, что базовые
+          сценарии поведения пользователей ...
+        </p>
+        <a href="#" class="article-more">Показать всю новость</a>
+      </div>
+
+      <div class="news-list-item__title">
+        <h3>
+          Частотность поисковых запросов процветает, как ни в чем не бывало
+        </h3>
+        <p class="article-date">22 марта 2022</p>
+      </div>
+    </div>
+    <!-- ./news-list-item -->
+    <div class="article-preview">
+      <div class="news-list-item__body">
+        <div
+          class="news-list-item__body-img"
+          style="background-image: url('img/information/article1.jpg')"
+        ></div>
+        <!-- image -->
+        <p class="article-text">
+          Сторонники тоталитаризма в науке рассмотрены исключительно в разрезе
+          маркетинговых и финансовых предпосылок! И нет сомнений, что базовые
+          сценарии поведения пользователей ...
+        </p>
+        <a href="#" class="article-more">Показать всю новость</a>
+      </div>
+
+      <div class="news-list-item__title">
+        <h3>
+          Частотность поисковых запросов процветает, как ни в чем не бывало
+        </h3>
+        <p class="article-date">22 марта 2022</p>
+      </div>
+    </div>
+    <!-- ./news-list-item -->
+  </div>
+  <!-- ./news-list -->
+  <div class="information-pagination">
+    <button class="information-pagination__prev"></button>
+    <a href="#" class="information-pagination__number">1</a
+    ><a href="#" class="information-pagination__number">2</a
+    ><a href="#" class="information-pagination__number">3</a
+    ><a href="#" class="information-pagination__number">4</a
+    ><a href="#" class="information-pagination__number">5</a
+    ><a href="#" class="information-pagination__number">6</a
+    ><a href="#" class="information-pagination__number">7</a
+    ><a href="#" class="information-pagination__number">8</a
+    ><a href="#" class="information-pagination__number">9</a
+    ><a href="#" class="information-pagination__number">10</a
+    ><span class="information-pagination__number">...</span>
+    <a href="#" class="information-pagination__number">23</a>
+    <button class="information-pagination__next"></button>
+  </div>
+</div>
+<!-- ./dropdown-item -->
+
+        <!-- ./dropdown-item -->
+        <div data-list="articles" class="catalog__block__sales-list dropdown-item">
+  <article class="information-title__article">
+    <img
+      class="lazyload"
+      src="img/information/title-article__img.jpg"
+      alt="title-img"
+    />
+    <h2>Курс ценных бумаг так же органично вписывается в наши планы</h2>
+    <p class="article-date">22 марта 2022</p>
+    <p class="article-text">
+      Сторонники тоталитаризма в науке рассмотрены исключительно в разрезе
+      маркетинговых и финансовых предпосылок! И нет сомнений, что базовые
+      сценарии поведения пользователей, превозмогая сложившуюся непростую
+      экономическую ситуацию, объединены в целые кластеры...
+      <a href="#" class="article-more">Читать подробнее</a>
+    </p>
+  </article>
+  <!-- ./ information-title__article-->
+  <div class="information-grid">
+    <article class="article-preview">
+      <picture><source srcset="img/information/article1.webp" type="image/webp"><img class="lazyload" src="img/information/article1.jpg" alt="article" /></picture>
+      <h3>Частотность поисковых запросов процветает, как ни в чем не бывало</h3>
+      <p class="article-date">22 марта 2022</p>
+      <p class="article-text">
+        Сторонники тоталитаризма в науке рассмотрены исключительно в разрезе
+        маркетинговых и финансовых предпосылок! И нет сомнений, что базовые
+        сценарии поведения пользователей ...
+      </p>
+      <a href="#" class="article-more">Читать подробнее</a>
+    </article>
+    <!-- ./article-preview -->
+    <article class="article-preview">
+      <picture><source srcset="img/information/article2.webp" type="image/webp"><img class="lazyload" src="img/information/article2.jpg" alt="article" /></picture>
+      <h3>Частотность поисковых запросов процветает, как ни в чем не бывало</h3>
+      <p class="article-date">22 марта 2022</p>
+      <p class="article-text">
+        Сторонники тоталитаризма в науке рассмотрены исключительно в разрезе
+        маркетинговых и финансовых предпосылок! И нет сомнений, что базовые
+        сценарии поведения пользователей ...
+      </p>
+      <a href="#" class="article-more">Читать подробнее</a>
+    </article>
+    <!-- ./article-preview -->
+    <article class="article-preview">
+      <picture><source srcset="img/information/article3.webp" type="image/webp"><img class="lazyload" src="img/information/article3.jpg" alt="article" /></picture>
+      <h3>Частотность поисковых запросов процветает, как ни в чем не бывало</h3>
+      <p class="article-date">22 марта 2022</p>
+      <p class="article-text">
+        Сторонники тоталитаризма в науке рассмотрены исключительно в разрезе
+        маркетинговых и финансовых предпосылок! И нет сомнений, что базовые
+        сценарии поведения пользователей ...
+      </p>
+      <a href="#" class="article-more">Читать подробнее</a>
+    </article>
+    <!-- ./article-preview -->
+    <article class="article-preview">
+      <picture><source srcset="img/information/article1.webp" type="image/webp"><img class="lazyload" src="img/information/article1.jpg" alt="article" /></picture>
+      <h3>Частотность поисковых запросов процветает, как ни в чем не бывало</h3>
+      <p class="article-date">22 марта 2022</p>
+      <p class="article-text">
+        Сторонники тоталитаризма в науке рассмотрены исключительно в разрезе
+        маркетинговых и финансовых предпосылок! И нет сомнений, что базовые
+        сценарии поведения пользователей ...
+      </p>
+      <a href="#" class="article-more">Читать подробнее</a>
+    </article>
+    <!-- ./article-preview -->
+    <article class="article-preview">
+      <picture><source srcset="img/information/article2.webp" type="image/webp"><img class="lazyload" src="img/information/article2.jpg" alt="article" /></picture>
+      <h3>Частотность поисковых запросов процветает, как ни в чем не бывало</h3>
+      <p class="article-date">22 марта 2022</p>
+      <p class="article-text">
+        Сторонники тоталитаризма в науке рассмотрены исключительно в разрезе
+        маркетинговых и финансовых предпосылок! И нет сомнений, что базовые
+        сценарии поведения пользователей ...
+      </p>
+      <a href="#" class="article-more">Читать подробнее</a>
+    </article>
+    <!-- ./article-preview -->
+    <article class="article-preview">
+      <picture><source srcset="img/information/article3.webp" type="image/webp"><img class="lazyload" src="img/information/article3.jpg" alt="article" /></picture>
+      <h3>Частотность поисковых запросов процветает, как ни в чем не бывало</h3>
+      <p class="article-date">22 марта 2022</p>
+      <p class="article-text">
+        Сторонники тоталитаризма в науке рассмотрены исключительно в разрезе
+        маркетинговых и финансовых предпосылок! И нет сомнений, что базовые
+        сценарии поведения пользователей ...
+      </p>
+      <a href="#" class="article-more">Читать подробнее</a>
+    </article>
+    <!-- ./article-preview -->
+    <article class="article-preview">
+      <picture><source srcset="img/information/article1.webp" type="image/webp"><img class="lazyload" src="img/information/article1.jpg" alt="article" /></picture>
+      <h3>Частотность поисковых запросов процветает, как ни в чем не бывало</h3>
+      <p class="article-date">22 марта 2022</p>
+      <p class="article-text">
+        Сторонники тоталитаризма в науке рассмотрены исключительно в разрезе
+        маркетинговых и финансовых предпосылок! И нет сомнений, что базовые
+        сценарии поведения пользователей ...
+      </p>
+      <a href="#" class="article-more">Читать подробнее</a>
+    </article>
+    <!-- ./article-preview -->
+    <article class="article-preview">
+      <picture><source srcset="img/information/article2.webp" type="image/webp"><img class="lazyload" src="img/information/article2.jpg" alt="article" /></picture>
+      <h3>Частотность поисковых запросов процветает, как ни в чем не бывало</h3>
+      <p class="article-date">22 марта 2022</p>
+      <p class="article-text">
+        Сторонники тоталитаризма в науке рассмотрены исключительно в разрезе
+        маркетинговых и финансовых предпосылок! И нет сомнений, что базовые
+        сценарии поведения пользователей ...
+      </p>
+      <a href="#" class="article-more">Читать подробнее</a>
+    </article>
+    <!-- ./article-preview -->
+    <article class="article-preview">
+      <picture><source srcset="img/information/article3.webp" type="image/webp"><img class="lazyload" src="img/information/article3.jpg" alt="article" /></picture>
+      <h3>Частотность поисковых запросов процветает, как ни в чем не бывало</h3>
+      <p class="article-date">22 марта 2022</p>
+      <p class="article-text">
+        Сторонники тоталитаризма в науке рассмотрены исключительно в разрезе
+        маркетинговых и финансовых предпосылок! И нет сомнений, что базовые
+        сценарии поведения пользователей ...
+      </p>
+      <a href="#" class="article-more">Читать подробнее</a>
+    </article>
+    <!-- ./article-preview -->
+  </div>
+  <!-- ./information-grid -->
+
+  <div class="information-pagination">
+    <button class="information-pagination__prev"></button>
+    <a href="#" class="information-pagination__number">1</a
+    ><a href="#" class="information-pagination__number">2</a
+    ><a href="#" class="information-pagination__number">3</a
+    ><a href="#" class="information-pagination__number">4</a
+    ><a href="#" class="information-pagination__number">5</a
+    ><a href="#" class="information-pagination__number">6</a
+    ><a href="#" class="information-pagination__number">7</a
+    ><a href="#" class="information-pagination__number">8</a
+    ><a href="#" class="information-pagination__number">9</a
+    ><a href="#" class="information-pagination__number">10</a
+    ><span class="information-pagination__number">...</span>
+    <a href="#" class="information-pagination__number">23</a>
+    <button class="information-pagination__next"></button>
+  </div>
+</div>
+<!-- ./dropdown-item -->
+
+        <!-- ./dropdown-item -->
+
+        <aside class="information-sidebar">
+          <form action="" class="information-searchform">
+    <input placeholder="Поиск..." type="text" />
+    <button type="submit"></button>
+  </form>
+          <div class="information-sidebar__block">
+            <h3 class="rubrics-title">Рубрики</h3>
+
+<nav class="rubrics-list">
+  <a href="#" class="rubrics-item">стили в дизайне</a>
+  <a href="#" class="rubrics-item active">помещения специфика</a>
+  <a href="#" class="rubrics-item">Все о дизайне</a>
+  <a href="#" class="rubrics-item">Технические решения</a>
+  <a href="#" class="rubrics-item">Все о плитке</a>
+  <a href="#" class="rubrics-item">говорит и показывает практика</a>
+  <a href="#" class="rubrics-item">Обзор мебели для ванной</a>
+  <a href="#" class="rubrics-item">Обзор сантехники</a>
+  <a href="#" class="rubrics-item">обзор проекта</a>
+  <a href="#" class="rubrics-item">реализованные проекты</a>
+</nav>
+
+<div class="information-pagination small p-0">
+  <button class="information-pagination__prev"></button>
+  <a href="#" class="information-pagination__number">1</a
+  ><a href="#" class="information-pagination__number">2</a>
+  <a href="#" class="information-pagination__number">3</a>
+  <a href="#" class="information-pagination__number">4</a>
+  <a href="#" class="information-pagination__number">5</a>
+  <span class="information-pagination__number">...</span>
+  <a href="#" class="information-pagination__number">8</a>
+  <button class="information-pagination__next"></button>
+</div>
+
+          </div>
+          <div class="information-sidebar__block">
+            <h3 class="rubrics-title">Теги</h3>
+
+<div class="information-sidebar-tags">
+  <a href="#">Теu1</a>
+  <a href="#">Тег2</a>
+  <a href="#">Тег3</a>
+  <a href="#">Тег4</a>
+  <a href="#">Тег5</a>
+  <a href="#">Тег1</a>
+  <a href="#">Тег2</a>
+  <a href="#">Тег3</a>
+  <a href="#">Тег4</a>
+  <a href="#">Тег5</a>
+  <a href="#">Тег1</a>
+  <a href="#">Тег2</a>
+  <a href="#">Тег3</a>
+  <a href="#">Тег4</a>
+  <a href="#">Тег5</a>
+  <a href="#">Тег1</a>
+  <a href="#">Тег2</a>
+  <a href="#">Тег3</a>
+  <a href="#">Тег4</a>
+  <a href="#">Тег5</a>
+  <a href="#">Тег1</a>
+  <a href="#">Тег2</a>
+  <a href="#">Тег3</a>
+  <a href="#">Тег4</a>
+  <a href="#">Тег5</a>
+  <a href="#">Тег1</a>
+  <a href="#">Тег2</a>
+  <a href="#">Тег3</a>
+  <a href="#">Тег4</a>
+  <a href="#">Тег5</a>
+  <a href="#">Тег1</a>
+  <a href="#">Тег2</a>
+  <a href="#">Тег3</a>
+  <a href="#">Тег4</a>
+  <a href="#">Тег5</a>
+  <a href="#">Тег1</a>
+  <a href="#">Тег2</a>
+  <a href="#">Тег3</a>
+  <a href="#">Тег4</a>
+  <a href="#">Тег5</a>
+  <a href="#">Тег1</a>
+  <a href="#">Тег2</a>
+  <a href="#">Тег3</a>
+  <a href="#">Тег4</a>
+  <a href="#">Тег5</a>
+  <a href="#">Тег1</a>
+  <a href="#">Тег2</a>
+  <a href="#">Тег3</a>
+  <a href="#">Тег4</a>
+  <a href="#">Тег5</a>
+  <a href="#">Тег1</a>
+  <a href="#">Тег2</a>
+  <a href="#">Тег3</a>
+  <a href="#">Тег4</a>
+  <a href="#">Тег5</a>
+</div>
+
+          </div>
+          <div class="information-sidebar__block bg-grey">
+            <h3 class="rubrics-title">Последние новости</h3>
+
+<p class="article-date">22 марта 2022 21 прочитали</p>
+<p class="information-sidebar__article">
+  <q>Частотность поисковых запросов процветает, как ни в чем не бывало</q>
+  А также активно развивающиеся страны третьего мира заблокированы в рамках
+  своих собственных рациональных ограничений. В частности, современная
+  методология разработки является качественно новой ступенью приоритизации
+  разума над эмоциями. Также как высокое качество позиционных исследований
+  позволяет оценить значение системы обучения кадров, соответствующей насущным
+  потребностям.
+</p>
+<a href="#" class="article-more">Читать подробнее</a>
+
+          </div>
+        </aside>
+        <!-- ./sidebar -->
+      </div>
+    </section>
+  </div>
+</main>
+
+    <footer class="footer">
+  <nav class="footer__logo-container">
+    <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.jpg" alt="logo" class="lazy footer__logo" /></picture>
+    <a href="#">Политика конфиденциальности</a>
+    <a href="#">Разработка сайта</a>
+  </nav>
+  <nav>
+    <h3>О компании</h3>
+    <a href="#">О фирме</a>
+    <a href="#">О плитке</a>
+    <a href="#">О дизайне</a>
+    <a href="#">Услуги</a>
+    <a href="#">Новости</a>
+    <a href="#">Статьи</a>
+    <a href="#">Контакты</a>
+  </nav>
+  <nav>
+    <h3>Клиентам</h3>
+    <a href="#">Оплата</a>
+    <a href="#">Доставка</a>
+    <a href="#">Возврат</a>
+    <a href="#">Гарантии</a>
+    <a href="#">Самовывоз</a>
+    <a href="#">Бонусы</a>
+    <a href="#">3D-визуализация</a>
+  </nav>
+  <nav>
+    <h3>Товары</h3>
+    <a href="#">Плитка</a>
+    <a href="#">Мебель для ванной</a>
+    <a href="#">Сантехника</a>
+    <a href="#">Сопутствующие товары</a>
+  </nav>
+
+  <nav class="footer__contacts">
+    <div class="header-top__connection double">
+      <a href="tel:+7(495)0463199" class="header_connection-icon"
+        ><img class="lazy" src="img/header-icons/mobile.svg" alt="phone" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img
+          class="lazy"
+          src="img/header-icons/whatsapp-icon.svg"
+          alt="whatsapp" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img class="lazy" src="img/header-icons/viber.svg" alt="viber" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img class="lazy" src="img/header-icons/e-mail.svg" alt="mail"
+      /></a>
+    </div>
+    <div class="header-top__phone">
+      <img class="lazy" src="img/header-icons/call-icon.svg" alt="point" />
+      <div>
+        <a href="tel:+79250463125">+7 (925) 046 31 25</a>
+        <p>Обратная связь</p>
+      </div>
+    </div>
+
+    <div class="header-top__phone">
+      <img class="lazy" src="img/footer-icons/mail-purple.svg" alt="point" />
+      <div>
+        <a href="mailto:plitka-tut@list.ru">plitka-tut@list.ru</a>
+      </div>
+    </div>
+
+    <div class="header-top__connection">
+      <a href="tel:+7(495)0463199" class="header_connection-icon"
+        ><img
+          class="lazy"
+          src="img/footer-icons/youtube.svg"
+          alt="youtube" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img class="lazy" src="img/footer-icons/vk.svg" alt="vk" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img class="lazy" src="img/footer-icons/insta.svg" alt="insta" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img class="lazy" src="img/footer-icons/facebook.svg" alt="face"
+      /></a>
+    </div>
+  </nav>
+</footer>
+ <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20220614185955"></script> -->
+<!--Load the AJAX API-->
+<!-- <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script> -->
+<!-- jQuery and circleType -->
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220614185955"></script> -->
+<!-- <script src="js/circletype.min.js?_v=20220614185955"></script> -->
+<!-- lazy load -->
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.2/dist/lazyload.min.js?_v=20220614185955"></script>
+<!-- Swiper -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220614185955"></script>
+<script src="js/lazysizes.min.js?_v=20220614185955" async></script>
+<!-- app -->
+<script src="js/app.min.js?_v=20220614185955"></script>
+
+  </body>
+</html>
