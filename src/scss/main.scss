@@ -3533,3 +3533,387 @@
     }
   }
 }
+
+.basket {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
+
+  &-title {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #2b2c31;
+
+    &.mb-20 {
+      margin-bottom: 20px;
+    }
+  }
+  &-body {
+    width: 70%;
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
+  }
+  &-total {
+    background-color: #f8f9fd;
+    padding: 20px;
+    width: 370px;
+    height: fit-content;
+
+    @media (max-width: 1020px) {
+      margin: auto;
+      margin-top: 20px;
+    }
+    @media (max-width: 400px) {
+      width: 100%;
+    }
+    .product-cost__warning {
+      padding: 0;
+
+      p {
+        font-size: 14px;
+        line-height: 16px;
+        color: #686d77;
+      }
+    }
+    &__block {
+      margin-top: 15px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+
+      border-bottom: 1px solid #e9e9e9;
+
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: #686d77;
+        margin-bottom: 12px;
+      }
+
+      &-grid {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        // row-gap: 12px;
+        p:nth-child(odd) {
+          max-width: 162px;
+        }
+        p:nth-child(even) {
+          text-align: right;
+        }
+      }
+
+      .radio-row {
+        margin-bottom: 10px;
+        label {
+          margin-left: 8px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          color: #393b41;
+        }
+      }
+      &.cost {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        span {
+          &:first-child {
+            font-size: 14px;
+            line-height: 120%;
+            color: #686d77;
+          }
+          &:last-child {
+            font-size: 18px;
+            line-height: 120%;
+            color: #393b41;
+          }
+        }
+      }
+    }
+
+    &-submit {
+      margin-top: 20px;
+      padding: 14px 0 14px;
+      width: 100%;
+      background: #e610e3;
+
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: #ffffff;
+    }
+  }
+  &-block {
+    width: 100%;
+
+    padding-top: 20px;
+    padding-bottom: 40px;
+    width: 100%;
+    border-top: 1px solid #f2f2f2;
+    .radio-row {
+      display: flex;
+      align-items: center;
+      &__question {
+        width: 17px;
+        height: 17px;
+        background: #d7e1e8;
+        border-radius: 44px;
+        color: #393b41;
+        font-size: 14px;
+        margin-left: 14px;
+        font-weight: 700;
+        
+      }
+      label {
+        margin-left: 14px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: #393b41;
+        input {
+          position: static;
+          width: 30px;
+          border: 1px solid black;
+          opacity: 1;
+          z-index: 1;
+
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 120%;
+          color: #393b41;
+          border: 1px solid #bcc2cb;
+          border-radius: 4px;
+        }
+      }
+
+      // =====STYLES FoR RADIO=========================
+      // тили для скрытия стандартного элемента input
+      input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+      }
+      // поддельный чекбокс.
+      input + label {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+      }
+      input + label::before {
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 1px solid #adb5bd;
+        border-radius: 50%;
+        margin-right: 0.5em;
+        background-repeat: no-repeat;
+        background-position: center 2px;
+        background-size: 80% 80%;
+      }
+      // стили при нахождении в состоянии checked
+      input:checked + label::before {
+        background-image: url("../img/header-icons/checkbox.svg");
+      }
+      /* стили для активного состояния чекбокса (при нажатии на него) */
+      input:not(:disabled):active + label::before {
+        background-color: #b3d7ff;
+        border-color: #b3d7ff;
+      }
+      // =====./STYLES FoR RADIO./======================
+    }
+
+    &-title {
+      margin-bottom: 24px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 120%;
+      color: #393b41;
+    }
+    &-table {
+      width: 100%;
+      &__description {
+        margin-left: 20px;
+        @media (max-width: 840px) {
+          margin-left: 0;
+          max-width: 150px;
+        }
+      }
+      &__name {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: left;
+        color: #007bff;
+      }
+      tr {
+        &:last-child {
+          td {
+            border-bottom: none;
+          }
+        }
+      }
+      th {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        color: #393b41;
+        h2 {
+          text-align: left;
+        }
+        @media (max-width: 530px) {
+          &:nth-child(2) {
+            display: none;
+          }
+        }
+      }
+      td {
+        border-bottom: 1px solid #f2f2f2;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: center;
+        color: #393b41;
+        &:first-child {
+          display: flex;
+          align-items: flex-start;
+          text-align: left;
+          padding-left: 40px;
+
+          @media (max-width: 840px) {
+            padding-left: 10px;
+            flex-direction: column;
+            img {
+              margin-bottom: 15px;
+            }
+          }
+
+          img {
+            width: 70px;
+          }
+
+          a {
+            display: block;
+            text-decoration: none;
+            margin-bottom: 5px;
+          }
+          h3 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 14px;
+            color: #393b41;
+            text-align: left;
+          }
+          p {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: #686d77;
+            text-align: left;
+            margin-bottom: 5px;
+          }
+        }
+        &:nth-child(3) {
+          // display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          .product-cost__number {
+            width: 200px;
+            margin: auto;
+            margin-bottom: 3px;
+            display: flex;
+            justify-content: center;
+            span {
+              display: flex;
+              align-items: center;
+              margin-right: auto;
+            }
+            button {
+              width: 25px;
+              height: 25px;
+              font-size: 22px;
+            }
+            input {
+              height: 25px;
+              width: 44px;
+            }
+          }
+        }
+        @media (max-width: 650px) {
+          &:nth-child(3) {
+            .product-cost__number {
+              margin-top: 10px;
+              flex-wrap: wrap;
+              align-items: center;
+              width: auto;
+              span {
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 5px;
+              }
+            }
+          }
+        }
+        @media (max-width: 530px) {
+          &:nth-child(2) {
+            display: none;
+          }
+        }
+        @media (max-width: 420px) {
+          &:last-child {
+            width: 20px;
+          }
+        }
+      }
+    }
+    &__container {
+      // margin-top: 23px;
+      padding-left: 20px;
+      .basket-block__container {
+        margin: 10px 0;
+      }
+      p {
+        font-size: 14px;
+        line-height: 16px;
+        color: #686d77;
+        margin-top: 19px;
+      }
+      input[type="text"] {
+        width: 404px;
+        border: 1px solid #d7e1e8;
+        padding: 10px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: #393b41;
+      }
+      &.grid {
+        display: grid;
+        grid-template-columns: 6fr 1fr;
+        row-gap: 10px;
+        span {
+          font-size: 14px;
+          line-height: 120%;
+          color: #bcc2cb;
+        }
+      }
+    }
+  }
+}

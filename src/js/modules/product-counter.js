@@ -1,5 +1,4 @@
-export const activateProductCounter = () => {
-  const counterBlock = document.querySelector(".product-cost__number");
+const initCounter = (counterBlock) => {
   if (counterBlock) {
     const inputCounter = counterBlock.querySelector("input");
     const btnPlus = counterBlock.querySelector(".product-cost__number-more");
@@ -18,4 +17,9 @@ export const activateProductCounter = () => {
       if (Number(inputCounter.value) < 0) inputCounter.value = 0;
     });
   }
+};
+
+export const activateProductCounter = () => {
+  const counterBlock = document.querySelectorAll(".product-cost__number");
+  counterBlock.forEach((block) => initCounter(block));
 };
