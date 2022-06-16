@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html',{ "title": "Подтвердить заказ" })
+  <body>
+    @@include('html/header.html',{})
+    <main class="main bg-white">
+      <div class="container">
+        <aside class="page-top p-sm-10">
+          <nav class="story-pages">
+            <a href="#">
+              <img src="@img/header-icons/to-home.svg" alt="home" />
+            </a>
+            &nbsp;/&nbsp;
+            <a href="#">Главная</a>
+            &nbsp;/&nbsp;
+            <a href="#">Главная</a>
+
+            &nbsp;/&nbsp;
+            <a href="#">Корзина</a>
+            &nbsp;/&nbsp;
+            <a href="#">Подтверждение заказа</a>
+          </nav>
+        </aside>
+        <h1 class="page-title thanks">Спасибо! Ваш заказ успешно оформлен.</h1>
+        <p class="thanks-par">
+          Менеджер свяжется с вами в ближайшее время. Также мы выслали вам на
+          почту письмо с деталями заказа
+        </p>
+        <button class="basket-submit m-auto" type="submit">
+          Оформить заказ
+        </button>
+      </div>
+    </main>
+    @@include('html/footer.html',{}) @@include('html/scripts.html',{})
+  </body>
+</html>

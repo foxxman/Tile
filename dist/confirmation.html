@@ -28,7 +28,7 @@
   />
 
   <!-- переменная title из параметров include -->
-  <title>Корзина</title>
+  <title>Подтвердить заказ</title>
 
   <!-- https://www.chartjs.org/docs/latest/configuration/ -->
   <!-- https://quickchart.io/documentation/chart-js/custom-pie-doughnut-chart-labels/ -->
@@ -394,7 +394,8 @@
 </div>
 
 </header>
- <main class="main bg-white">
+
+    <main class="main bg-white">
   <div class="container">
     <aside class="page-top p-sm-10">
       <nav class="story-pages">
@@ -403,10 +404,11 @@
         <a href="#">Главная</a>
         &nbsp;/&nbsp;
         <a href="#">Главная</a>
-        &nbsp;/&nbsp;
-        <a href="#">Абингтон</a>
+
         &nbsp;/&nbsp;
         <a href="#">Корзина</a>
+        &nbsp;/&nbsp;
+        <a href="#">Подтверждение заказа</a>
       </nav>
     </aside>
     <h1 class="page-title">Оформить заказ</h1>
@@ -414,7 +416,7 @@
       <div class="basket-block pb-0">
         <h3 class="basket-title">Ваш заказ</h3>
 
-        <table class="basket-block-table">
+        <table class="basket-block-table confirmation">
           <tr>
             <th><h2 class="basket-title">Товары</h2></th>
             <th>Цена</th>
@@ -569,308 +571,60 @@
           <tr>
             <td>Вес: 248кг</td>
             <td></td>
-            <td></td>
             <td class="basket-block-title">Итого:</td>
             <td>
               <span class="basket-block-table__total"> 122 748 Р</span>
             </td>
+            <td></td>
           </tr>
         </table>
         <!-- ./TABLE -->
       </div>
       <!-- ./basket-block -->
-      <div class="basket-block">
-        <h2 class="basket-title mb-20">Выберите подарок</h2>
-        <div class="basket-presents">
-          <div class="basket-presents__item">
-            <input
-              type="radio"
-              id="presents1"
-              name="presents"
-              value="3D визуализация"
-            />
-            <label for="presents1"
-              ><span>Доставка</span>
-              <picture><source srcset="img/basket/present-img.webp" type="image/webp"><img src="img/basket/present-img.jpg" alt="present-img" /></picture>
-            </label>
-          </div>
-          <!-- ./basket-presents__item -->
-          <div class="basket-presents__item">
-            <input
-              type="radio"
-              id="presents2"
-              name="presents"
-              value="Затирка"
-            />
-            <label for="presents2"
-              ><span>Затирка</span>
-              <picture><source srcset="img/basket/present-img.webp" type="image/webp"><img src="img/basket/present-img.jpg" alt="present-img" /></picture>
-            </label>
-          </div>
-          <!-- ./basket-presents__item -->
-          <div class="basket-presents__item">
-            <input
-              type="radio"
-              id="presents3"
-              name="presents"
-              value="Смеситель"
-            />
-            <label for="presents3"
-              ><span>Смеситель</span>
-              <picture><source srcset="img/basket/present-img.webp" type="image/webp"><img src="img/basket/present-img.jpg" alt="present-img" /></picture>
-            </label>
-            <span class="basket-presents__item-cost"> 19 990 Р</span>
-          </div>
-          <!-- ./basket-presents__item -->
-          <div class="basket-presents__item">
-            <input
-              type="radio"
-              id="presents4"
-              name="presents"
-              value="Шторка для ванной"
-            />
-            <label for="presents4"
-              ><span>Шторка для ванной</span>
-              <picture><source srcset="img/basket/present-img.webp" type="image/webp"><img src="img/basket/present-img.jpg" alt="present-img" /></picture>
-            </label>
-            <span class="basket-presents__item-cost"> 19 990 Р</span>
-          </div>
-          <!-- ./basket-presents__item -->
-          <div class="basket-presents__item">
-            <input
-              type="radio"
-              id="presents5"
-              name="presents"
-              value="3D дизайн"
-            />
-            <label for="presents5"
-              ><span>3D дизайн</span>
-              <picture><source srcset="img/basket/present-img.webp" type="image/webp"><img src="img/basket/present-img.jpg" alt="present-img" /></picture>
-            </label>
-          </div>
-          <!-- ./basket-presents__item -->
-        </div>
+      <div class="confirm-row d-flex justify-around no-top-border">
+        <button type="button" class="confirm-button">Добавить товары</button>
+        <button type="button" class="confirm-button">Редактировать</button>
       </div>
-      <!-- ./basket-block -->
-
-      <div class="basket-block">
-        <h2 class="basket-title mb-20">Способ получения заказа</h2>
-        <div class="basket-block__container basket-radios">
-          <div class="basket-radios__item">
-            <input
-              type="radio"
-              name="delivery"
-              id="delivery1"
-              value="Самовывоз со склада"
-            />
-            <label for="delivery1">
-              <span class="label-text"> Самовывоз со склада </span>
-              <button type="button" class="question">?</button>
-              <span class="cost">0 руб</span>
-            </label>
-          </div>
-          <!-- ./basket-radios__item -->
-          <div class="basket-radios__item">
-            <input
-              type="radio"
-              name="delivery"
-              id="delivery2"
-              value="Самовывоз из магазина"
-            />
-            <label for="delivery2">
-              <span class="label-text"> Самовывоз из магазина </span>
-
-              <button type="button" class="question">?</button>
-              <span class="cost">500 руб</span>
-            </label>
-          </div>
-          <!-- ./basket-radios__item -->
-          <div class="basket-radios__item">
-            <input
-              type="radio"
-              name="delivery"
-              id="delivery3"
-              value="Льготная доставка"
-            />
-            <label for="delivery3">
-              <span class="label-text">
-                Льготная доставка (до 300кг с попутной машиной)
-              </span>
-
-              <button type="button" class="question">?</button>
-              <span class="cost">0 руб</span>
-            </label>
-          </div>
-          <!-- ./basket-radios__item -->
-          <div class="basket-radios__item">
-            <input
-              type="radio"
-              name="delivery"
-              id="delivery4"
-              value="Обычная доставка"
-            />
-            <label for="delivery4">
-              <span class="label-text">
-                Обычная доставка (в течении 3-х раб. дней) по Москве
-                <span class="shit">
-                  + <input name="distance" type="text" value="0" /> км за МКАД
-                </span>
-              </span>
-
-              <button type="button" class="question">?</button>
-              <span class="cost">1800 руб</span>
-            </label>
-          </div>
-          <div class="basket-radios__item for_previous_item">
-            <!-- исключительно для адаптива, другого решения не нашел -->
-            <label for="delivery4">
-              <p>
-                + <input name="distance" type="text" value="0" /> км за МКАД
-              </p>
-            </label>
-          </div>
-          <!-- ./basket-radios__item -->
-          <div class="basket-block__container basket-radios">
-            <div class="basket-radios__item">
-              <input
-                type="radio"
-                name="time"
-                id="time1"
-                value="нерабочее время"
-              />
-              <label for="time1">
-                <span class="label-text">
-                  В нерабочее время (суббота, воскресенье, с 19:00 до 06:00
-                </span>
-
-                <button type="button" class="question">?</button>
-                <span class="cost">+2000 руб</span>
-              </label>
-            </div>
-            <!-- ./basket-radios__item -->
-            <div class="basket-radios__item">
-              <input type="radio" name="time" id="time2" value="Срочная" />
-              <label for="time2">
-                <span class="label-text"> Срочная (на следующий день) </span>
-
-                <button type="button" class="question">?</button>
-                <span class="cost">+2500 руб</span>
-              </label>
-            </div>
-            <!-- ./basket-radios__item -->
-            <div class="basket-radios__item">
-              <input type="radio" name="time" id="time3" value="День в день" />
-              <label for="time3">
-                <span class="label-text">
-                  День в день (при оформлении заказа до 12:00)
-                </span>
-
-                <button type="button" class="question">?</button>
-                <span class="cost">+3500 руб</span>
-              </label>
-            </div>
-            <!-- ./basket-radios__item -->
-          </div>
-          <!-- ./basket-radios -->
-          <div class="basket-radios__item">
-            <input
-              type="radio"
-              name="delivery"
-              id="delivery5"
-              value=" не определился"
-            />
-            <label for="delivery5">
-              <span class="label-text">
-                С фомрой и датой не определился, информация будет позже
-              </span>
-
-              <button type="button" class="question">?</button>
-              <span class="cost">0 руб</span>
-            </label>
-          </div>
-          <!-- ./basket-radios__item -->
-          <div class="basket-radios__item">
-            <input
-              type="radio"
-              name="delivery"
-              id="delivery6"
-              value="До транспортной компании"
-            />
-            <label for="delivery6">
-              <span class="label-text">
-                До транспортной компании (на следующий день после прихода денег)
-              </span>
-              <button type="button" class="question">?</button>
-              <span class="cost">1800 руб</span>
-            </label>
-          </div>
-          <!-- ./basket-radios__item -->
-        </div>
-        <!-- ./basket-radios -->
+      <div class="confirm-row">
+        <p class="confirm-category name">
+          Ваши контактные данные:
+          <span>Николай Петров;</span>
+          <span>+7 919 357 77 97;</span>
+          <span>111@fas.ru</span>
+        </p>
       </div>
-      <!-- ./basket-block -->
-      <div class="basket-block">
-        <h2 class="basket-title mb-20">Услуги</h2>
-        <div class="basket-block__container basket-radios">
-          <div class="basket-radios__item">
-            <input
-              type="radio"
-              name="service"
-              id="service1"
-              value="подьем до квартиры"
-            />
-            <label for="service1">
-              <span class="label-text">
-                Требуется разгрузкка и подьем до квартиры
-              </span>
-
-              <button type="button" class="question">?</button>
-              <span class="cost">12230 руб</span>
-            </label>
-          </div>
-          <!-- ./basket-radios__item -->
-          <div class="basket-radios__item">
-            <input type="radio" name="service" id="service2" value="погрузка" />
-            <label for="service2">
-              <span class="label-text">
-                Требуется погрузка (при самовывозе из магазина)
-              </span>
-
-              <button type="button" class="question">?</button>
-              <span class="cost">3669 руб</span>
-            </label>
-          </div>
-          <!-- ./basket-radios__item -->
-          <div class="basket-radios__item">
-            <input
-              type="radio"
-              name="service"
-              id="service3"
-              value="не требуется"
-            />
-            <label for="service3">
-              <span class="label-text">
-                Дополнительных услуг не требуется
-              </span>
-
-              <button type="button" class="question">?</button>
-              <span class="cost">0 руб</span>
-            </label>
-          </div>
-          <!-- ./basket-radios__item -->
-        </div>
-        <!-- ./basket-radios -->
+      <div class="confirm-row">
+        <p class="confirm-category">
+          Способ получения заказа:
+          <span
+            >Самовывоз со склада
+            <button class="question">?</button>
+          </span>
+          <span>0 руб</span>
+        </p>
       </div>
-      <!-- ./basket-block -->
-      <div class="basket-block width-min-content">
-        <h2 class="basket-title mb-20">Ваши контактные данные</h2>
-        <div class="basket-block__container">
-          <p class="basket-input-title">Имя и Фамилия</p>
-          <input class="basket-input" name="order_name" type="text" />
-          <p class="basket-input-title">Телефон</p>
-          <input class="basket-input" name="order_phone" type="text" />
-          <p class="basket-input-title">Элетронная почта</p>
-          <input class="basket-input" name="order_mail" type="text" />
+      <div class="confirm-row">
+        <p class="confirm-category">
+          Услуги:
+          <span
+            >Дополнительных услуг не требуется
+            <button class="question">?</button>
+          </span>
+          <span>0 руб</span>
+        </p>
+      </div>
+      <div class="confirm-row">
+        <p class="confirm-category">
+          Вами выбран подарок:
+          <span
+            >Шторка для ванной
+            <button class="question">?</button>
+          </span>
+          <span>0 руб</span>
+        </p>
+      </div>
+      <div class="basket-block width-min-content no-top-border">
+        
           <button class="basket-submit" type="submit">Оформить заказ</button>
           <div class="product-cost__warning">
             <span>i</span>

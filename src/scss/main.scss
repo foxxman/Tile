@@ -3562,7 +3562,15 @@
     padding-bottom: 40px;
     width: 100%;
     border-top: 1px solid #f2f2f2;
-
+    &.no-top-border {
+      border-top: none;
+    }
+    &.width-min-content {
+      width: min-content;
+      @media (max-width: 450px) {
+        width: 100%;
+      }
+    }
     &-title {
       margin-bottom: 24px;
       font-weight: 500;
@@ -3729,6 +3737,14 @@
           &:last-child {
             width: 20px;
           }
+        }
+      }
+      &.confirmation {
+        th:last-child {
+          display: none;
+        }
+        td:last-child {
+          display: none;
         }
       }
     }
@@ -3987,5 +4003,92 @@
     text-align: center;
     margin: auto;
     display: block;
+  }
+}
+
+.confirm {
+  &-row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 850px;
+    margin-bottom: 30px;
+    width: 100%;
+    border-top: 2px solid #f2f2f2;
+    &.no-top-border {
+      border-top: none;
+    }
+  }
+  &-button {
+    width: 320px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #2b2c31;
+    padding: 15px 0;
+    border: 1px solid #2b2c31;
+    background: none;
+    margin-bottom: 5px;
+  }
+  &-category {
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 120%;
+    color: #393b41;
+    max-width: 540px;
+    width: 100%;
+    display: flex;
+
+    @media (max-width: 590px) {
+      flex-direction: column;
+    }
+
+    &.name {
+      max-width: 640px;
+
+      span {
+        margin-left: 6px;
+        &:last-child {
+          margin-left: 6px;
+        }
+      }
+    }
+    span {
+      font-size: 14px;
+      margin-left: 14px;
+      &:last-child {
+        margin-left: auto;
+      }
+    }
+    .question {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 120%;
+      color: #393b41;
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.thanks {
+  &.page-title {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &-par {
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #2b2c31;
+    max-width: 492px;
+    margin: auto;
+    margin-bottom: 40px;
   }
 }

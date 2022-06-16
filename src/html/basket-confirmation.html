@@ -1,0 +1,245 @@
+<main class="main bg-white">
+  <div class="container">
+    <aside class="page-top p-sm-10">
+      <nav class="story-pages">
+        <a href="#"> <img src="@img/header-icons/to-home.svg" alt="home" /> </a>
+        &nbsp;/&nbsp;
+        <a href="#">Главная</a>
+        &nbsp;/&nbsp;
+        <a href="#">Главная</a>
+
+        &nbsp;/&nbsp;
+        <a href="#">Корзина</a>
+        &nbsp;/&nbsp;
+        <a href="#">Подтверждение заказа</a>
+      </nav>
+    </aside>
+    <h1 class="page-title">Оформить заказ</h1>
+    <form class="basket">
+      <div class="basket-block pb-0">
+        <h3 class="basket-title">Ваш заказ</h3>
+
+        <table class="basket-block-table confirmation">
+          <tr>
+            <th><h2 class="basket-title">Товары</h2></th>
+            <th>Цена</th>
+            <th>Количество</th>
+            <th>Стоимость</th>
+            <th></th>
+          </tr>
+          <!-- ./HEAD LINE -->
+          <tr>
+            <td>
+              <img src="@img/basket/product1.jpg" alt="product1" />
+              <div class="basket-block-table__description">
+                <h3>Плитка настенная</h3>
+                <a href="#" class="basket-block-table__name">
+                  Название плитки, 20x120
+                </a>
+                <p>Абингтон (Керама Марацци)</p>
+                <p>Коробка: 1.25 кв.м (25 кг)</p>
+                <p>Плитка: 1.25 кв.м (0,75 кг)</p>
+                <p>Артикул: 0000000000</p>
+              </div>
+            </td>
+            <td>100 000 Р</td>
+            <td>
+              <div class="product-cost__number">
+                <button
+                  type="button"
+                  class="product-cost__number-less d-flex align-center justify-center"
+                >
+                  -
+                </button>
+                <input type="number" />
+                <button
+                  type="button"
+                  class="product-cost__number-more d-flex align-center justify-center"
+                >
+                  +
+                </button>
+                <span>шт.</span>
+              </div>
+              <div class="product-cost__number">
+                <button
+                  type="button"
+                  class="product-cost__number-less d-flex align-center justify-center"
+                >
+                  -
+                </button>
+                <input type="number" />
+                <button
+                  type="button"
+                  class="product-cost__number-more d-flex align-center justify-center"
+                >
+                  +
+                </button>
+                <span>кв.м.</span>
+              </div>
+              <div class="product-cost__number">
+                <button
+                  type="button"
+                  class="product-cost__number-less d-flex align-center justify-center"
+                >
+                  -
+                </button>
+                <input type="number" />
+                <button
+                  type="button"
+                  class="product-cost__number-more d-flex align-center justify-center"
+                >
+                  +
+                </button>
+                <span>коробок</span>
+              </div>
+            </td>
+            <td>100 000 Р</td>
+            <td>
+              <button type="button">
+                <img src="@img/basket/delete-btn.svg" alt="delte" />
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="@img/other/interesting-1.jpg" alt="product1" />
+              <div class="basket-block-table__description">
+                <a href="#" class="basket-block-table__name">
+                  Смеситель для раковины Lemark Plus Grace
+                </a>
+                <p>Артикул: 0000000000</p>
+              </div>
+            </td>
+            <td>3 158 Р</td>
+            <td>
+              <div class="product-cost__number">
+                <button
+                  type="button"
+                  class="product-cost__number-less d-flex align-center justify-center"
+                >
+                  -
+                </button>
+                <input type="number" />
+                <button
+                  type="button"
+                  class="product-cost__number-more d-flex align-center justify-center"
+                >
+                  +
+                </button>
+              </div>
+            </td>
+            <td>3 158 Р</td>
+            <td>
+              <button type="button">
+                <img src="@img/basket/delete-btn.svg" alt="delte" />
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="@img/other/interesting-2.jpg" alt="product1" />
+              <div class="basket-block-table__description">
+                <a href="#" class="basket-block-table__name">
+                  Ванна AM.PM Gem 170х75
+                </a>
+                <p>Артикул: 0000000000</p>
+              </div>
+            </td>
+            <td>19 990 Р</td>
+            <td>
+              <div class="product-cost__number">
+                <button
+                  type="button"
+                  class="product-cost__number-less d-flex align-center justify-center"
+                >
+                  -
+                </button>
+                <input type="number" />
+                <button
+                  type="button"
+                  class="product-cost__number-more d-flex align-center justify-center"
+                >
+                  +
+                </button>
+              </div>
+            </td>
+            <td>19 990 Р</td>
+            <td>
+              <button type="button">
+                <img src="@img/basket/delete-btn.svg" alt="delte" />
+              </button>
+            </td>
+          </tr>
+          <!-- TOTAL LINE -->
+          <tr>
+            <td>Вес: 248кг</td>
+            <td></td>
+            <td class="basket-block-title">Итого:</td>
+            <td>
+              <span class="basket-block-table__total"> 122 748 Р</span>
+            </td>
+            <td></td>
+          </tr>
+        </table>
+        <!-- ./TABLE -->
+      </div>
+      <!-- ./basket-block -->
+      <div class="confirm-row d-flex justify-around no-top-border">
+        <button type="button" class="confirm-button">Добавить товары</button>
+        <button type="button" class="confirm-button">Редактировать</button>
+      </div>
+      <div class="confirm-row">
+        <p class="confirm-category name">
+          Ваши контактные данные:
+          <span>Николай Петров;</span>
+          <span>+7 919 357 77 97;</span>
+          <span>111@fas.ru</span>
+        </p>
+      </div>
+      <div class="confirm-row">
+        <p class="confirm-category">
+          Способ получения заказа:
+          <span
+            >Самовывоз со склада
+            <button class="question">?</button>
+          </span>
+          <span>0 руб</span>
+        </p>
+      </div>
+      <div class="confirm-row">
+        <p class="confirm-category">
+          Услуги:
+          <span
+            >Дополнительных услуг не требуется
+            <button class="question">?</button>
+          </span>
+          <span>0 руб</span>
+        </p>
+      </div>
+      <div class="confirm-row">
+        <p class="confirm-category">
+          Вами выбран подарок:
+          <span
+            >Шторка для ванной
+            <button class="question">?</button>
+          </span>
+          <span>0 руб</span>
+        </p>
+      </div>
+      <div class="basket-block width-min-content no-top-border">
+        
+          <button class="basket-submit" type="submit">Оформить заказ</button>
+          <div class="product-cost__warning">
+            <span>i</span>
+            <p>
+              Минимальная сумма заказа составляет 10000₽. Докупки принимаются
+              только по заказам, размещенным ранее в нашем магазине.
+            </p>
+            <a href="#">Почему?</a>
+          </div>
+        </div>
+      </div>
+      <!-- ./basket-block -->
+    </form>
+  </div>
+</main>
