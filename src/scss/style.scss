@@ -115,6 +115,9 @@ $main-container-width: 1495px;
 .width {
   width: 100%;
 }
+.width-min-content {
+  width: min-content;
+}
 .d-flex {
   display: flex;
 }

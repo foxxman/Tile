@@ -3536,12 +3536,6 @@
 
 .basket {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-
-  @media (max-width: 1200px) {
-    flex-direction: column;
-  }
 
   &-title {
     font-family: "Raleway";
@@ -3555,104 +3549,12 @@
     &.mb-20 {
       margin-bottom: 20px;
     }
-  }
-  &-body {
-    width: 70%;
-    @media (max-width: 1200px) {
-      width: 100%;
+    @media (max-width: 450px) {
+      font-size: 18px;
+      text-align: center;
     }
   }
-  &-total {
-    background-color: #f8f9fd;
-    padding: 20px;
-    width: 370px;
-    height: fit-content;
 
-    @media (max-width: 1020px) {
-      margin: auto;
-      margin-top: 20px;
-    }
-    @media (max-width: 400px) {
-      width: 100%;
-    }
-    .product-cost__warning {
-      padding: 0;
-
-      p {
-        font-size: 14px;
-        line-height: 16px;
-        color: #686d77;
-      }
-    }
-    &__block {
-      margin-top: 15px;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 10px;
-
-      border-bottom: 1px solid #e9e9e9;
-
-      p {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 120%;
-        color: #686d77;
-        margin-bottom: 12px;
-      }
-
-      &-grid {
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        // row-gap: 12px;
-        p:nth-child(odd) {
-          max-width: 162px;
-        }
-        p:nth-child(even) {
-          text-align: right;
-        }
-      }
-
-      .radio-row {
-        margin-bottom: 10px;
-        label {
-          margin-left: 8px;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 16px;
-          color: #393b41;
-        }
-      }
-      &.cost {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        span {
-          &:first-child {
-            font-size: 14px;
-            line-height: 120%;
-            color: #686d77;
-          }
-          &:last-child {
-            font-size: 18px;
-            line-height: 120%;
-            color: #393b41;
-          }
-        }
-      }
-    }
-
-    &-submit {
-      margin-top: 20px;
-      padding: 14px 0 14px;
-      width: 100%;
-      background: #e610e3;
-
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 22px;
-      color: #ffffff;
-    }
-  }
   &-block {
     width: 100%;
 
@@ -3660,84 +3562,10 @@
     padding-bottom: 40px;
     width: 100%;
     border-top: 1px solid #f2f2f2;
-    .radio-row {
-      display: flex;
-      align-items: center;
-      &__question {
-        width: 17px;
-        height: 17px;
-        background: #d7e1e8;
-        border-radius: 44px;
-        color: #393b41;
-        font-size: 14px;
-        margin-left: 14px;
-        font-weight: 700;
-        
-      }
-      label {
-        margin-left: 14px;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 120%;
-        color: #393b41;
-        input {
-          position: static;
-          width: 30px;
-          border: 1px solid black;
-          opacity: 1;
-          z-index: 1;
-
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 120%;
-          color: #393b41;
-          border: 1px solid #bcc2cb;
-          border-radius: 4px;
-        }
-      }
-
-      // =====STYLES FoR RADIO=========================
-      // тили для скрытия стандартного элемента input
-      input {
-        position: absolute;
-        z-index: -1;
-        opacity: 0;
-      }
-      // поддельный чекбокс.
-      input + label {
-        display: inline-flex;
-        align-items: center;
-        user-select: none;
-      }
-      input + label::before {
-        content: "";
-        display: inline-block;
-        width: 24px;
-        height: 24px;
-        flex-shrink: 0;
-        flex-grow: 0;
-        border: 1px solid #adb5bd;
-        border-radius: 50%;
-        margin-right: 0.5em;
-        background-repeat: no-repeat;
-        background-position: center 2px;
-        background-size: 80% 80%;
-      }
-      // стили при нахождении в состоянии checked
-      input:checked + label::before {
-        background-image: url("../img/header-icons/checkbox.svg");
-      }
-      /* стили для активного состояния чекбокса (при нажатии на него) */
-      input:not(:disabled):active + label::before {
-        background-color: #b3d7ff;
-        border-color: #b3d7ff;
-      }
-      // =====./STYLES FoR RADIO./======================
-    }
 
     &-title {
       margin-bottom: 24px;
-      font-weight: 400;
+      font-weight: 500;
       font-size: 18px;
       line-height: 120%;
       color: #393b41;
@@ -3757,6 +3585,17 @@
         line-height: 14px;
         text-align: left;
         color: #007bff;
+      }
+      &__total {
+        font-size: 18px;
+        line-height: 120%;
+        text-align: right;
+        color: #393b41;
+        white-space: nowrap;
+
+        @media (max-width: 450px) {
+          font-size: 14px;
+        }
       }
       tr {
         &:last-child {
@@ -3778,6 +3617,9 @@
             display: none;
           }
         }
+        @media (max-width: 530px) {
+          font-size: 14px;
+        }
       }
       td {
         border-bottom: 1px solid #f2f2f2;
@@ -3788,6 +3630,13 @@
         line-height: 16px;
         text-align: center;
         color: #393b41;
+        &.basket-block-title {
+          margin-bottom: 24px;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 120%;
+          color: #393b41;
+        }
         &:first-child {
           display: flex;
           align-items: flex-start;
@@ -3834,7 +3683,7 @@
           justify-content: center;
           flex-direction: column;
           .product-cost__number {
-            width: 200px;
+            width: 166px;
             margin: auto;
             margin-bottom: 3px;
             display: flex;
@@ -3842,7 +3691,7 @@
             span {
               display: flex;
               align-items: center;
-              margin-right: auto;
+              margin-left: auto;
             }
             button {
               width: 25px;
@@ -3889,31 +3738,254 @@
       .basket-block__container {
         margin: 10px 0;
       }
-      p {
-        font-size: 14px;
+    }
+  }
+  &-presents {
+    display: flex;
+    @media (max-width: 1500px) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 500px) {
+      justify-content: space-around;
+      // flex-wrap: wrap;
+    }
+    &__item {
+      margin-right: 42px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &-cost {
+        margin-top: 15px;
+        font-size: 12px;
         line-height: 16px;
-        color: #686d77;
-        margin-top: 19px;
+        text-align: center;
+        color: #393b41;
+      }
+
+      @media (max-width: 1500px) {
+        margin-right: 12px;
+        margin-bottom: 10px;
+      }
+
+      input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+      }
+      input + label {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+        cursor: pointer;
+
+        span {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 120%;
+          color: #393b41;
+          position: absolute;
+          text-align: center;
+          width: 90%;
+          top: 35%;
+          left: 5%;
+        }
+        img {
+          height: 140px;
+        }
+      }
+      input + label::before {
+        content: "";
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 1px solid #e610e3;
+        border-radius: 0.25em;
+        // margin-right: 0.5em;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50% 50%;
+
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
+      input:checked + label::before {
+        border-color: #e610e3;
+        background-color: #e610e3;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+      }
+      /* стили при наведении курсора на checkbox */
+      input:not(:disabled):not(:checked) + label:hover::before {
+        border-color: #e610e3;
+      }
+      /* стили для активного состояния чекбокса (при нажатии на него) */
+      input:not(:disabled):active + label::before {
+        background-color: #e610e3;
+        border-color: #e610e3;
+      }
+      /* стили для чекбокса, находящегося в фокусе */
+      input:focus + label::before {
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+      }
+      /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+      input:focus:not(:checked) + label::before {
+        border-color: #e610e3;
+      }
+      /* стили для чекбокса, находящегося в состоянии disabled */
+      input:disabled + label::before {
+        background-color: #e610e3;
+      }
+    }
+  }
+  &-input {
+    padding: 10px 15px 10px 10px;
+    width: 404px;
+    border: 1px solid #d7e1e8;
+    font-size: 14px;
+    line-height: 120%;
+    color: #393b41;
+
+    margin-bottom: 20px;
+
+    @media (max-width: 500px) {
+      width: 85%;
+    }
+    &-title {
+      font-size: 12px;
+      line-height: 16px;
+      color: #686d77;
+      margin-bottom: 4px;
+    }
+  }
+  &-radios {
+    &__item {
+      display: flex;
+      width: 100%;
+      margin-bottom: 10px;
+      &.for_previous_item {
+        display: none;
+        @media (max-width: 730px) {
+          display: block;
+        }
+      }
+      .shit {
+        @media (max-width: 730px) {
+          display: none;
+        }
       }
       input[type="text"] {
-        width: 404px;
-        border: 1px solid #d7e1e8;
-        padding: 10px;
-        font-weight: 400;
+        width: 36px;
+        height: 21px;
+        margin: 0 6px;
+        border: 1px solid #bcc2cb;
+        border-radius: 4px;
+        text-align: center;
+      }
+
+      input[type="radio"] {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+      }
+      label {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+        width: 100%;
+
         font-size: 14px;
         line-height: 120%;
         color: #393b41;
-      }
-      &.grid {
-        display: grid;
-        grid-template-columns: 6fr 1fr;
-        row-gap: 10px;
-        span {
+        cursor: pointer;
+        @media (max-width: 670px) {
+          font-size: 12px;
+        }
+        .cost {
+          width: 80px;
+          margin-left: auto;
           font-size: 14px;
           line-height: 120%;
           color: #bcc2cb;
+
+          @media (max-width: 670px) {
+            font-size: 12px;
+          }
+        }
+        .question {
+          font-size: 13px;
+          font-weight: 600;
+          color: #393b41;
+          background: #d7e1e8;
+          border-radius: 50%;
+          margin-left: 14px;
+          width: 17px;
+          height: 17px;
+          @media (max-width: 670px) {
+            margin-left: 5px;
+          }
+        }
+        .label-text {
+          @media (max-width: 500px) {
+            max-width: 175px;
+          }
         }
       }
+      input[type="radio"] + label::before {
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 1px solid #bcc2cb;
+        border-radius: 50%;
+        margin-right: 14px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50% 50%;
+      }
+      input[type="radio"]:checked + label::after {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        left: 6px;
+        top: calc(50% - 6px);
+        border-radius: 50%;
+        background-color: #e610e3;
+      }
+      input[type="radio"]:checked + label {
+        .cost {
+          color: #393b41;
+        }
+      }
+      /* стили для активного состояния чекбокса (при нажатии на него) */
+      input[type="radio"]:not(:disabled):active + label::before {
+        background-color: #e610e255;
+        border-color: #e610e255;
+      }
     }
+  }
+  &-submit {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+    background: #e610e3;
+    width: 320px;
+    padding: 14px 0;
+    text-align: center;
+    margin: auto;
+    display: block;
   }
 }
