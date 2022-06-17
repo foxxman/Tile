@@ -1,4 +1,6 @@
-<div class="header-top">
+<div class="header-top short">
+  <button class="open-menu"><span></span><span></span><span></span></button>
+
   <a href="index.html" class="header-top__logo-container">
     <img class="lazy header-top__logo" src="@img/logo.jpg" alt="logo" />
   </a>
@@ -40,23 +42,20 @@
   <!-- header-top__connection -->
 
   <div class="header-top__goods">
-    <div class="header-top__cart-block">
+    <a href="basket.html" class="header-top__cart-block">
       <img class="lazy" src="@img/header-icons/shopping-cart.svg" alt="cart" />
-
-      <div>
-        <a href="basket.html"
-          >Корзина (<span class="header-top__count">0</span>)</a
-        >
-        <p>Доставка от 0 ₽</p>
-      </div>
-    </div>
-    <div class="header-top__primary-goods">
+      <span class="header-top__count">0</span>
+    </a>
+    <a href="#" class="header-top__primary-goods">
       <img class="lazy" src="@img/header-icons/like.svg" alt="liked goods" />
-
-      <div>
-        <a href="#">Избранное (<span class="header-top__count">0</span>)</a>
-      </div>
-    </div>
+      <span class="header-top__count">0</span>
+    </a>
   </div>
   <!-- header-top__primary-goods -->
+  <form action="" class="header-menuline__section">
+    <input type="text" placeholder="Поиск..." />
+    <button type="submit">
+      <img class="lazy" src="@img/header-icons/search-icon.svg" alt="search" />
+    </button>
+  </form>
 </div>

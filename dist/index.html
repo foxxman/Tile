@@ -4,27 +4,27 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20220617092829" />
-  <link rel="stylesheet" href="css/normalize.css?_v=20220617092829" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
   <link
-    href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&_v=20220617092829"
+    href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
     rel="stylesheet"
   />
   <link
-    href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&_v=20220617092829"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
     rel="stylesheet"
   />
   <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&_v=20220617092829"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic"
     rel="stylesheet"
   />
   <link
-    href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&_v=20220617092829"
+    href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
     rel="stylesheet"
   />
   <link
     rel="stylesheet"
-    href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220617092829"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
   />
 
   <!-- переменная title из параметров include -->
@@ -37,9 +37,9 @@
   <body>
     <header class="header">
   <div class="header-top">
-  <div class="header-top__logo-container">
-    <picture><source srcset="img/logo.webp" type="image/webp"><img class="lazy header-top__logo" src="img/logo.jpg" alt="logo" /></picture>
-  </div>
+  <a href="index.html" class="header-top__logo-container">
+    <img class="lazy header-top__logo" src="img/logo.jpg" alt="logo" />
+  </a>
 
   <!-- header-top__logo -->
   <div class="header-top__place">
@@ -82,7 +82,9 @@
       <img class="lazy" src="img/header-icons/shopping-cart.svg" alt="cart" />
 
       <div>
-        <a href="#">Корзина (0)</a>
+        <a href="basket.html"
+          >Корзина (<span class="header-top__count">0</span>)</a
+        >
         <p>Доставка от 0 ₽</p>
       </div>
     </div>
@@ -90,7 +92,7 @@
       <img class="lazy" src="img/header-icons/like.svg" alt="liked goods" />
 
       <div>
-        <a href="#">Избранное (0)</a>
+        <a href="#">Избранное (<span class="header-top__count">0</span>)</a>
       </div>
     </div>
   </div>
@@ -2131,7 +2133,7 @@
           <a href="#">Перейти в каталог</a>
         </div>
 
-        <picture><source srcset="img/slider-img.webp" type="image/webp"><img src="img/slider-img.png" alt="img" class="lazy slide__img" /></picture>
+        <img src="img/slider-img.png" alt="img" class="lazy slide__img" />
       </div>
       <!-- ./swiper-slide -->
 
@@ -2143,7 +2145,7 @@
           </p>
           <a href="#">Перейти в каталог</a>
         </div>
-        <picture><source srcset="img/slider-img.webp" type="image/webp"><img src="img/slider-img.jpg" alt="img" class="lazy slide__img" /></picture>
+        <img src="img/slider-img.jpg" alt="img" class="lazy slide__img" />
       </div>
       <!-- ./swiper-slide -->
 
@@ -2155,7 +2157,7 @@
           </p>
           <a href="#">Перейти в каталог</a>
         </div>
-        <picture><source srcset="img/slider-img.webp" type="image/webp"><img src="img/slider-img.jpg" alt="img" class="lazy slide__img" /></picture>
+        <img src="img/slider-img.jpg" alt="img" class="lazy slide__img" />
       </div>
       <!-- ./swiper-slide -->
     </div>
@@ -2164,7 +2166,7 @@
   </div>
   <!-- ./swiper -->
   <div class="preview">
-    <picture><source srcset="img/bathroom.webp" type="image/webp"><img src="img/bathroom.png" alt="img" class="lazy" /></picture>
+    <img src="img/bathroom.png" alt="img" class="lazy" />
     <div class="preview-description">
       <h2 class="preview-description__title"><span>ЗD</span> визуализация</h2>
       <p class="preview-description__subtitle">
@@ -2266,7 +2268,7 @@
   <div class="catalog__block__body">
     <div class="catalog__block__cell">
       <a href="#" class="catalog__block__item">
-        <picture><source srcset="img/design-catalog/design-1.webp" type="image/webp"><img class="lazy" src="img/design-catalog/design-1.jpg" alt="design" /></picture>
+        <img class="lazy" src="img/design-catalog/design-1.jpg" alt="design" />
         <p>Лофт/Минимализм</p>
       </a>
       <!-- ./catalog__block__item -->
@@ -2275,7 +2277,7 @@
 
     <div class="catalog__block__cell">
       <a href="#" class="catalog__block__item">
-        <picture><source srcset="img/design-catalog/design-2.webp" type="image/webp"><img class="lazy" src="img/design-catalog/design-2.jpg" alt="design" /></picture>
+        <img class="lazy" src="img/design-catalog/design-2.jpg" alt="design" />
         <p>Пэтчворк</p>
       </a>
       <!-- ./catalog__block__item -->
@@ -2283,7 +2285,7 @@
     <!-- ./catalog__block__cell -->
     <div class="catalog__block__cell">
       <a href="#" class="catalog__block__item">
-        <picture><source srcset="img/design-catalog/design-3.webp" type="image/webp"><img class="lazy" src="img/design-catalog/design-3.jpg" alt="design" /></picture>
+        <img class="lazy" src="img/design-catalog/design-3.jpg" alt="design" />
         <p>Тераццо</p>
       </a>
       <!-- ./catalog__block__item -->
@@ -2291,7 +2293,7 @@
     <!-- ./catalog__block__cell -->
     <div class="catalog__block__cell">
       <a href="#" class="catalog__block__item">
-        <picture><source srcset="img/design-catalog/design-4.webp" type="image/webp"><img class="lazy" src="img/design-catalog/design-4.jpg" alt="design" /></picture>
+        <img class="lazy" src="img/design-catalog/design-4.jpg" alt="design" />
         <p>Антик</p>
       </a>
       <!-- ./catalog__block__item -->
@@ -2299,7 +2301,7 @@
     <!-- ./catalog__block__cell -->
     <div class="catalog__block__cell">
       <a href="#" class="catalog__block__item">
-        <picture><source srcset="img/design-catalog/design-5.webp" type="image/webp"><img class="lazy" src="img/design-catalog/design-5.jpg" alt="design" /></picture>
+        <img class="lazy" src="img/design-catalog/design-5.jpg" alt="design" />
         <p>Ар-деко</p>
       </a>
       <!-- ./catalog__block__item -->
@@ -2307,7 +2309,7 @@
     <!-- ./catalog__block__cell -->
     <div class="catalog__block__cell">
       <a href="#" class="catalog__block__item">
-        <picture><source srcset="img/design-catalog/design-6.webp" type="image/webp"><img class="lazy" src="img/design-catalog/design-6.jpg" alt="design" /></picture>
+        <img class="lazy" src="img/design-catalog/design-6.jpg" alt="design" />
         <p>Восточный</p>
       </a>
       <!-- ./catalog__block__item -->
@@ -2315,7 +2317,7 @@
     <!-- ./catalog__block__cell -->
     <div class="catalog__block__cell">
       <a href="#" class="catalog__block__item">
-        <picture><source srcset="img/design-catalog/design-7.webp" type="image/webp"><img class="lazy" src="img/design-catalog/design-7.jpg" alt="design" /></picture>
+        <img class="lazy" src="img/design-catalog/design-7.jpg" alt="design" />
         <p>Модерн/Хайтек</p>
       </a>
       <!-- ./catalog__block__item -->
@@ -2323,7 +2325,7 @@
     <!-- ./catalog__block__cell -->
     <div class="catalog__block__cell">
       <a href="#" class="catalog__block__item">
-        <picture><source srcset="img/design-catalog/design-8.webp" type="image/webp"><img class="lazy" src="img/design-catalog/design-8.jpg" alt="design" /></picture>
+        <img class="lazy" src="img/design-catalog/design-8.jpg" alt="design" />
         <p>Прованс/Кантри</p>
       </a>
       <!-- ./catalog__block__item -->
@@ -2331,7 +2333,7 @@
     <!-- ./catalog__block__cell -->
     <div class="catalog__block__cell">
       <a href="#" class="catalog__block__item">
-        <picture><source srcset="img/design-catalog/design-9.webp" type="image/webp"><img class="lazy" src="img/design-catalog/design-9.jpg" alt="design" /></picture>
+        <img class="lazy" src="img/design-catalog/design-9.jpg" alt="design" />
         <p>Рококо</p>
       </a>
       <!-- ./catalog__block__item -->
@@ -2363,7 +2365,7 @@
     <div class="colors__block__list">
       <div class="colors__block__item">
         <div class="colors__block__item_img">
-          <picture><source srcset="img/color-icon/color-1.webp" type="image/webp"><img class="lazy" src="img/color-icon/color-1.png" alt="color" /></picture>
+          <img class="lazy" src="img/color-icon/color-1.png" alt="color" />
         </div>
         <div>
           <a href="#">вся гамма</a>
@@ -2374,7 +2376,7 @@
       <!-- ./colors__block__item -->
       <div class="colors__block__item">
         <div class="colors__block__item_img">
-          <picture><source srcset="img/color-icon/color-2.webp" type="image/webp"><img class="lazy" src="img/color-icon/color-2.png" alt="color" /></picture>
+          <img class="lazy" src="img/color-icon/color-2.png" alt="color" />
         </div>
         <div class="">
           <a href="#">вся гамма</a>
@@ -2387,7 +2389,7 @@
       <!-- ./colors__block__item -->
       <div class="colors__block__item">
         <div class="colors__block__item_img">
-          <picture><source srcset="img/color-icon/color-2.webp" type="image/webp"><img class="lazy" src="img/color-icon/color-2.png" alt="color" /></picture>
+          <img class="lazy" src="img/color-icon/color-2.png" alt="color" />
         </div>
         <div>
           <a href="#">вся гамма</a>
@@ -2400,7 +2402,7 @@
       <!-- ./colors__block__item -->
       <div class="colors__block__item">
         <div class="colors__block__item_img">
-          <picture><source srcset="img/color-icon/color-3.webp" type="image/webp"><img class="lazy" src="img/color-icon/color-3.png" alt="color" /></picture>
+          <img class="lazy" src="img/color-icon/color-3.png" alt="color" />
         </div>
         <div>
           <a href="#">вся гамма</a>
@@ -2411,7 +2413,7 @@
       <!-- ./colors__block__item -->
       <div class="colors__block__item">
         <div class="colors__block__item_img">
-          <picture><source srcset="img/color-icon/color-4.webp" type="image/webp"><img class="lazy" src="img/color-icon/color-4.png" alt="color" /></picture>
+          <img class="lazy" src="img/color-icon/color-4.png" alt="color" />
         </div>
         <div>
           <a href="#">вся гамма</a>
@@ -2423,7 +2425,7 @@
       <!-- ./colors__block__item -->
       <div class="colors__block__item">
         <div class="colors__block__item_img">
-          <picture><source srcset="img/color-icon/color-5.webp" type="image/webp"><img class="lazy" src="img/color-icon/color-5.png" alt="color" /></picture>
+          <img class="lazy" src="img/color-icon/color-5.png" alt="color" />
         </div>
         <div>
           <a href="#">вся гамма</a>
@@ -2435,7 +2437,7 @@
       <!-- ./colors__block__item -->
       <div class="colors__block__item">
         <div class="colors__block__item_img">
-          <picture><source srcset="img/color-icon/color-6.webp" type="image/webp"><img class="lazy" src="img/color-icon/color-6.png" alt="color" /></picture>
+          <img class="lazy" src="img/color-icon/color-6.png" alt="color" />
         </div>
         <div>
           <a href="#">вся гамма</a>
@@ -2447,7 +2449,7 @@
       <!-- ./colors__block__item -->
       <div class="colors__block__item">
         <div class="colors__block__item_img">
-          <picture><source srcset="img/color-icon/color-7.webp" type="image/webp"><img class="lazy" src="img/color-icon/color-7.png" alt="color" /></picture>
+          <img class="lazy" src="img/color-icon/color-7.png" alt="color" />
         </div>
         <div>
           <a href="#">мультиколор</a>
@@ -2462,7 +2464,7 @@
     </div>
   </div>
   <div class="colors__block__preview">
-    <picture><source srcset="img/colors-block-img.webp" type="image/webp"><img class="lazy" src="img/colors-block-img.jpg" alt="color-preview" /></picture>
+    <img class="lazy" src="img/colors-block-img.jpg" alt="color-preview" />
   </div>
 </section>
 <!-- ./colors -->
@@ -2475,51 +2477,51 @@
 
   <div class="catalog__block__firms">
     <div class="catalog__block__firm">
-      <picture><source srcset="img/firms/firm-1.webp" type="image/webp"><img class="lazy" src="img/firms/firm-1.png" alt="firm" /></picture>
+      <img class="lazy" src="img/firms/firm-1.png" alt="firm" />
       <p>Название производителя в 2 строки</p>
     </div>
     <div class="catalog__block__firm">
-      <picture><source srcset="img/firms/firm-2.webp" type="image/webp"><img class="lazy" src="img/firms/firm-2.png" alt="firm" /></picture>
+      <img class="lazy" src="img/firms/firm-2.png" alt="firm" />
       <p>Название производителя в 2 строки</p>
     </div>
     <div class="catalog__block__firm">
-      <picture><source srcset="img/firms/firm-3.webp" type="image/webp"><img class="lazy" src="img/firms/firm-3.png" alt="firm" /></picture>
+      <img class="lazy" src="img/firms/firm-3.png" alt="firm" />
       <p>Название производителя в 2 строки</p>
     </div>
     <div class="catalog__block__firm">
-      <picture><source srcset="img/firms/firm-4.webp" type="image/webp"><img class="lazy" src="img/firms/firm-4.png" alt="firm" /></picture>
+      <img class="lazy" src="img/firms/firm-4.png" alt="firm" />
       <p>Название производителя в 2 строки</p>
     </div>
     <div class="catalog__block__firm">
-      <picture><source srcset="img/firms/firm-5.webp" type="image/webp"><img class="lazy" src="img/firms/firm-5.png" alt="firm" /></picture>
+      <img class="lazy" src="img/firms/firm-5.png" alt="firm" />
       <p>Название производителя в 2 строки</p>
     </div>
     <div class="catalog__block__firm">
-      <picture><source srcset="img/firms/firm-6.webp" type="image/webp"><img class="lazy" src="img/firms/firm-6.png" alt="firm" /></picture>
+      <img class="lazy" src="img/firms/firm-6.png" alt="firm" />
       <p>Название производителя в 2 строки</p>
     </div>
     <div class="catalog__block__firm">
-      <picture><source srcset="img/firms/firm-7.webp" type="image/webp"><img class="lazy" src="img/firms/firm-7.png" alt="firm" /></picture>
+      <img class="lazy" src="img/firms/firm-7.png" alt="firm" />
       <p>Название производителя в 2 строки</p>
     </div>
     <div class="catalog__block__firm">
-      <picture><source srcset="img/firms/firm-8.webp" type="image/webp"><img class="lazy" src="img/firms/firm-8.png" alt="firm" /></picture>
+      <img class="lazy" src="img/firms/firm-8.png" alt="firm" />
       <p>Название производителя в 2 строки</p>
     </div>
     <div class="catalog__block__firm">
-      <picture><source srcset="img/firms/firm-9.webp" type="image/webp"><img class="lazy" src="img/firms/firm-9.png" alt="firm" /></picture>
+      <img class="lazy" src="img/firms/firm-9.png" alt="firm" />
       <p>Название производителя в 2 строки</p>
     </div>
     <div class="catalog__block__firm">
-      <picture><source srcset="img/firms/firm-10.webp" type="image/webp"><img class="lazy" src="img/firms/firm-10.png" alt="firm" /></picture>
+      <img class="lazy" src="img/firms/firm-10.png" alt="firm" />
       <p>Название производителя в 2 строки</p>
     </div>
     <div class="catalog__block__firm">
-      <picture><source srcset="img/firms/firm-11.webp" type="image/webp"><img class="lazy" src="img/firms/firm-11.png" alt="firm" /></picture>
+      <img class="lazy" src="img/firms/firm-11.png" alt="firm" />
       <p>Название производителя в 2 строки</p>
     </div>
     <div class="catalog__block__firm">
-      <picture><source srcset="img/firms/firm-12.webp" type="image/webp"><img class="lazy" src="img/firms/firm-12.png" alt="firm" /></picture>
+      <img class="lazy" src="img/firms/firm-12.png" alt="firm" />
       <p>Название производителя в 2 строки</p>
     </div>
   </div>
@@ -2577,16 +2579,16 @@
           />
           <div class="buttons-block">
             <button>
-              <picture><source srcset="img/sales/like.webp" type="image/webp"><img class="lazy" src="img/sales/like.png" alt="like" /></picture>
+              <img class="lazy" src="img/sales/like.png" alt="like" />
             </button>
             <button>
-              <picture><source srcset="img/sales/scales.webp" type="image/webp"><img class="lazy" src="img/sales/scales.png" alt="scales" /></picture>
+              <img class="lazy" src="img/sales/scales.png" alt="scales" />
             </button>
             <!-- ./right part -->
             <button>
               <p>выбрать подарок</p>
               <div>
-                <picture><source srcset="img/sales/present.webp" type="image/webp"><img class="lazy" src="img/sales/present.png" alt="present" /></picture>
+                <img class="lazy" src="img/sales/present.png" alt="present" />
               </div>
             </button>
             <button>
@@ -2602,7 +2604,7 @@
             <button>
               <p>есть видео</p>
               <div>
-                <picture><source srcset="img/sales/video.webp" type="image/webp"><img class="lazy" src="img/sales/video.png" alt="video" /></picture>
+                <img class="lazy" src="img/sales/video.png" alt="video" />
               </div>
             </button>
             <button>
@@ -2680,16 +2682,16 @@
           />
           <div class="buttons-block">
             <button>
-              <picture><source srcset="img/sales/like.webp" type="image/webp"><img class="lazy" src="img/sales/like.png" alt="like" /></picture>
+              <img class="lazy" src="img/sales/like.png" alt="like" />
             </button>
             <button>
-              <picture><source srcset="img/sales/scales.webp" type="image/webp"><img class="lazy" src="img/sales/scales.png" alt="scales" /></picture>
+              <img class="lazy" src="img/sales/scales.png" alt="scales" />
             </button>
             <!-- ./right part -->
             <button>
               <p>выбрать подарок</p>
               <div>
-                <picture><source srcset="img/sales/present.webp" type="image/webp"><img class="lazy" src="img/sales/present.png" alt="present" /></picture>
+                <img class="lazy" src="img/sales/present.png" alt="present" />
               </div>
             </button>
             <button>
@@ -2705,7 +2707,7 @@
             <button>
               <p>есть видео</p>
               <div>
-                <picture><source srcset="img/sales/video.webp" type="image/webp"><img class="lazy" src="img/sales/video.png" alt="video" /></picture>
+                <img class="lazy" src="img/sales/video.png" alt="video" />
               </div>
             </button>
             <button>
@@ -2783,16 +2785,16 @@
           />
           <div class="buttons-block">
             <button>
-              <picture><source srcset="img/sales/like.webp" type="image/webp"><img class="lazy" src="img/sales/like.png" alt="like" /></picture>
+              <img class="lazy" src="img/sales/like.png" alt="like" />
             </button>
             <button>
-              <picture><source srcset="img/sales/scales.webp" type="image/webp"><img class="lazy" src="img/sales/scales.png" alt="scales" /></picture>
+              <img class="lazy" src="img/sales/scales.png" alt="scales" />
             </button>
             <!-- ./right part -->
             <button>
               <p>выбрать подарок</p>
               <div>
-                <picture><source srcset="img/sales/present.webp" type="image/webp"><img class="lazy" src="img/sales/present.png" alt="present" /></picture>
+                <img class="lazy" src="img/sales/present.png" alt="present" />
               </div>
             </button>
             <button>
@@ -2808,7 +2810,7 @@
             <button>
               <p>есть видео</p>
               <div>
-                <picture><source srcset="img/sales/video.webp" type="image/webp"><img class="lazy" src="img/sales/video.png" alt="video" /></picture>
+                <img class="lazy" src="img/sales/video.png" alt="video" />
               </div>
             </button>
             <button>
@@ -2886,16 +2888,16 @@
           />
           <div class="buttons-block">
             <button>
-              <picture><source srcset="img/sales/like.webp" type="image/webp"><img class="lazy" src="img/sales/like.png" alt="like" /></picture>
+              <img class="lazy" src="img/sales/like.png" alt="like" />
             </button>
             <button>
-              <picture><source srcset="img/sales/scales.webp" type="image/webp"><img class="lazy" src="img/sales/scales.png" alt="scales" /></picture>
+              <img class="lazy" src="img/sales/scales.png" alt="scales" />
             </button>
             <!-- ./right part -->
             <button>
               <p>выбрать подарок</p>
               <div>
-                <picture><source srcset="img/sales/present.webp" type="image/webp"><img class="lazy" src="img/sales/present.png" alt="present" /></picture>
+                <img class="lazy" src="img/sales/present.png" alt="present" />
               </div>
             </button>
             <button>
@@ -2911,7 +2913,7 @@
             <button>
               <p>есть видео</p>
               <div>
-                <picture><source srcset="img/sales/video.webp" type="image/webp"><img class="lazy" src="img/sales/video.png" alt="video" /></picture>
+                <img class="lazy" src="img/sales/video.png" alt="video" />
               </div>
             </button>
             <button>
@@ -2974,7 +2976,7 @@
   <div class="catalog__block__service">
     <div class="catalog__block__service-item">
       <div class="preview">
-        <picture><source srcset="img/bathroom.webp" type="image/webp"><img class="lazy" src="img/bathroom.png" alt="img" /></picture>
+        <img class="lazy" src="img/bathroom.png" alt="img" />
         <div class="preview-description">
           <h2 class="preview-description__title">
             <span>ЗD</span> визуализация
@@ -2990,12 +2992,12 @@
     <!-- ./catalog__block__service-item -->
 
     <a class="catalog__block__service-item">
-      <picture><source srcset="img/photo.webp" type="image/webp"><img class="lazy" src="img/photo.png" alt="photo" /></picture>
+      <img class="lazy" src="img/photo.png" alt="photo" />
     </a>
     <!-- ./catalog__block__service-item -->
 
     <a class="catalog__block__service-item">
-      <picture><source srcset="img/photo.webp" type="image/webp"><img class="lazy" src="img/photo.png" alt="photo" /></picture>
+      <img class="lazy" src="img/photo.png" alt="photo" />
     </a>
     <!-- ./catalog__block__service-item -->
   </div>
@@ -3010,7 +3012,7 @@
     <!-- ./catalog__block__head -->
     <div class="catalog__block__news__list">
       <div class="catalog__block__news__card">
-        <picture><source srcset="img/news/news-1.webp" type="image/webp"><img class="lazy" src="img/news/news-1.jpg" alt="img" /></picture>
+        <img class="lazy" src="img/news/news-1.jpg" alt="img" />
         <p>22.07.2021</p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
@@ -3020,7 +3022,7 @@
       </div>
       <!-- ./catalog__block__news__card -->
       <div class="catalog__block__news__card">
-        <picture><source srcset="img/news/news-2.webp" type="image/webp"><img class="lazy" src="img/news/news-2.jpg" alt="img" /></picture>
+        <img class="lazy" src="img/news/news-2.jpg" alt="img" />
         <p>22.07.2021</p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
@@ -3030,7 +3032,7 @@
       </div>
       <!-- ./catalog__block__news__card -->
       <div class="catalog__block__news__card">
-        <picture><source srcset="img/news/news-3.webp" type="image/webp"><img class="lazy" src="img/news/news-3.jpg" alt="img" /></picture>
+        <img class="lazy" src="img/news/news-3.jpg" alt="img" />
         <p>22.07.2021</p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
@@ -3040,7 +3042,7 @@
       </div>
       <!-- ./catalog__block__news__card -->
       <div class="catalog__block__news__card">
-        <picture><source srcset="img/news/news-4.webp" type="image/webp"><img class="lazy" src="img/news/news-4.jpg" alt="img" /></picture>
+        <img class="lazy" src="img/news/news-4.jpg" alt="img" />
         <p>22.07.2021</p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
@@ -3159,7 +3161,7 @@
 
       <div class="review__body">
         <div class="review__person">
-          <picture><source srcset="img/review-avatar.webp" type="image/webp"><img class="lazy" src="img/review-avatar.jpg" alt="avatar" /></picture>
+          <img class="lazy" src="img/review-avatar.jpg" alt="avatar" />
           <p class="review__person__name">Анна Верещагина</p>
           <p class="review__person__work-name">Ванная с коллекцией Stones</p>
         </div>
@@ -3260,7 +3262,7 @@
 
       <div class="review__body">
         <div class="review__person">
-          <picture><source srcset="img/review-avatar.webp" type="image/webp"><img class="lazy" src="img/review-avatar.jpg" alt="avatar" /></picture>
+          <img class="lazy" src="img/review-avatar.jpg" alt="avatar" />
           <p class="review__person__name">Иван Иванов</p>
           <p class="review__person__work-name">Ванная с коллекцией Stones</p>
         </div>
@@ -3354,7 +3356,7 @@
 
       <div class="review__body">
         <div class="review__person">
-          <picture><source srcset="img/review-avatar.webp" type="image/webp"><img src="img/review-avatar.jpg" alt="avatar" class="lazy" /></picture>
+          <img src="img/review-avatar.jpg" alt="avatar" class="lazy" />
           <p class="review__person__name">Петр Петров</p>
           <p class="review__person__work-name">Ванная с коллекцией Stones</p>
         </div>
@@ -3372,7 +3374,7 @@
 
     <footer class="footer">
   <nav class="footer__logo-container">
-    <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.jpg" alt="logo" class="lazy footer__logo" /></picture>
+    <img src="img/logo.jpg" alt="logo" class="lazy footer__logo" />
     <a href="#">Политика конфиденциальности</a>
     <a href="#">Разработка сайта</a>
   </nav>
@@ -3450,22 +3452,22 @@
     </div>
   </nav>
 </footer>
- <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20220617092829"></script> -->
+ <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
 <!--Load the AJAX API-->
 <!-- <script
       type="text/javascript"
       src="https://www.gstatic.com/charts/loader.js"
     ></script> -->
 <!-- jQuery and circleType -->
-<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220617092829"></script> -->
-<!-- <script src="js/circletype.min.js?_v=20220617092829"></script> -->
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<!-- <script src="js/circletype.min.js"></script> -->
 <!-- lazy load -->
-<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.2/dist/lazyload.min.js?_v=20220617092829"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.2/dist/lazyload.min.js"></script>
 <!-- Swiper -->
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220617092829"></script>
-<script src="js/lazysizes.min.js?_v=20220617092829" async></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/lazysizes.min.js" async></script>
 <!-- app -->
-<script src="js/app.min.js?_v=20220617092829"></script>
+<script src="js/app.min.js"></script>
 
   </body>
 </html>

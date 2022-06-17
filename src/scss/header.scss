@@ -2,9 +2,21 @@
   font-size: $header-fsz;
   color: #ffffff;
   background-color: $header-bg;
-  // DELETE
-  // margin-bottom: 200px;
+  .open-menu {
+    background: #e610e3;
+    padding: 0px 18px;
 
+    span {
+      display: block;
+      width: 25px;
+      height: 2px;
+      background: white;
+      margin-bottom: 7px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
   &-top {
     display: flex;
     justify-content: space-between;
@@ -117,8 +129,84 @@
         }
       }
     }
+    &.short {
+      padding-top: 0;
+      padding-bottom: 0;
+      @media (max-width: 1290px) {
+        padding: 0;
+        .header-top__place,
+        .header-top__phone {
+          display: none;
+        }
+      }
+      @media (max-width: 1200px) {
+        .header-top__logo-container {
+          width: auto;
+          margin-bottom: 0;
+        }
+      }
+      .open-menu {
+        height: 52px;
+      }
+      .header-top__logo {
+        height: 36px;
+      }
+      .header-top__place h3,
+      .header-top__place p {
+        font-size: 12px;
+      }
+      .header-menuline__section {
+        padding-top: 0;
+        padding-bottom: 0;
+        border-right: none;
+        max-width: 260px;
+      }
+      .header-top {
+        &__cart-block {
+          position: relative;
+          text-decoration: none;
+          height: 52px;
+          align-items: center;
+          justify-content: center;
+          padding: 0 16px;
+          border: 1px solid #686d77;
+          @media (max-width: 450px) {
+            padding: 0 8px;
+          }
+        }
+        &__primary-goods {
+          position: relative;
+          text-decoration: none;
+          height: 52px;
+          align-items: center;
+          justify-content: center;
+          padding: 0 16px;
+          border: 1px solid #686d77;
+          @media (max-width: 450px) {
+            padding: 0 8px;
+          }
+        }
+      }
+      .header-top__count {
+        position: absolute;
+        right: 30%;
+        top: 18%;
+        text-decoration: none;
+        font-size: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #2b2c31;
+        font-weight: 700;
+        width: 15px;
+        height: 15px;
+        background-color: #fff;
+        border-radius: 50%;
+        text-align: center;
+      }
+    }
   }
-
+  // end -top
   &-menuline {
     display: flex;
     width: 100%;
@@ -129,22 +217,6 @@
 
     @media (max-width: 580px) {
       padding: 0;
-    }
-
-    .open-menu {
-      background: #e610e3;
-      padding: 0px 18px;
-
-      span {
-        display: block;
-        width: 25px;
-        height: 2px;
-        background: white;
-        margin-bottom: 7px;
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
     }
 
     form {
@@ -512,7 +584,6 @@
     }
   }
 }
-// ===========================================================
 .navigation-brands {
   &__wrapper {
     width: auto;

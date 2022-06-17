@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
   @@include('html/head.html',{ "title": "Подтвердить заказ" })
-  <body>
-    @@include('html/header/header.html',{})
-    <main class="main bg-white pb-100">
+  <body
+    style="
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    "
+  >
+    @@include('html/header/header-short.html',{})
+
+    <main class="main bg-white pb-100" style="flex-grow: 1">
       <div class="container">
         <aside class="page-top p-sm-10">
           <nav class="story-pages">
