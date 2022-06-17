@@ -1,0 +1,54 @@
+<nav class="header-menuline">
+  <button class="open-menu"><span></span><span></span><span></span></button>
+
+  <div class="header-menuline__section">
+    <a href="#" class="divide-menu__link" class="divide-menu__link"> Мебель </a>
+    @@include("_divide-menu.html",{})
+  </div>
+
+  <div class="header-menuline__section">
+    <a href="#" class="divide-menu__link"> Плитка для ванной </a>
+    @@include("_divide-menu.html",{})
+  </div>
+
+  <div class="header-menuline__section">
+    <a href="#" class="divide-menu__link"> Сантехника </a>
+    @@include("_divide-menu.html",{})
+  </div>
+
+  <div class="header-menuline__section">
+    <a href="#" class="divide-menu__link"> Сопутствующие товары </a>
+    @@include("_divide-menu.html",{})
+  </div>
+
+  <button class="header-menuline__section small">
+    О компании
+    <div class="dropdown-content">
+      <a href="#">О фирме</a>
+      <a href="#">О плитке</a>
+      <a href="#">О дизайне</a>
+      <a href="#">Услуги</a>
+      <a href="#">Новости</a>
+      <a href="#">Статьи</a>
+      <a href="#">Контакты</a>
+    </div></button
+  ><button class="header-menuline__section small">
+    Клиентам
+    <div class="dropdown-content">
+      <a href="#">Оплата</a>
+      <a href="#">Доставка</a>
+      <a href="#">Возврат</a>
+      <a href="#">Гарантии</a>
+      <a href="#">Самовывоз</a>
+      <a href="#">Бонусы</a>
+      <a href="#">3D-визуализация</a>
+    </div>
+  </button>
+
+  <form action="" class="header-menuline__section">
+    <input type="text" placeholder="Поиск..." />
+    <button type="submit">
+      <img class="lazy" src="@img/header-icons/search-icon.svg" alt="search" />
+    </button>
+  </form>
+</nav>

@@ -8,30 +8,20 @@ import * as zoomSlider from "./modules/zoom-slider.js";
 // import * as catalogsMenus from "./modules/catalogs-dropdown.js";
 import * as collapsesBlocks from "./modules/collapses.js";
 import * as accordions from "./modules/accordion.js";
+import * as header from "./modules/header.js";
 
 flsFunctions.isWebp();
 // LAZY LOAD====================
-document.querySelectorAll("img").forEach((img) => img.classList.add("lazy"));
+// document.querySelectorAll("img").forEach((img) => img.classList.add("lazy"));
 
 var lazyLoadInstance = new LazyLoad({
-  // Your custom settings go here
+  selector: "img", // all images
 });
 
 // HEADER MENU===============
-const openHeaderMenu = document.querySelector(".header .open-menu");
-const headerMenu = document.querySelector(".header .main-menu");
-const headerSearchlineDropdown = document.querySelector(
-  ".header-searchline__dropdown"
-);
-const openHeaderSearchline = document.querySelector(".header-searchline-open");
+header.initHeader();
 
-openHeaderMenu.addEventListener("click", () => {
-  headerMenu.classList.toggle("hidden");
-});
-openHeaderSearchline.addEventListener("click", () => {
-  headerSearchlineDropdown.classList.toggle("show");
-});
-
+// SLIDERS
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   // direction: "vertical",
@@ -59,7 +49,9 @@ catalogsMenus.activateCatalogs();
 // ================================================
 collapsesBlocks.initCollapses();
 productCounter.activateProductCounter();
+// for block with zoom lens
 zoomImg.activateZoom();
 zoomSlider.activateZoomSliders();
+
 accordions.activateAccordion();
 // ===============================

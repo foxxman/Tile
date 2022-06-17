@@ -64,6 +64,7 @@ $header-pl-sm: 10px;
 $header-pr-sm: 10px;
 // ======
 $main-container-width: 1495px;
+$purple-standart: #e610e3;
 
 @import "header";
 @import "main";
@@ -116,9 +117,11 @@ $main-container-width: 1495px;
   width: 100%;
 }
 
-
 .d-flex {
   display: flex;
+}
+.d-none {
+  display: none;
 }
 .flex-column {
   flex-direction: column;
