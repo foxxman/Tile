@@ -9,6 +9,7 @@ import * as zoomSlider from "./modules/zoom-slider.js";
 import * as collapsesBlocks from "./modules/collapses.js";
 import * as accordions from "./modules/accordion.js";
 import * as header from "./modules/header.js";
+import * as favourites from "./modules/favourites.js";
 
 flsFunctions.isWebp();
 // LAZY LOAD====================
@@ -20,17 +21,24 @@ $("img.img-svg").each(function () {
   var $img = $(this);
   var imgClass = $img.attr("class");
   var imgURL = $img.attr("src");
-  $.get(imgURL, function (data) {
+  $.get(
+    imgURL,
+    function (data) {
       var $svg = $(data).find("svg");
       if (typeof imgClass !== "undefined") {
-          $svg = $svg.attr("class", imgClass + " replaced-svg");
+        $svg = $svg.attr("class", imgClass + " replaced-svg");
       }
       $svg = $svg.removeAttr("xmlns:a");
       if (!$svg.attr("viewBox") && $svg.attr("height") && $svg.attr("width")) {
-          $svg.attr("viewBox", "0 0 " + $svg.attr("height") + " " + $svg.attr("width"))
+        $svg.attr(
+          "viewBox",
+          "0 0 " + $svg.attr("height") + " " + $svg.attr("width")
+        );
       }
       $img.replaceWith($svg);
-  }, "xml");
+    },
+    "xml"
+  );
 });
 // HEADER MENU===============
 header.initHeader();
@@ -69,3 +77,4 @@ zoomSlider.activateZoomSliders();
 
 accordions.activateAccordion();
 // ===============================
+favourites.initButtons();

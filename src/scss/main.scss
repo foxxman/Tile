@@ -189,6 +189,9 @@
 .container {
   max-width: $main-container-width;
   margin: auto;
+  section:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .title-feature {
@@ -1661,6 +1664,12 @@
       height: 0;
     }
   }
+  @media (max-width: 1380px) {
+    .collection-title {
+      margin-top: 25px;
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .collection {
@@ -1677,7 +1686,7 @@
       align-items: center;
       margin: auto;
       font-size: 16px;
-      margin-top: 33px;
+      margin-top: 15px;
       margin-bottom: 20px;
       display: none;
 
@@ -1757,6 +1766,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 15px 0;
+      padding-bottom: 0px;
     }
     .catalog__block__sale {
       &-card {
@@ -1817,6 +1827,9 @@
 
     @media (max-width: 920px) {
       text-align: center;
+    }
+    @media (max-width: 500px) {
+      text-align: left;
     }
   }
   &-vendor {
