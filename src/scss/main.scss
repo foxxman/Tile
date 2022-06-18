@@ -4257,3 +4257,119 @@
     }
   }
 }
+
+.producer-info {
+  max-width: 1265px;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "t s" "p s";
+
+  @media (max-width: 1265px) {
+    padding: 0 10px;
+    column-gap: 20px;
+  }
+  @media (max-width: 620px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page-title {
+    grid-area: t;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  &__sidebar {
+    grid-area: s;
+    max-width: 215px;
+    width: 100%;
+    @media (max-width: 620px) {
+      margin-bottom: 20px;
+    }
+  }
+  &__flag {
+    margin-right: 10px;
+  }
+  &__logo {
+    max-width: 90%;
+    margin-bottom: 28px;
+
+    &-block {
+      border: 1px solid #d7e1e8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 35px 0 25px 0;
+      margin-bottom: 20px;
+
+      p {
+        display: flex;
+        align-items: center;
+
+        font-size: 14px;
+        line-height: 120%;
+        text-decoration-line: underline;
+        color: #2b2c31;
+      }
+    }
+  }
+  &__par {
+    grid-area: p;
+
+    max-width: 840px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    color: #2b2c31;
+
+    margin-bottom: 20px;
+    &.hide-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    }
+    &-more {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      color: #e610e3;
+      margin-top: 20px;
+      display: block;
+      background: none;
+    }
+  }
+}
+.document-download {
+  text-decoration: none;
+
+  display: grid;
+  width: 215px;
+  grid-template-areas: "i n" "i s";
+  column-gap: 15px;
+  img {
+    grid-area: i;
+  }
+  &__name {
+    grid-area: n;
+    font-size: 14px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: #2b2c31;
+    display: flex;
+    align-items: flex-end;
+  }
+  &__size {
+    grid-area: s;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #686d77;
+    display: flex;
+    align-items: flex-start;
+  }
+}
