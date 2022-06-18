@@ -1,0 +1,48 @@
+<main class="main bg-white">
+  <div class="container">
+    <aside class="page-top p-sm-10">
+      <nav class="story-pages">
+        <a href="#"> <img src="@img/header-icons/to-home.svg" alt="home" /> </a>
+        &nbsp;/&nbsp;
+        <a href="#">Главная</a>
+        &nbsp;/&nbsp;
+      </nav>
+    </aside>
+    <h1 class="page-title">Ваши избранные товары</h1>
+    <section class="catalog__block drops-block pb-0">
+      <div class="catalog__block__head">
+        <div class="catalog__dropdown five-elem mb-sm-0">
+          <button data-list="001">Плитка</button>
+          <button data-list="002" class="catalog__dropdown-active">
+            Коллекции плитки товарами
+          </button>
+          <button data-list="003">Смесители</button>
+          <button data-list="004">Ванные</button>
+          <button data-list="005">Унитазы</button>
+        </div>
+      </div>
+      <!-- ./catalog__block__head -->
+      <div class="catalog__blog__subhead">
+        <button class="favourite-function">Выбрать все</button>
+        <!-- /.favourite-function -->
+        <button class="favourite-function" disabled>Удалить</button>
+        <!-- /.favourite-function -->
+        <button class="favourite-function">Скопировать ссылку</button>
+        <!-- /.favourite-function -->
+      </div>
+      <!-- /.catalog__blog__subhead -->
+
+      @@include("favourites/_tab-1.html",{})
+      <!-- ./dropdown-item -->
+      @@include("favourites/_tab-2.html",{})
+      <!-- ./dropdown-item -->
+      @@include("favourites/_tab-3.html",{})
+      <!-- ./dropdown-item -->
+      @@include("favourites/_tab-4.html",{})
+      <!-- ./dropdown-item -->
+      @@include("favourites/_tab-5.html",{})
+      <!-- ./dropdown-item -->
+    </section>
+    @@include("other/maybe-interesting.html", {})
+  </div>
+</main>
