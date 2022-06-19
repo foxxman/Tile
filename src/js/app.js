@@ -10,6 +10,7 @@ import * as collapsesBlocks from "./modules/collapses.js";
 import * as accordions from "./modules/accordion.js";
 import * as header from "./modules/header.js";
 import * as favourites from "./modules/favourites.js";
+import * as comparison from "./modules/comparison.js";
 
 flsFunctions.isWebp();
 // LAZY LOAD====================
@@ -64,6 +65,9 @@ const swiper = new Swiper(".swiper", {
     disableOnIteration: true,
   },
 });
+
+comparison.initTable();
+
 // OTHER===================================
 reviewSliders.activateReviewSliders();
 saleSliders.activateSaleSliders();

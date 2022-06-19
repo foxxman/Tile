@@ -71,6 +71,7 @@ $purple-standart: #e610e3;
 @import "footer";
 @import "zoom-slider";
 @import "map-block";
+@import "comparison";
 
 .pt-0 {
   padding-top: 0;
@@ -81,6 +82,16 @@ $purple-standart: #e610e3;
 .p-0 {
   padding: 0;
 }
+.ml-0 {
+  margin-left: 0;
+}
+.mr-0 {
+  margin-right: 0;
+}
+.m-0 {
+  margin: 0;
+}
+
 .mb-0 {
   margin-bottom: 0;
 }

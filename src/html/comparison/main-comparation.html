@@ -1,0 +1,66 @@
+<main class="main bg-white">
+  <div class="container">
+    <aside class="page-top p-sm-10">
+      <nav class="story-pages">
+        <a href="#"> <img src="@img/header-icons/to-home.svg" alt="home" /> </a>
+        &nbsp;/&nbsp;
+        <a href="#">Каталог плитки</a>
+        &nbsp;/&nbsp;
+        <a href="#">для ванной</a>
+        &nbsp;/&nbsp;
+        <a href="#">Избранное</a>
+        &nbsp;/&nbsp;
+        <a href="#">Сравнение</a>
+      </nav>
+    </aside>
+    <h1 class="page-title">Сравнение товаров</h1>
+
+    <section class="drops-block">
+      <div class="catalog__block__head five-elem">
+        <div class="catalog__dropdown five-elem mb-sm-0">
+          <button data-list="001">Плитка</button>
+          <button data-list="002" class="catalog__dropdown-active">
+            Коллекции плитки товарами
+          </button>
+          <button data-list="003">Смесители</button>
+          <button data-list="004">Ванные</button>
+          <button data-list="005">Унитазы</button>
+        </div>
+      </div>
+      <!-- ./catalog__block__head -->
+
+      <div
+        data-list="001"
+        class="catalog__block__sales-list cd-products-comparison-table dropdown-item"
+      >
+        @@include("./_comparison-table.html", {})
+      </div>
+      <div
+        data-list="002"
+        class="catalog__block__sales-list cd-products-comparison-table dropdown-item"
+      >
+        @@include("./_comparison-table.html", {})
+      </div>
+      <div
+        data-list="003"
+        class="catalog__block__sales-list cd-products-comparison-table dropdown-item"
+      >
+        @@include("./_comparison-table.html", {})
+      </div>
+      <div
+        data-list="004"
+        class="catalog__block__sales-list cd-products-comparison-table dropdown-item"
+      >
+        @@include("./_comparison-table.html", {})
+      </div>
+      <div
+        data-list="005"
+        class="catalog__block__sales-list cd-products-comparison-table dropdown-item"
+      >
+        @@include("./_comparison-table.html", {})
+      </div>
+    </section>
+  </div>
+
+  <!-- .cd-products-comparison-table -->
+</main>

@@ -784,6 +784,9 @@
         @media (max-width: 720px) {
           flex-direction: column;
           align-items: center;
+          &.cd-products-comparison-table {
+            flex-direction: row;
+          }
         }
       }
     }

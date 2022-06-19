@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20220619105439" />
+  <link rel="stylesheet" href="css/normalize.css?_v=20220619105439" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&_v=20220619105439"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&_v=20220619105439"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&_v=20220619105439"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&_v=20220619105439"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220619105439"
+  />
+
+  <!-- переменная title из параметров include -->
+  <title>Сравнение</title>
+
+  <!-- https://www.chartjs.org/docs/latest/configuration/ -->
+  <!-- https://quickchart.io/documentation/chart-js/custom-pie-doughnut-chart-labels/ -->
+</head>
+
+  <body>
+    <header class="header">
+  <div class="header-top short">
+  <button class="open-menu"><span></span><span></span><span></span></button>
+
+  <a href="index.html" class="header-top__logo-container">
+    <picture><source srcset="img/logo.webp" type="image/webp"><img class="lazy header-top__logo" src="img/logo.jpg" alt="logo" /></picture>
+  </a>
+
+  <!-- header-top__logo -->
+  <div class="header-top__place align-center">
+    <img class="lazy" src="img/header-icons/place-point.svg" alt="point" />
+
+    <div>
+      <p>на севере Москвы<br />рядом с Леруа и ОБИ</p>
+    </div>
+  </div>
+  <!-- header-top__place -->
+
+  <div class="header-top__phone">
+    <img class="lazy" src="img/header-icons/call-icon.svg" alt="point" />
+    <div>
+      <a href="tel:+79250463125">+7 (925) 046 31 25</a>
+      <p>Обратный звонок</p>
+    </div>
+  </div>
+  <!-- header-top__phone -->
+
+  <div class="header-top__connection">
+    <a href="tel:+7(495)0463199" class="header_connection-icon"
+      ><img class="lazy" src="img/header-icons/mobile.svg" alt="phone" /></a
+    ><a href="#" class="header_connection-icon"
+      ><img
+        class="lazy"
+        src="img/header-icons/whatsapp-icon.svg"
+        alt="whatsapp" /></a
+    ><a href="#" class="header_connection-icon"
+      ><img class="lazy" src="img/header-icons/viber.svg" alt="viber" /></a
+    ><a href="#" class="header_connection-icon"
+      ><img class="lazy" src="img/header-icons/e-mail.svg" alt="mail"
+    /></a>
+  </div>
+  <!-- header-top__connection -->
+
+  <div class="header-top__goods">
+    <a href="basket.html" class="header-top__cart-block">
+      <img class="lazy" src="img/header-icons/shopping-cart.svg" alt="cart" />
+      <span class="header-top__count">0</span>
+    </a>
+    <a href="#" class="header-top__primary-goods">
+      <img class="lazy" src="img/header-icons/like.svg" alt="liked goods" />
+      <span class="header-top__count">0</span>
+    </a>
+  </div>
+  <!-- header-top__primary-goods -->
+  <form action="" class="header-menuline__section">
+    <input type="text" placeholder="Поиск..." />
+    <button type="submit">
+      <img class="lazy" src="img/header-icons/search-icon.svg" alt="search" />
+    </button>
+  </form>
+</div>
+ <nav class="sidebar-menu hidden">
+  <button class="sidebar-menu__close">
+    <div></div>
+    <div></div>
+  </button>
+
+  <ul class="sidebar-menu__list">
+    <li class="sidebar-menu__item">
+      <a class="sidebar-menu__link sidebar-menu__link_toggle" href="#"
+        >Плитка</a
+      >
+      <ul class="sidebar-menu__inner">
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="#">Для ванной</a>
+        </li>
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="#">Для пола</a>
+        </li>
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="#">Мозайка/бассейны</a>
+        </li>
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="#">Ступени</a>
+        </li>
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="№"
+            >Общественные и жилые пространства</a
+          >
+        </li>
+      </ul>
+    </li>
+    <!-- ./slider-menu__item -->
+    <li class="sidebar-menu__item">
+      <a class="sidebar-menu__link sidebar-menu__link_toggle" href="#"
+        >Мебель для ванной</a
+      >
+      <ul class="sidebar-menu__inner">
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="#">Для ванной</a>
+        </li>
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="#">Для пола</a>
+        </li>
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="#">Мозайка/бассейны</a>
+        </li>
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="#">Ступени</a>
+        </li>
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="№"
+            >Общественные и жилые пространства</a
+          >
+        </li>
+      </ul>
+    </li>
+    <!-- ./slider-menu__item -->
+    <li class="sidebar-menu__item">
+      <a class="sidebar-menu__link sidebar-menu__link_toggle" href="#"
+        >Сантехника</a
+      >
+      <ul class="sidebar-menu__inner">
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="#">Для ванной</a>
+        </li>
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="#">Для пола</a>
+        </li>
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="#">Мозайка/бассейны</a>
+        </li>
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="#">Ступени</a>
+        </li>
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="№"
+            >Общественные и жилые пространства</a
+          >
+        </li>
+      </ul>
+    </li>
+    <!-- ./slider-menu__item -->
+    <li class="sidebar-menu__item">
+      <a class="sidebar-menu__link sidebar-menu__link_toggle" href="#"
+        >Сопутствующие товары</a
+      >
+      <ul class="sidebar-menu__inner">
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="#">Для ванной</a>
+        </li>
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="#">Для пола</a>
+        </li>
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="#">Мозайка/бассейны</a>
+        </li>
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="#">Ступени</a>
+        </li>
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="№"
+            >Общественные и жилые пространства</a
+          >
+        </li>
+      </ul>
+    </li>
+    <!-- ./slider-menu__item -->
+    <li class="sidebar-menu__item">
+      <a class="sidebar-menu__link sidebar-menu__link_toggle" href="#"
+        >производители</a
+      >
+      <div class="sidebar-menu__inner">
+        <div class="sidebar-menu__production">
+          <a href="#" class="sidebar-menu__production__item">A</a>
+          <a href="#" class="sidebar-menu__production__item">B</a>
+          <a href="#" class="sidebar-menu__production__item">C</a>
+          <a href="#" class="sidebar-menu__production__item">D</a>
+          <a href="#" class="sidebar-menu__production__item">E</a>
+          <a href="#" class="sidebar-menu__production__item">F</a>
+          <a href="#" class="sidebar-menu__production__item">G</a>
+          <a href="#" class="sidebar-menu__production__item">H</a>
+          <a href="#" class="sidebar-menu__production__item">I</a>
+          <a href="#" class="sidebar-menu__production__item">J</a>
+          <a href="#" class="sidebar-menu__production__item">K</a>
+          <a href="#" class="sidebar-menu__production__item">L</a>
+          <a href="#" class="sidebar-menu__production__item">M</a>
+          <a href="#" class="sidebar-menu__production__item">N</a>
+          <a href="#" class="sidebar-menu__production__item">O</a>
+          <a href="#" class="sidebar-menu__production__item">P</a>
+          <a href="#" class="sidebar-menu__production__item">R</a>
+          <a href="#" class="sidebar-menu__production__item">S</a>
+          <a href="#" class="sidebar-menu__production__item">T</a>
+          <a href="#" class="sidebar-menu__production__item">U</a>
+          <a href="#" class="sidebar-menu__production__item">V</a>
+          <a href="#" class="sidebar-menu__production__item">W</a>
+          <a href="#" class="sidebar-menu__production__item">X</a>
+          <a href="#" class="sidebar-menu__production__item">Y</a>
+          <a href="#" class="sidebar-menu__production__item">Z</a>
+          <a href="#" class="sidebar-menu__production__item">А-Я</a>
+        </div>
+      </div>
+    </li>
+    <!-- ./slider-menu__item -->
+    <li class="sidebar-menu__item">
+      <a class="sidebar-menu__link" href="#">О компании</a>
+    </li>
+    <!-- ./slider-menu__item -->
+    <li class="sidebar-menu__item">
+      <a class="sidebar-menu__link" href="#">Клиентам</a>
+    </li>
+    <!-- ./slider-menu__item -->
+    <li class="sidebar-menu__item">
+      <a class="sidebar-menu__link" href="#">О нас</a>
+    </li>
+    <!-- ./slider-menu__item -->
+    <li class="sidebar-menu__item">
+      <a class="sidebar-menu__link" href="#">Новости и статьи</a>
+    </li>
+  </ul>
+</nav>
+
+</header>
+
+    <main class="main bg-white">
+  <div class="container">
+    <aside class="page-top p-sm-10">
+      <nav class="story-pages">
+        <a href="#"> <img src="img/header-icons/to-home.svg" alt="home" /> </a>
+        &nbsp;/&nbsp;
+        <a href="#">Каталог плитки</a>
+        &nbsp;/&nbsp;
+        <a href="#">для ванной</a>
+        &nbsp;/&nbsp;
+        <a href="#">Избранное</a>
+        &nbsp;/&nbsp;
+        <a href="#">Сравнение</a>
+      </nav>
+    </aside>
+    <h1 class="page-title">Сравнение товаров</h1>
+
+    <section class="drops-block">
+      <div class="catalog__block__head five-elem">
+        <div class="catalog__dropdown five-elem mb-sm-0">
+          <button data-list="001">Плитка</button>
+          <button data-list="002" class="catalog__dropdown-active">
+            Коллекции плитки товарами
+          </button>
+          <button data-list="003">Смесители</button>
+          <button data-list="004">Ванные</button>
+          <button data-list="005">Унитазы</button>
+        </div>
+      </div>
+      <!-- ./catalog__block__head -->
+
+      <div
+        data-list="001"
+        class="catalog__block__sales-list cd-products-comparison-table dropdown-item"
+      >
+        <div class="cd-products-table">
+  <div class="features">
+    <div class="top-info">Характеристики</div>
+    <ul class="cd-features-list">
+      <li>Производитель</li>
+      <li>Страна</li>
+      <li>Применение</li>
+      <li>Поверхность</li>
+      <li>Имитация</li>
+      <li>Стиль</li>
+      <li>Цвет</li>
+      <li>Форма</li>
+      <li>Назначение</li>
+      <li>Элемент</li>
+      <li>Тема дизайна</li>
+      <li>Коллекция</li>
+      <li>Товар</li>
+      <li>Назначение</li>
+      <li>Размер</li>
+    </ul>
+  </div>
+  <!-- .features -->
+
+  <div class="cd-products-wrapper">
+    <ul class="cd-products-columns">
+      <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+ <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+
+      <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+ <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+
+      <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+ <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+
+      <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+
+    </ul>
+    <!-- .cd-products-columns -->
+  </div>
+  <!-- .cd-products-wrapper -->
+
+  <ul class="cd-table-navigation">
+    <li><a href="#0" class="prev inactive">Prev</a></li>
+    <li><a href="#0" class="next">Next</a></li>
+  </ul>
+</div>
+<!-- .cd-products-table -->
+
+      </div>
+      <div
+        data-list="002"
+        class="catalog__block__sales-list cd-products-comparison-table dropdown-item"
+      >
+        <div class="cd-products-table">
+  <div class="features">
+    <div class="top-info">Характеристики</div>
+    <ul class="cd-features-list">
+      <li>Производитель</li>
+      <li>Страна</li>
+      <li>Применение</li>
+      <li>Поверхность</li>
+      <li>Имитация</li>
+      <li>Стиль</li>
+      <li>Цвет</li>
+      <li>Форма</li>
+      <li>Назначение</li>
+      <li>Элемент</li>
+      <li>Тема дизайна</li>
+      <li>Коллекция</li>
+      <li>Товар</li>
+      <li>Назначение</li>
+      <li>Размер</li>
+    </ul>
+  </div>
+  <!-- .features -->
+
+  <div class="cd-products-wrapper">
+    <ul class="cd-products-columns">
+      <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+ <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+
+      <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+ <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+
+      <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+ <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+
+      <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+
+    </ul>
+    <!-- .cd-products-columns -->
+  </div>
+  <!-- .cd-products-wrapper -->
+
+  <ul class="cd-table-navigation">
+    <li><a href="#0" class="prev inactive">Prev</a></li>
+    <li><a href="#0" class="next">Next</a></li>
+  </ul>
+</div>
+<!-- .cd-products-table -->
+
+      </div>
+      <div
+        data-list="003"
+        class="catalog__block__sales-list cd-products-comparison-table dropdown-item"
+      >
+        <div class="cd-products-table">
+  <div class="features">
+    <div class="top-info">Характеристики</div>
+    <ul class="cd-features-list">
+      <li>Производитель</li>
+      <li>Страна</li>
+      <li>Применение</li>
+      <li>Поверхность</li>
+      <li>Имитация</li>
+      <li>Стиль</li>
+      <li>Цвет</li>
+      <li>Форма</li>
+      <li>Назначение</li>
+      <li>Элемент</li>
+      <li>Тема дизайна</li>
+      <li>Коллекция</li>
+      <li>Товар</li>
+      <li>Назначение</li>
+      <li>Размер</li>
+    </ul>
+  </div>
+  <!-- .features -->
+
+  <div class="cd-products-wrapper">
+    <ul class="cd-products-columns">
+      <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+ <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+
+      <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+ <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+
+      <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+ <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+
+      <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+
+    </ul>
+    <!-- .cd-products-columns -->
+  </div>
+  <!-- .cd-products-wrapper -->
+
+  <ul class="cd-table-navigation">
+    <li><a href="#0" class="prev inactive">Prev</a></li>
+    <li><a href="#0" class="next">Next</a></li>
+  </ul>
+</div>
+<!-- .cd-products-table -->
+
+      </div>
+      <div
+        data-list="004"
+        class="catalog__block__sales-list cd-products-comparison-table dropdown-item"
+      >
+        <div class="cd-products-table">
+  <div class="features">
+    <div class="top-info">Характеристики</div>
+    <ul class="cd-features-list">
+      <li>Производитель</li>
+      <li>Страна</li>
+      <li>Применение</li>
+      <li>Поверхность</li>
+      <li>Имитация</li>
+      <li>Стиль</li>
+      <li>Цвет</li>
+      <li>Форма</li>
+      <li>Назначение</li>
+      <li>Элемент</li>
+      <li>Тема дизайна</li>
+      <li>Коллекция</li>
+      <li>Товар</li>
+      <li>Назначение</li>
+      <li>Размер</li>
+    </ul>
+  </div>
+  <!-- .features -->
+
+  <div class="cd-products-wrapper">
+    <ul class="cd-products-columns">
+      <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+ <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+
+      <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+ <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+
+      <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+ <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+
+      <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+
+    </ul>
+    <!-- .cd-products-columns -->
+  </div>
+  <!-- .cd-products-wrapper -->
+
+  <ul class="cd-table-navigation">
+    <li><a href="#0" class="prev inactive">Prev</a></li>
+    <li><a href="#0" class="next">Next</a></li>
+  </ul>
+</div>
+<!-- .cd-products-table -->
+
+      </div>
+      <div
+        data-list="005"
+        class="catalog__block__sales-list cd-products-comparison-table dropdown-item"
+      >
+        <div class="cd-products-table">
+  <div class="features">
+    <div class="top-info">Характеристики</div>
+    <ul class="cd-features-list">
+      <li>Производитель</li>
+      <li>Страна</li>
+      <li>Применение</li>
+      <li>Поверхность</li>
+      <li>Имитация</li>
+      <li>Стиль</li>
+      <li>Цвет</li>
+      <li>Форма</li>
+      <li>Назначение</li>
+      <li>Элемент</li>
+      <li>Тема дизайна</li>
+      <li>Коллекция</li>
+      <li>Товар</li>
+      <li>Назначение</li>
+      <li>Размер</li>
+    </ul>
+  </div>
+  <!-- .features -->
+
+  <div class="cd-products-wrapper">
+    <ul class="cd-products-columns">
+      <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+ <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+
+      <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+ <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+
+      <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+ <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+
+      <li class="product">
+  <div class="top-info">
+    
+    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
+    <div class="top-info__name">
+      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
+    </div>
+    <div class="top-info__cost">
+      <span>от 100 000 ₽/м2</span>
+    </div>
+    <button class="top-info__tocart">В корзину</button>
+  </div>
+  <!-- ./top-info -->
+
+  <ul class="cd-features-list">
+    <li>Керама Марацци</li>
+    <li>Россия</li>
+    <li>Керамогранит</li>
+    <li>Матовая</li>
+    <li>Под мрамор</li>
+    <li>Античный</li>
+    <li>Черный, белый, красный</li>
+    <li>Прямоугольник</li>
+    <li>для ванной, для кухни</li>
+    <li>настенная, бордюр</li>
+    <li>флора</li>
+    <li>Абингтон</li>
+    <li>наименование товара</li>
+    <li>Керамогранит</li>
+    <li>20x120</li>
+  </ul>
+</li>
+<!-- .product -->
+
+    </ul>
+    <!-- .cd-products-columns -->
+  </div>
+  <!-- .cd-products-wrapper -->
+
+  <ul class="cd-table-navigation">
+    <li><a href="#0" class="prev inactive">Prev</a></li>
+    <li><a href="#0" class="next">Next</a></li>
+  </ul>
+</div>
+<!-- .cd-products-table -->
+
+      </div>
+    </section>
+  </div>
+
+  <!-- .cd-products-comparison-table -->
+</main>
+
+    <footer class="footer">
+  <nav class="footer__logo-container">
+    <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.jpg" alt="logo" class="lazy footer__logo" /></picture>
+    <a href="#">Политика конфиденциальности</a>
+    <a href="#">Разработка сайта</a>
+  </nav>
+  <nav>
+    <h3>О компании</h3>
+    <a href="#">О фирме</a>
+    <a href="#">О плитке</a>
+    <a href="#">О дизайне</a>
+    <a href="#">Услуги</a>
+    <a href="#">Новости</a>
+    <a href="#">Статьи</a>
+    <a href="#">Контакты</a>
+  </nav>
+  <nav>
+    <h3>Клиентам</h3>
+    <a href="#">Оплата</a>
+    <a href="#">Доставка</a>
+    <a href="#">Возврат</a>
+    <a href="#">Гарантии</a>
+    <a href="#">Самовывоз</a>
+    <a href="#">Бонусы</a>
+    <a href="#">3D-визуализация</a>
+  </nav>
+  <nav>
+    <h3>Товары</h3>
+    <a href="#">Плитка</a>
+    <a href="#">Мебель для ванной</a>
+    <a href="#">Сантехника</a>
+    <a href="#">Сопутствующие товары</a>
+  </nav>
+
+  <nav class="footer__contacts">
+    <div class="header-top__connection double">
+      <a href="tel:+7(495)0463199" class="header_connection-icon"
+        ><img class="lazy" src="img/header-icons/mobile.svg" alt="phone" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img
+          class="lazy"
+          src="img/header-icons/whatsapp-icon.svg"
+          alt="whatsapp" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img class="lazy" src="img/header-icons/viber.svg" alt="viber" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img class="lazy" src="img/header-icons/e-mail.svg" alt="mail"
+      /></a>
+    </div>
+    <div class="header-top__phone">
+      <img class="lazy" src="img/header-icons/call-icon.svg" alt="point" />
+      <div>
+        <a href="tel:+79250463125">+7 (925) 046 31 25</a>
+        <p>Обратная связь</p>
+      </div>
+    </div>
+
+    <div class="header-top__phone">
+      <img class="lazy" src="img/footer-icons/mail-purple.svg" alt="point" />
+      <div>
+        <a href="mailto:plitka-tut@list.ru">plitka-tut@list.ru</a>
+      </div>
+    </div>
+
+    <div class="header-top__connection">
+      <a href="tel:+7(495)0463199" class="header_connection-icon"
+        ><img
+          class="lazy"
+          src="img/footer-icons/youtube.svg"
+          alt="youtube" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img class="lazy" src="img/footer-icons/vk.svg" alt="vk" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img class="lazy" src="img/footer-icons/insta.svg" alt="insta" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img class="lazy" src="img/footer-icons/facebook.svg" alt="face"
+      /></a>
+    </div>
+  </nav>
+</footer>
+ <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20220619105439"></script> -->
+<!--Load the AJAX API-->
+<!-- <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script> -->
+<!-- jQuery and circleType -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220619105439"></script>
+<!-- <script src="js/circletype.min.js?_v=20220619105439"></script> -->
+<!-- lazy load -->
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.2/dist/lazyload.min.js?_v=20220619105439"></script>
+<!-- Swiper -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220619105439"></script>
+<script src="js/lazysizes.min.js?_v=20220619105439" async></script>
+<!-- app -->
+<script src="js/app.min.js?_v=20220619105439"></script>
+
+
+    <!-- <script src="js/comparison.js?_v=20220619105439"></script> -->
+  </body>
+</html>
+<!-- https://ruseller.com/lessons.php?rub=2&id=2757 -->
