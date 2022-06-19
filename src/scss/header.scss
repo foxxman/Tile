@@ -29,6 +29,7 @@
       &__logo-container {
         width: 100%;
         margin-bottom: 5px;
+        color: white;
       }
     }
     @media (max-width: 580px) {
@@ -745,5 +746,89 @@
     letter-spacing: 0.01em;
 
     color: #b7becc;
+  }
+}
+
+.logo {
+  display: grid;
+  grid-template-areas: "l n1" "l n2";
+  column-gap: 8px;
+  width: fit-content;
+  margin: auto;
+
+  span {
+    color: white;
+  }
+
+  &-circle {
+    grid-area: l;
+    position: relative;
+    padding-top: 8px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid $purple-standart;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+
+      width: 31px;
+      height: 31px;
+      left: 2%;
+      top: 16%;
+      background: $purple-standart;
+      border-radius: 50%;
+    }
+    span {
+      position: relative;
+      z-index: 2;
+      font-family: "Raleway";
+      font-weight: 700;
+      font-size: 7px;
+      letter-spacing: 0.015em;
+      &:nth-child(2) {
+        font-size: 4px;
+      }
+      &:nth-child(3) {
+        font-size: 7px;
+        margin-right: 4px;
+        margin-left: auto;
+      }
+    }
+  }
+  &__name {
+    display: flex;
+    font-family: "Raleway";
+    font-feature-settings: "pnum" on, "lnum" on;
+    letter-spacing: 0.015em;
+
+    &:first-child {
+      grid-area: n1;
+      align-items: flex-end;
+      font-weight: 700;
+      font-size: 20px;
+
+      @media (max-width: 420px) {
+        font-size: 13px;
+      }
+    }
+    &:nth-child(2) {
+      align-items: flex-start;
+      grid-area: n2;
+      font-size: 13px;
+
+      @media (max-width: 420px) {
+        font-size: 8px;
+      }
+    }
+    span {
+      color: $purple-standart;
+    }
   }
 }
