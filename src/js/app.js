@@ -13,6 +13,7 @@ import * as favourites from "./modules/favourites.js";
 import * as comparison from "./modules/comparison.js";
 import * as yaMap from "./modules/ya-map.js";
 import * as custScroll from "./modules/custom-scrolling.js";
+import * as imgComp from "./modules/img-comparison.js";
 
 $(document).ready(function () {
   new WOW().init();
@@ -69,6 +70,7 @@ const swiper = new Swiper(".swiper", {
   // Optional parameters
   // direction: "vertical",
   loop: true,
+  allowTouchMove: true,
   navigation: {
     nextEl: ".swiper-next",
     prevEl: ".swiper-prev",
@@ -83,6 +85,12 @@ const swiper = new Swiper(".swiper", {
   autoplay: {
     delay: 4000,
     disableOnIteration: true,
+  },
+  breakpoints: {
+    // when window width is >= 480px
+    500: {
+      allowTouchMove: false,
+    },
   },
 });
 
@@ -135,3 +143,4 @@ accordions.activateAccordion();
 // ===============================
 favourites.initButtons(); //кнопки добавления в избранное
 yaMap.initMap(); //яндекс карта
+imgComp.initComparisons(); //сравнение двух картинок с ползунком

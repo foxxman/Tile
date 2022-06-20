@@ -91,6 +91,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
         &::after {
           content: url("../img/arrows/review__changer-arrow.png");
         }
@@ -4539,5 +4540,105 @@ button.btn-animate-white {
       left: -10%;
       width: 130%;
     }
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.img-comp {
+  &-container {
+    width: fit-content;
+    margin: auto;
+    margin-top: 27px;
+
+    position: relative;
+    height: 629px; /*should be the same height as the images*/
+  }
+  &-img {
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    img {
+      max-width: none;
+      display: block;
+      vertical-align: middle;
+      width: 930px;
+      height: 629px;
+    }
+  }
+  &-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &-slider {
+    position: absolute;
+    z-index: 9;
+    cursor: ew-resize;
+    /*set the appearance of the slider:*/
+    width: 4px;
+    height: 80px;
+    background-color: white;
+
+    top: calc(50% - 20px);
+    left: calc(50% - 2px);
+    z-index: 4;
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: -26px;
+      top: 40%;
+      border: 12px solid transparent;
+      border-left: 12px solid #fff;
+      z-index: 5;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      left: -26px;
+      top: 40%;
+      border: 12px solid transparent;
+      border-right: 12px solid #fff;
+      z-index: 5;
+    }
+  }
+}
+
+@media (max-width: 949px) {
+  .img-comp-img img {
+    width: 500px;
+    height: 350px;
+  }
+  .img-comp-container {
+    height: 350px;
+  }
+  .img-comp-slider {
+    width: 4px;
+    height: 60px;
+    background-color: white;
+
+    top: calc(50% - 30px);
+    left: calc(50% - 2px);
+  }
+}
+@media (max-width: 500px) {
+  .img-comp-img img {
+    width: 360px;
+    height: 180px;
+  }
+  .img-comp-container {
+    height: 180px;
+  }
+  .img-comp-slider {
+    width: 4px;
+    height: 60px;
+    background-color: white;
+
+    top: calc(50% - 30px);
+    left: calc(50% - 2px);
   }
 }
