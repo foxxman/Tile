@@ -11,6 +11,7 @@ import * as accordions from "./modules/accordion.js";
 import * as header from "./modules/header.js";
 import * as favourites from "./modules/favourites.js";
 import * as comparison from "./modules/comparison.js";
+import * as yaMap from "./modules/ya-map.js";
 
 flsFunctions.isWebp();
 // LAZY LOAD====================
@@ -66,7 +67,7 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-comparison.initTable();
+comparison.initTable(); //таблица
 
 // OTHER===================================
 reviewSliders.activateReviewSliders();
@@ -81,4 +82,5 @@ zoomSlider.activateZoomSliders();
 
 accordions.activateAccordion();
 // ===============================
-favourites.initButtons();
+favourites.initButtons(); //кнопки добавления в избранное
+yaMap.initMap(); //яндекс карта
