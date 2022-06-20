@@ -70,7 +70,7 @@ const swiper = new Swiper(".swiper", {
   // Optional parameters
   // direction: "vertical",
   loop: true,
-  allowTouchMove: true,
+  // allowTouchMove: true,
   navigation: {
     nextEl: ".swiper-next",
     prevEl: ".swiper-prev",
@@ -86,15 +86,15 @@ const swiper = new Swiper(".swiper", {
     delay: 4000,
     disableOnIteration: true,
   },
-  breakpoints: {
-    // when window width is >= 480px
-    500: {
-      allowTouchMove: false,
-    },
-  },
+  // breakpoints: {
+  //   // when window width is >= 480px
+  //   500: {
+  //     allowTouchMove: false,
+  //   },
+  // },
 });
 
-const view = new Swiper(".view", {
+const view = new Swiper(".slider-1", {
   slidesPerView: 2,
   spaceBetween: 10,
 
@@ -127,6 +127,22 @@ const view = new Swiper(".view", {
   },
 });
 
+const doubleImg = new Swiper(".slider-2", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  allowTouchMove: false,
+  loop: true,
+  navigation: {
+    nextEl: ".view-next",
+    prevEl: ".view-prev",
+  },
+  pagination: {
+    el: ".view-pagination",
+    clickable: true,
+  },
+  breakpoints: {},
+});
+
 comparison.initTable(); //таблица
 
 // OTHER===================================
@@ -143,4 +159,4 @@ accordions.activateAccordion();
 // ===============================
 favourites.initButtons(); //кнопки добавления в избранное
 yaMap.initMap(); //яндекс карта
-imgComp.initComparisons(); //сравнение двух картинок с ползунком
+imgComp.initNewComparisons(); //сравнение двух картинок с ползунком
