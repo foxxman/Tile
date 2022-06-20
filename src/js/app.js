@@ -86,6 +86,39 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+const view = new Swiper(".view", {
+  slidesPerView: 2,
+  spaceBetween: 10,
+
+  loop: true,
+  navigation: {
+    nextEl: ".view-next",
+    prevEl: ".view-prev",
+  },
+  // If we need pagination
+  pagination: {
+    el: ".view-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    // when window width is >= 480px
+    500: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    // when window width is >= 640px
+    800: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+  },
+
+  autoplay: {
+    delay: 4000,
+    disableOnIteration: true,
+  },
+});
+
 comparison.initTable(); //таблица
 
 // OTHER===================================
