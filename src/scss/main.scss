@@ -1426,6 +1426,7 @@
     background: #ffffff;
     position: relative;
     width: 100%;
+
     @media (max-width: 1495px) {
       flex-direction: column-reverse;
     }
@@ -1440,7 +1441,7 @@
 
     @media (max-width: 1495px) {
       width: 100%;
-      margin-bottom: 15px;
+      // margin-bottom: 15px;
     }
     @media (max-width: 840px) {
       padding: 25px 45px 0 45px;
