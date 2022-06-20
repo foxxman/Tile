@@ -82,7 +82,7 @@ export function initComparisons() {
 }
 
 export function initNewComparisons() {
-  $(".img-camp-block").each(function () {
+  $(".img-comp-block").each(function () {
     $(this).twentytwenty({
       default_offset_pct: 0.5, // сколько показывать 'изображение до' в процентах (максимально 1) сразу после загрузки страницы
       orientation: "horizontal", // ориентация слайдера ('horizontal' или 'vertical')
