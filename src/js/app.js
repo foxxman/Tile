@@ -14,6 +14,8 @@ import * as comparison from "./modules/comparison.js";
 import * as yaMap from "./modules/ya-map.js";
 
 flsFunctions.isWebp();
+
+new WOW().init();
 // LAZY LOAD====================
 var lazyLoadInstance = new LazyLoad({
   selector: "img", // all images
