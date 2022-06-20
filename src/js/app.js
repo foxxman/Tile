@@ -12,10 +12,14 @@ import * as header from "./modules/header.js";
 import * as favourites from "./modules/favourites.js";
 import * as comparison from "./modules/comparison.js";
 import * as yaMap from "./modules/ya-map.js";
+import * as custScroll from "./modules/custom-scrolling.js";
+
+$(document).ready(function () {
+  new WOW().init();
+});
 
 flsFunctions.isWebp();
 
-new WOW().init();
 // LAZY LOAD====================
 var lazyLoadInstance = new LazyLoad({
   selector: "img", // all images
@@ -81,8 +85,8 @@ productCounter.activateProductCounter();
 // for block with zoom lens
 zoomImg.activateZoom();
 zoomSlider.activateZoomSliders();
-
 accordions.activateAccordion();
 // ===============================
 favourites.initButtons(); //кнопки добавления в избранное
 yaMap.initMap(); //яндекс карта
+custScroll.scroll({ from: "", to: "" });

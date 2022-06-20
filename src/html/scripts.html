@@ -4,6 +4,15 @@
       type="text/javascript"
       src="https://www.gstatic.com/charts/loader.js"
     ></script> -->
+<script>
+  window.onload = function () {
+    document.body.classList.add("loaded_hiding");
+    window.setTimeout(function () {
+      document.body.classList.add("loaded");
+      document.body.classList.remove("loaded_hiding");
+    }, 500);
+  };
+</script>
 <!-- jQuery and circleType -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- <script src="js/circletype.min.js"></script> -->

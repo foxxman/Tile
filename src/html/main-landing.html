@@ -49,6 +49,7 @@
       <button
         class="landing__blue-btn animate__animated wow animate__fadeInUp"
         data-wow-delay="0.8s"
+        id="call-request"
       >
         Заказать обратный звонок
       </button>
@@ -495,7 +496,7 @@
 
     @@include('_review-slider.html',{})
 
-    <section class="questions section-margin">
+    <section id="call-form" class="questions section-margin">
       <h2 class="landing-examples__title">Часто задаваемые вопросы</h2>
       <div class="questions__accordion">
         <div class="questions__accordion-item accordion">
@@ -730,7 +731,7 @@
   </section>
 
   <div class="container">
-    <section class="map">
+    <section class="map" id="map-block">
       <div class="map-contacts">
         <h2>Контакты</h2>
         <p class="map-contacts__list">
