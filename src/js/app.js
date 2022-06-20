@@ -14,6 +14,7 @@ import * as comparison from "./modules/comparison.js";
 import * as yaMap from "./modules/ya-map.js";
 import * as custScroll from "./modules/custom-scrolling.js";
 import * as imgComp from "./modules/img-comparison.js";
+import * as aboutShop from "./modules/about-shop-slider.js";
 
 $(document).ready(function () {
   new WOW().init();
@@ -142,7 +143,7 @@ const doubleImg = new Swiper(".slider-2", {
   },
   breakpoints: {},
 });
-
+aboutShop.initAboutShopSlider();
 comparison.initTable(); //таблица
 
 // OTHER===================================

@@ -264,9 +264,9 @@
 .container {
   max-width: $main-container-width;
   margin: auto;
-  section:last-child {
-    margin-bottom: 0;
-  }
+  // section:last-child {
+  //   margin-bottom: 0;
+  // }
 }
 
 .title-feature {
