@@ -20,6 +20,19 @@ $(document).ready(function () {
 
 flsFunctions.isWebp();
 
+// скролл к форме обратной связи
+const callRequestBtn = document.getElementById("call-request");
+const callForm = document.getElementById("call-form");
+if (callRequestBtn && callForm) {
+  custScroll.scroll({ from: callRequestBtn, to: callForm });
+}
+// скролл к карте
+const mapBlock = document.querySelector("#map-block");
+const mapReference = document.querySelector("#ref-to-map");
+if (mapReference && mapBlock) {
+  custScroll.scroll({ from: mapReference, to: mapBlock });
+}
+
 // LAZY LOAD====================
 var lazyLoadInstance = new LazyLoad({
   selector: "img", // all images
@@ -89,4 +102,3 @@ accordions.activateAccordion();
 // ===============================
 favourites.initButtons(); //кнопки добавления в избранное
 yaMap.initMap(); //яндекс карта
-custScroll.scroll({ from: "", to: "" });
