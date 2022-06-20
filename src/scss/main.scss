@@ -1379,7 +1379,7 @@
     }
     &.swiper {
       width: 715px;
-      height: 536px;
+      height: 100%;
 
       @media (max-width: 1495px) {
         margin: auto;
@@ -1389,7 +1389,7 @@
       }
       @media (max-width: 715px) {
         width: 100%;
-        height: auto;
+        height: 100%;
       }
       @media (max-width: 650px) {
         width: 100%;
