@@ -50,25 +50,29 @@
   <!-- header-top__connection -->
 
   <div class="header-top__goods">
-    <div class="header-top__cart-block">
+    <a href="comparison.html" class="header-top__cart-block align-center">
+      <img
+        class="lazy img-svg"
+        src="@img/favourite-scale-icon.svg"
+        alt="scales"
+      />
+      <div><span>Сравнить товары</span></div>
+    </a>
+    <a href="basket.html" class="header-top__cart-block">
       <img class="lazy" src="@img/header-icons/shopping-cart.svg" alt="cart" />
 
       <div>
-        <a href="basket.html"
-          >Корзина (<span class="header-top__count">0</span>)</a
-        >
+        <span>Корзина (<span class="header-top__count">0</span>)</span>
         <p>Доставка от 0 ₽</p>
       </div>
-    </div>
-    <div class="header-top__primary-goods">
+    </a>
+    <a href="favourites.html" class="header-top__primary-goods">
       <img class="lazy" src="@img/header-icons/like.svg" alt="liked goods" />
 
       <div>
-        <a href="favourites.html"
-          >Избранное (<span class="header-top__count">0</span>)</a
-        >
+        <span>Избранное (<span class="header-top__count">0</span>)</span>
       </div>
-    </div>
+    </a>
   </div>
   <!-- header-top__primary-goods -->
 </div>
