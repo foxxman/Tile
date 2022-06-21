@@ -397,9 +397,9 @@
     }
   }
   &-mobile {
-    display: block;
-    @media (min-width: 500px) {
-      display: none;
+    display: none;
+    @media (max-width: 500px) {
+      display: block;
     }
     &.header {
       .open-menu {

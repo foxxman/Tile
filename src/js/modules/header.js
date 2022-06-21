@@ -14,13 +14,17 @@ const initMenuList = (list) => {
 };
 
 const initSidebarMenu = () => {
-  const openSidebarMenu = document.querySelector(".header .open-menu");
+  const openSidebarMenus = document.querySelectorAll(".header .open-menu");
   const sidebarMenu = document.querySelector(".sidebar-menu");
   const closeSidebarMenu = document.querySelector(".sidebar-menu__close");
 
-  openSidebarMenu.addEventListener("click", () => {
-    sidebarMenu.classList.remove("hidden");
+  openSidebarMenus.forEach((openSidebarMenu) => {
+    openSidebarMenu.addEventListener("click", () => {
+      console.log(sidebarMenu);
+      sidebarMenu.classList.remove("hidden");
+    });
   });
+
   closeSidebarMenu.addEventListener("click", () => {
     sidebarMenu.classList.add("hidden");
   });
