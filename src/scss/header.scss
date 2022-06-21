@@ -194,6 +194,7 @@
           margin-bottom: 0;
         }
       }
+
       .open-menu {
         height: 52px;
       }
@@ -218,12 +219,13 @@
           align-items: center;
           justify-content: center;
           padding: 0 16px;
-          border: 1px solid #686d77;
+          // border: 1px solid #686d77;
           @media (max-width: 450px) {
             padding: 0 8px;
           }
           .img-svg path {
             fill: $purple-standart;
+            margin-right: 0;
           }
         }
         &__primary-goods {
@@ -233,7 +235,7 @@
           align-items: center;
           justify-content: center;
           padding: 0 16px;
-          border: 1px solid #686d77;
+          // border: 1px solid #686d77;
           @media (max-width: 450px) {
             padding: 0 8px;
           }
