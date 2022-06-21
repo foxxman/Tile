@@ -4,7 +4,9 @@
     <div class="preloader__item"></div>
   </div>
 </div>
+@@include('./_header-mobile.html')
 <header class="header">
   @@include('_header-topline.html',{}) @@include('_header-menuline.html',{})
-  @@include('_header-searchline.html',{}) @@include('_sidebar-menu.html',{})
+  @@include('_header-searchline.html',{})
 </header>
+@@include('_sidebar-menu.html',{})

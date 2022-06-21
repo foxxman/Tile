@@ -7,39 +7,39 @@
 
   <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20220621061758"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20220621073935"
   />
   <link
-    href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,800,800italic,900,900italic&_v=20220621061758"
+    href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,800,800italic,900,900italic&_v=20220621073935"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="css/style.min.css?_v=20220621061758" />
-  <link rel="stylesheet" href="css/normalize.css?_v=20220621061758" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20220621073935" />
+  <link rel="stylesheet" href="css/normalize.css?_v=20220621073935" />
   <link
     rel="stylesheet"
-    href="css/twentytwenty.css?_v=20220621061758"
+    href="css/twentytwenty.css?_v=20220621073935"
     type="text/css"
     media="screen"
   />
   <link
-    href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&_v=20220621061758"
+    href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&_v=20220621073935"
     rel="stylesheet"
   />
   <link
-    href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&_v=20220621061758"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&_v=20220621073935"
     rel="stylesheet"
   />
   <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&_v=20220621061758"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&_v=20220621073935"
     rel="stylesheet"
   />
   <link
-    href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&_v=20220621061758"
+    href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&_v=20220621073935"
     rel="stylesheet"
   />
   <link
     rel="stylesheet"
-    href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220621061758"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220621073935"
   />
 
   <!-- переменная title из параметров include -->
@@ -56,8 +56,93 @@
     <div class="preloader__item"></div>
   </div>
 </div>
-<header class="header">
-  <div class="header-top short">
+<header class="header header-mobile">
+  <div class="header-top">
+    <button class="open-menu"><span></span><span></span><span></span></button>
+    <a href="index.html" class="logo">
+      <span class="logo__name">ПЛИТКА - <span>ТУТ.РФ</span></span>
+      <span class="logo__name">шоу рум - студия дизайна</span>
+      <div class="logo-circle">
+        <span>Плитка- тут</span><span>студия дизайна</span><span>.РФ</span>
+      </div>
+    </a>
+    <div class="header-top__goods">
+      <button class="header-top__goods" type="submit">
+        <img
+          class="lazy entered loading"
+          src="img/header-icons/search-icon.svg"
+          alt="search"
+          data-ll-status="loading"
+        />
+      </button>
+      <a class="header-top__goods" href="tel:+79250463125"
+        ><img
+          class="lazy entered loading"
+          src="img/header-icons/call-icon.svg"
+          alt="point"
+          data-ll-status="loading"
+      /></a>
+
+      <a class="header-top__goods" href="favourites.html"
+        ><img
+          class="lazy entered loading"
+          src="img/header-icons/like.svg"
+          alt="liked goods"
+          data-ll-status="loading"
+      /></a>
+
+      <a class="header-top__goods" href="basket.html"
+        ><img
+          class="lazy entered loading"
+          src="img/header-icons/shopping-cart.svg"
+          alt="cart"
+          data-ll-status="loading"
+      /></a>
+    </div>
+  </div>
+  <div class="header-menuline">
+    <a href="landing.html#map-block" class="header-top__place align-center">
+      <img
+        class="lazy entered loading"
+        src="img/header-icons/place-point.svg"
+        alt="point"
+        data-ll-status="loading"
+      />
+      <div>
+        <p>на севере Москвы<br />рядом с Леруа и ОБИ</p>
+      </div>
+    </a>
+    <div class="header-top__connection">
+      <a href="tel:+7(495)0463199" class="header_connection-icon"
+        ><img
+          class="lazy entered loading"
+          src="img/header-icons/mobile.svg"
+          alt="phone"
+          data-ll-status="loading" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img
+          class="lazy entered loading"
+          src="img/header-icons/whatsapp-icon.svg"
+          alt="whatsapp"
+          data-ll-status="loading" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img
+          class="lazy entered loading"
+          src="img/header-icons/viber.svg"
+          alt="viber"
+          data-ll-status="loading" /></a
+      ><a href="#" class="header_connection-icon"
+        ><img
+          class="lazy entered loading"
+          src="img/header-icons/e-mail.svg"
+          alt="mail"
+          data-ll-status="loading"
+      /></a>
+    </div>
+  </div>
+</header>
+
+<header class="header"><div class="header-top short">
   <button class="open-menu"><span></span><span></span><span></span></button>
   <a href="index.html" class="header-top__logo-container">
     <!-- <picture><source srcset="img/logo.webp" type="image/webp"><img class="lazy header-top__logo" src="img/logo.jpg" alt="logo" /></picture> -->
@@ -128,7 +213,8 @@
     </button>
   </form>
 </div>
- <nav class="sidebar-menu hidden">
+</header>
+<nav class="sidebar-menu hidden">
   <button class="sidebar-menu__close">
     <div></div>
     <div></div>
@@ -272,7 +358,7 @@
     </li>
     <!-- ./slider-menu__item -->
     <li class="sidebar-menu__item">
-      <a class="sidebar-menu__link" href="#">О компании</a>
+      <a class="sidebar-menu__link" href="landing.html">О компании</a>
     </li>
     <!-- ./slider-menu__item -->
     <li class="sidebar-menu__item">
@@ -289,7 +375,6 @@
   </ul>
 </nav>
 
-</header>
 
     <main class="main bg-white pb-80">
   <div class="container">
@@ -1826,7 +1911,7 @@
   </nav>
 </footer>
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20220621061758"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20220621073935"></script> -->
 <!--Load the AJAX API-->
 <!-- <script
       type="text/javascript"
@@ -1842,20 +1927,20 @@
   };
 </script>
 <!-- jQuery and circleType -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220621061758"></script>
-<!-- <script src="js/circletype.min.js?_v=20220621061758"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220621073935"></script>
+<!-- <script src="js/circletype.min.js?_v=20220621073935"></script> -->
 <!-- lazy load -->
-<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.2/dist/lazyload.min.js?_v=20220621061758"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.2/dist/lazyload.min.js?_v=20220621073935"></script>
 <!-- Swiper -->
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220621061758"></script>
-<script src="js/lazysizes.min.js?_v=20220621061758" async></script>
-<script src="js/wow.min.js?_v=20220621061758"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220621073935"></script>
+<script src="js/lazysizes.min.js?_v=20220621073935" async></script>
+<script src="js/wow.min.js?_v=20220621073935"></script>
 <script>
   new WOW().init();
   console.log("complete");
 </script>
 <!-- app -->
-<script src="js/app.min.js?_v=20220621061758"></script>
+<script src="js/app.min.js?_v=20220621073935"></script>
 
   </body>
 </html>

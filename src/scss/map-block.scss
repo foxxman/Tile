@@ -61,6 +61,10 @@
   background-position: center center;
   background-size: cover;
   box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.2);
+  @media (max-width: 500px) {
+    width: 100%;
+    height: 70vh;
+  }
 }
 
 /* Блок, в котором появится Яндекс.Карта */
