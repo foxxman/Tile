@@ -93,7 +93,9 @@ const openInputWindow = (input, searchWindow) => {
 };
 
 const initInput = () => {
-  const input = document.querySelector(".header-menuline__search-input");
+  const input = document.querySelector(
+    ".desktop .header-menuline__search-input"
+  );
   if (input) {
     const searchWindow = input.parentNode.querySelector(
       ".header-menuline__search-window"
@@ -106,7 +108,7 @@ const initInput = () => {
 };
 
 const initMobileInput = () => {
-  const headerMobile = document.querySelector(".header-mobile");
+  const headerMobile = document.querySelector(" .header-mobile");
   const activateBtn = headerMobile.querySelector(".search-activate");
   const searchWindow = headerMobile.querySelector(
     ".header-menuline__search-window"
