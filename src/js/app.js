@@ -15,6 +15,7 @@ import * as yaMap from "./modules/ya-map.js";
 import * as custScroll from "./modules/custom-scrolling.js";
 import * as imgComp from "./modules/img-comparison.js";
 import * as aboutShop from "./modules/about-shop-slider.js";
+import * as modalCart from "./modules/modal-cart.js";
 
 $(document).ready(function () {
   new WOW().init();
@@ -161,3 +162,4 @@ accordions.activateAccordion();
 favourites.initButtons(); //кнопки добавления в избранное
 yaMap.initMap(); //яндекс карта
 imgComp.initNewComparisons(); //сравнение двух картинок с ползунком
+modalCart.initOpenModalBtns(); // активация кнопок "в корзину" для открытия модалки

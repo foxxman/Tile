@@ -1765,7 +1765,8 @@
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 35px;
-    margin-bottom: 106px;
+    margin-bottom: 30px;
+    height: 85vh;
     &.two-col {
       grid-template-columns: 1.2fr 1fr;
     }
@@ -1779,6 +1780,7 @@
       margin-bottom: 50px;
       display: flex;
       flex-direction: column;
+      height: auto;
     }
 
     @media (max-width: 500px) {
@@ -1802,6 +1804,8 @@
 
         @media (max-width: 500px) {
           display: block;
+          font-size: 21px;
+          line-height: 21px;
         }
       }
     }
@@ -2021,16 +2025,23 @@
 .reasons {
   width: 100%;
   margin-bottom: 130px;
+
   @media (max-width: 1500px) {
     width: 95%;
     margin: auto;
   }
+
   @media (max-width: 500px) {
     margin-bottom: 40px;
   }
   &.mb-sm-30 {
     @media (max-width: 1500px) {
       margin-bottom: 30px;
+    }
+  }
+  &.display-none-sm {
+    @media (max-width: 500px) {
+      display: none;
     }
   }
   &-title {
