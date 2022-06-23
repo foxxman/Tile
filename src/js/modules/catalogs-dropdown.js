@@ -14,9 +14,13 @@ const initDefault = (btns, contentBlocks, defaultBlockIndex) => {
 
 const initCatalogDrop = (block) => {
   const btnsBlock = block.querySelector(".catalog__dropdown");
-  const contentBlocks = block.querySelectorAll(".catalog__block__sales-list");
-  const btns = btnsBlock.querySelectorAll("button");
+  const contentBlocks = block.querySelectorAll("div[data-list]");
 
+  // const contentBlocks = block.querySelectorAll(".catalog__block__sales-list");
+  const btns = btnsBlock.querySelectorAll("button");
+  // const filteredContentList = contentBlocks.map(
+  //   (block) => !block.closest(".catalog__block__head")
+  // );
   // устанавливаем первое значение
   const defaultBlockIndex = 0;
   initDefault(btns, contentBlocks, defaultBlockIndex);

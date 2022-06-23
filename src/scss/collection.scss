@@ -1,0 +1,201 @@
+.collection {
+  &-line {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 340px auto;
+    grid-column-gap: 25px;
+    grid-template-areas: "p t" "p g";
+    width: 100%;
+    margin-top: 40px;
+
+    .catalog__block__more {
+      align-items: center;
+      margin: auto;
+      font-size: 16px;
+      margin-top: 15px;
+      margin-bottom: 20px;
+      display: none;
+
+      @media (max-width: 520px) {
+        display: flex;
+      }
+    }
+    .collapse-btn.collapsed::after {
+      transform: rotate(0) translateY(-31%);
+    }
+
+    @media (max-width: 1380px) {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+    }
+  }
+  &-title {
+    grid-area: t;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    color: #2b2c31;
+    @media (max-width: 1380px) {
+      margin-top: 25px;
+      margin-bottom: 30px;
+    }
+    &__card {
+      font-size: 14px;
+      line-height: 120%;
+      text-decoration: none;
+      margin-bottom: 10px;
+      color: #393b41;
+    }
+  }
+  &-subtitle {
+    margin-bottom: 20px;
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 20px;
+    color: #2b2c31;
+  }
+  &-preview {
+    grid-area: p;
+    &.catalog__block__sale {
+      &-card {
+        margin-top: 0;
+      }
+    }
+    @media (max-width: 1380px) {
+      align-self: center;
+    }
+  }
+  &-goods {
+    display: flex;
+    grid-area: g;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-bottom: 10px;
+    scrollbar-color: rgba(216, 213, 213, 0.615) white;
+    scrollbar-width: 12px;
+
+    &::-webkit-scrollbar {
+      height: 12px; /* высота для горизонтального скролла */
+    }
+
+    /* ползунок скроллбара */
+    &::-webkit-scrollbar-thumb {
+      background-color: rgb(181, 179, 179);
+      //   border-radius: 4em;
+      // opacity: 0;
+    }
+    &::-webkit-scrollbar-button {
+      border-style: solid;
+      height: 16px;
+      width: 16px;
+
+      &:start:increment {
+        display: none;
+      }
+      &:start:decrement {
+        border-width: 7px 14px 7px 0;
+        border-color: transparent #515151 transparent transparent;
+      }
+      &:end:decrement {
+        display: none;
+      }
+      &:end:increment {
+        border-width: 7px 0 7px 14px;
+        border-color: transparent transparent transparent #515151;
+      }
+    }
+
+    @media (max-width: 500px) {
+      overflow-x: hidden;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px 0;
+      padding-bottom: 0px;
+    }
+    .catalog__block__sale {
+      &-card {
+        margin-top: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 25px;
+        @media (max-width: 500px) {
+          margin-right: 0;
+        }
+      }
+      &-images {
+        width: 140px;
+        height: 140px;
+        overflow: hidden;
+
+        @media (max-width: 920px) {
+          width: 85px;
+          height: 85px;
+          margin-bottom: 9px;
+        }
+
+        .image-item {
+          position: relative;
+          height: 100%;
+          // width: auto;
+        }
+      }
+      &-cost {
+        display: flex;
+        flex-direction: column;
+        span {
+          margin-left: 0;
+          margin-top: 5px;
+          font-size: 14px;
+          @media (max-width: 920px) {
+            font-size: 10px;
+          }
+          &.previous-sale {
+            font-size: 12px;
+            line-height: 12px;
+            @media (max-width: 920px) {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-name {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 16px;
+    color: #393b41;
+    margin: 5px 0 5px 0;
+
+    @media (max-width: 920px) {
+      text-align: center;
+    }
+    @media (max-width: 500px) {
+      text-align: left;
+    }
+  }
+  &-vendor {
+    font-size: 12px;
+    line-height: 16px;
+    color: #686d77;
+    margin-bottom: 10px;
+  }
+  &-tags {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &-tag {
+    font-size: 14px;
+    color: #2b2c31;
+    padding: 4px 15px;
+    border: 1px solid #bcc2cb;
+    border-radius: 2px;
+    margin-right: 8px;
+  }
+}
