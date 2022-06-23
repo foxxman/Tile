@@ -8,8 +8,65 @@
         <span>Плитка- тут</span><span>студия дизайна</span><span>.РФ</span>
       </div>
     </a>
+    <!-- ./logo -->
+    <div class="header-menuline__search-window hidden">
+      <!-- форма поиска размещена прямо во всплывающем окне -->
+      <form action="" class="header-menuline__section d-block">
+        <input
+          class="header-menuline__search-input"
+          type="text"
+          placeholder="Поиск..."
+        />
+        <button type="submit">
+          <img class="lazy" src="@img/header-icons/search-icon.svg" alt="search" />
+        </button>
+      </form>
+      <!-- ./header-menuline__section -->
+      <div class="header-menuline__search-item">
+        <h5>Производители:</h5>
+        <a href="#" class="header-menuline__search-row">
+          <img src="@img/firms/firm-1.png" alt="firm-logo" />
+          <span>Пункт 1</span>
+        </a>
+        <a href="#" class="header-menuline__search-row">
+          <img src="@img/firms/firm-2.png" alt="firm-logo" />
+          <span>Пункт 2</span>
+        </a>
+        <a href="#" class="header-menuline__search-row">
+          <img src="@img/firms/firm-3.png" alt="firm-logo" />
+          <span>Пункт 3</span>
+        </a>
+      </div>
+      <!-- ./header-menuline__search-item -->
+      <div class="header-menuline__search-item">
+        <h5>Коллекции:</h5>
+        <a href="#" class="header-menuline__search-row">
+          <img src="@img/firms/firm-1.png" alt="firm-logo" />
+          <span>Пункт 1</span>
+        </a>
+      </div>
+      <!-- ./header-menuline__search-item -->
+      <div class="header-menuline__search-item">
+        <h5>Товары:</h5>
+        <a href="#" class="header-menuline__search-row">
+          <img src="@img/firms/firm-1.png" alt="firm-logo" />
+          <span>Пункт 1</span>
+        </a>
+        <a href="#" class="header-menuline__search-row">
+          <img src="@img/firms/firm-2.png" alt="firm-logo" />
+          <span>Пункт 2</span>
+        </a>
+        <a href="#" class="header-menuline__search-row">
+          <img src="@img/firms/firm-3.png" alt="firm-logo" />
+          <span>Пункт 3</span>
+        </a>
+      </div>
+      <!-- ./header-menuline__search-item -->
+    </div>
+    <!-- ./header-menuline__search-window -->
     <div class="header-top__goods">
-      <button class="header-top__goods" type="submit">
+      <!-- кнопка открывающее мод.окно поиска -->
+      <button class="header-top__goods search-activate" type="submit">
         <img
           class="lazy entered loading"
           src="img/header-icons/search-icon.svg"
@@ -41,6 +98,7 @@
           data-ll-status="loading"
       /></a>
     </div>
+    <!-- ./goods -->
   </div>
   <div class="header-menuline">
     <a href="landing.html#map-block" class="header-top__place align-center">
@@ -83,4 +141,5 @@
       /></a>
     </div>
   </div>
+  <!-- ./header-menuline -->
 </header>

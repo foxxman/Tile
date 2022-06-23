@@ -2,14 +2,14 @@
   <button class="open-menu"><span></span><span></span><span></span></button>
 
   <div class="header-menuline__section">
-    <a href="#" class="divide-menu__link" class="divide-menu__link">
-      Мебель для ванной
-    </a>
+    <a href="#" class="divide-menu__link">Плитка</a>
     @@include("_divide-menu.html",{})
   </div>
 
   <div class="header-menuline__section">
-    <a href="#" class="divide-menu__link">Плитка</a>
+    <a href="#" class="divide-menu__link" class="divide-menu__link">
+      Мебель для ванной
+    </a>
     @@include("_divide-menu.html",{})
   </div>
 
@@ -47,8 +47,51 @@
     </div>
   </button>
 
-  <form action="" class="header-menuline__section">
-    <input type="text" placeholder="Поиск..." />
+  <form action="" class="header-menuline__section position-relative">
+    <input
+      class="header-menuline__search-input"
+      type="text"
+      placeholder="Поиск..."
+    />
+    <div class="header-menuline__search-window hidden">
+      <div class="header-menuline__search-item">
+        <h5>Производители:</h5>
+        <a href="#" class="header-menuline__search-row">
+          <img src="@img/firms/firm-1.png" alt="firm-logo" />
+          <span>Пункт 1</span>
+        </a>
+        <a href="#" class="header-menuline__search-row">
+          <img src="@img/firms/firm-2.png" alt="firm-logo" />
+          <span>Пункт 2</span>
+        </a>
+        <a href="#" class="header-menuline__search-row">
+          <img src="@img/firms/firm-3.png" alt="firm-logo" />
+          <span>Пункт 3</span>
+        </a>
+      </div>
+      <div class="header-menuline__search-item">
+        <h5>Коллекции:</h5>
+        <a href="#" class="header-menuline__search-row">
+          <img src="@img/firms/firm-1.png" alt="firm-logo" />
+          <span>Пункт 1</span>
+        </a>
+      </div>
+      <div class="header-menuline__search-item">
+        <h5>Товары:</h5>
+        <a href="#" class="header-menuline__search-row">
+          <img src="@img/firms/firm-1.png" alt="firm-logo" />
+          <span>Пункт 1</span>
+        </a>
+        <a href="#" class="header-menuline__search-row">
+          <img src="@img/firms/firm-2.png" alt="firm-logo" />
+          <span>Пункт 2</span>
+        </a>
+        <a href="#" class="header-menuline__search-row">
+          <img src="@img/firms/firm-3.png" alt="firm-logo" />
+          <span>Пункт 3</span>
+        </a>
+      </div>
+    </div>
     <button type="submit">
       <img class="lazy" src="@img/header-icons/search-icon.svg" alt="search" />
     </button>

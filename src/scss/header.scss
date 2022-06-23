@@ -9,15 +9,15 @@
   left: 0;
   top: 0; /* Положение подсказки */
   background: white; /* Синий цвет фона */
-  color: $purple-standart; /* Цвет текста */
-  border: 1px solid $purple-standart;
+  color: #34363d; /* Цвет текста */
+  border: 1px solid #34363d;
   border-radius: 5px;
 
   padding: 0.5em; /* Поля вокруг текста */
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
   pointer-events: none; /* Подсказка */
   opacity: 0; /* Подсказка невидима */
-  transition: 1s; /* Время появления подсказки */
+  transition: 0.5s; /* Время появления подсказки */
 }
 [data-tooltip]:hover::after {
   opacity: 1; /* Показываем подсказку */
@@ -300,6 +300,7 @@
       background-color: $header-bg;
       border-right: 1px solid #686d77;
       flex-grow: 1;
+      // position: relative;
 
       &.small {
         position: relative;
@@ -307,7 +308,6 @@
       &:hover {
         .divide-menu {
           height: 640px;
-          padding: 21px 39px 0;
 
           opacity: 1;
           border-top-width: 1px;
@@ -390,9 +390,25 @@
         font-size: 16px;
         line-height: 120%;
         background: none;
-        color: #686d77;
+        color: white;
         padding-left: 20px;
         width: 100%;
+        &::-webkit-input-placeholder {
+          /* WebKit browsers */
+          color: #686d77;
+        }
+        :-moz-placeholder {
+          /* Mozilla Firefox 4 to 18 */
+          color: #686d77;
+        }
+        &::-moz-placeholder {
+          /* Mozilla Firefox 19+ */
+          color: #686d77;
+        }
+        &:-ms-input-placeholder {
+          /* Internet Explorer 10+ */
+          color: #686d77;
+        }
       }
       button[type="submit"] {
         height: 100%;
@@ -400,6 +416,86 @@
         padding: 16px 21px;
         margin-left: auto;
         min-width: 64px;
+      }
+    }
+    &__search {
+      &-window {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 0px 22px 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        border: 1px solid #686d77;
+        z-index: 999;
+        max-height: 80vh;
+
+        overflow-x: hidden;
+        overflow-y: scroll;
+        scrollbar-color: rgba(216, 213, 213, 0.615) white;
+        scrollbar-width: 2px;
+
+        &::-webkit-scrollbar {
+          height: 2px; /* высота для горизонтального скролла */
+          background-color: thin;
+        }
+        /* ползунок скроллбара */
+        &::-webkit-scrollbar-thumb {
+          background-color: rgba(216, 213, 213, 0.615);
+          border-radius: 2em;
+          width: 2px;
+          height: 2px;
+          // opacity: 0;
+        }
+        &.hidden {
+          display: none;
+        }
+        .header-menuline__section {
+          background: none;
+          border: none;
+          padding-bottom: 0;
+          padding-left: 0;
+          padding-right: 0;
+          input {
+            color: black;
+          }
+          @media (max-width: 1040px) {
+            display: flex;
+          }
+        }
+      }
+      &-item {
+        width: 100%;
+        margin-top: 20px;
+
+        h5 {
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 16px;
+          color: #686d77;
+          text-transform: none;
+        }
+      }
+      &-row {
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #d7e1e8;
+        padding: 4px 20px 4px 20px;
+
+        img {
+          width: 40px;
+          border-radius: 2px;
+          margin-right: 10px;
+        }
+        span {
+          font-size: 12px;
+          line-height: 16px;
+          display: flex;
+          align-items: center;
+          color: #2b2c31;
+          text-transform: none;
+        }
       }
     }
   }
@@ -427,6 +523,7 @@
         padding: 10px 10px;
       }
       .header-top {
+        position: relative;
         &__goods {
           button {
             background: none;
@@ -588,12 +685,15 @@
 
 .divide-menu {
   position: absolute;
+  display: flex;
+  justify-content: space-between;
+
   z-index: 998;
   top: 100%;
   left: 0;
   width: 100%;
   height: 0;
-  padding: 0 39px 0;
+  padding: 0;
 
   border-top: 0 solid $purple-standart;
   border-radius: 0 0 10px 10px;
@@ -603,6 +703,26 @@
   will-change: padding, height, border-color;
   overflow: hidden;
   transition: all 0.45s ease;
+  &-sidebar {
+    width: 25%;
+    height: 100%;
+    border-left: 1px solid #bcc2cb;
+    position: relative;
+    // height: 0;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+    p {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      line-height: 22px;
+      color: #393b41;
+      text-transform: none;
+    }
+  }
   &__link {
     text-align: center;
     text-decoration: none;
@@ -613,11 +733,12 @@
     color: white;
   }
   &-list {
+    padding: 21px 0 0 21px;
     display: flex;
     overflow: hidden;
     flex-direction: column;
-    width: 100%;
-    max-height: 595px;
+    width: 75%;
+    height: 595px;
     flex-wrap: wrap;
     align-items: flex-start;
     align-content: flex-start;
@@ -631,7 +752,8 @@
     display: inline-flex;
     flex-direction: column;
     width: auto;
-    max-width: 177px;
+    width: 150px;
+    white-space: nowrap;
     max-height: 595px;
     margin-right: 44px;
     margin-bottom: 29px;
@@ -665,6 +787,36 @@
       line-height: 28px;
       display: inline;
       color: #3f4a5d;
+      transition: all 0.1s linear;
+      &:hover {
+        font-weight: 600;
+      }
+      &.hidden {
+        display: none;
+      }
+    }
+    &__btn {
+      background: none;
+      font-weight: 600;
+      color: $purple-standart;
+      font-size: 14px;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+
+      &::after {
+        content: url("../img/arrows/purple_arrow-small.svg");
+        position: relative;
+        margin-top: -2px;
+        margin-left: 3px;
+        transition: all 0.3s ease-in;
+      }
+      &.rotate-arrow {
+        &::after {
+          transform: rotate(180deg);
+          margin-top: 2px;
+        }
+      }
     }
   }
 }
@@ -836,9 +988,12 @@
   display: grid;
   grid-template-areas: "l n1" "l n2";
   column-gap: 8px;
-  width: fit-content;
+  width: 229px;
   margin: auto;
 
+  @media (max-width: 420px) {
+    width: 175px;
+  }
   span {
     color: white;
   }
