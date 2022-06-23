@@ -97,30 +97,68 @@
       }
     }
   }
+  &__smth {
+    max-width: 100%;
+  }
   &__items {
-    &-list {
+    &-track {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      width: fit-content;
+    }
+    &-list {
       width: 100%;
+      max-width: 800px;
       margin-top: 20px;
+      overflow-x: scroll;
+      padding-bottom: 10px;
+
       @media (max-width: 500px) {
         margin-top: 10px;
-        justify-content: space-around;
       }
     }
     &-btn {
       background: none;
-      height: 126px;
+      // height: 126px;
+      width: 150px;
+      margin-right: 10px;
+
       img {
-        height: 100%;
+        width: 100%;
+        margin-right: 0;
       }
-      @media (max-width: 1400px) {
-        height: 80px;
-      }
-      @media (max-width: 500px) {
-        height: 59px;
-      }
+    }
+  }
+}
+
+.custom-scroll {
+  &::-webkit-scrollbar {
+    height: 12px; /* высота для горизонтального скролла */
+  }
+
+  /* ползунок скроллбара */
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(181, 179, 179);
+    //   border-radius: 4em;
+    // opacity: 0;
+  }
+  &::-webkit-scrollbar-button {
+    border-style: solid;
+    height: 16px;
+    width: 16px;
+
+    &:start:increment {
+      display: none;
+    }
+    &:start:decrement {
+      border-width: 7px 14px 7px 0;
+      border-color: transparent #515151 transparent transparent;
+    }
+    &:end:decrement {
+      display: none;
+    }
+    &:end:increment {
+      border-width: 7px 0 7px 14px;
+      border-color: transparent transparent transparent #515151;
     }
   }
 }
