@@ -21,53 +21,57 @@ const activateInternal = () => {
   );
 };
 
-// const activateGeneralSlide = (activeIndex, slides) => {
-//   slides.forEach((slide, index) => {
-//     if (index === activeIndex) {
-//       slide.classList.remove("hidden");
-//     } else {
-//       slide.classList.add("hidden");
-//     }
-//   });
-// };
+const turnSlide = (slides, activeSlide) => {
+  slides.forEach((slide, index) => {
+    if (index === activeSlide) {
+      slide.classList.remove("hidden");
+    } else {
+      slide.classList.add("hidden");
+    }
+  });
+};
 
-// const activateGeneral = () => {
-//   let activeSlideIndex = 0;
-//   const reviewBlock = document.querySelector(".review");
+const activateGeneral = () => {
+  const review = document.querySelector(".review");
+  if (review) {
+    const changer = review.querySelector(".review__changer");
+    const track = review.querySelector(".review__track");
+    const slides = track.querySelectorAll(".review__content");
+    let activeSlide = 0;
+    turnSlide(slides, activeSlide);
 
-//   if (reviewBlock) {
-//     const slides = reviewBlock.querySelectorAll(
-//       ".review__track .review__content"
-//     );
+    changer.addEventListener("click", ({ target }) => {
+      if (target.closest(".review__changer-previous")) {
+        activeSlide--;
+        if (activeSlide < 0) activeSlide = slides.length - 1;
+      } else if (".review__changer-next") {
+        activeSlide++;
+        if (activeSlide > slides.length - 1) activeSlide = 0;
+      }
 
-//     const btnPrev = reviewBlock.querySelector(
-//       ".review__changer .review__changer-previous"
-//     );
-//     const btnNext = reviewBlock.querySelector(
-//       ".review__changer .review__changer-next"
-//     );
-
-//     activateGeneralSlide(activeSlideIndex, slides);
-
-//     btnNext.addEventListener("click", () => {
-//       if (++activeSlideIndex === slides.length) {
-//         activeSlideIndex = 0;
-//       }
-//       activateGeneralSlide(activeSlideIndex, slides);
-//     });
-
-//     btnPrev.addEventListener("click", () => {
-//       if (--activeSlideIndex < 0) {
-//         activeSlideIndex = slides.length - 1;
-//       }
-//       activateGeneralSlide(activeSlideIndex, slides);
-//     });
-//   }
-// };
+      turnSlide(slides, activeSlide);
+    });
+  }
+};
 
 export const activateReviewSliders = () => {
+  const insideReview = new Swiper(".review-slider", {
+    slidesPerView: 1,
+    loop: true,
+    nested: true,
+    pagination: {
+      el: ".review-pagination",
+      clickable: true,
+    },
+    autoplay: {
+      delay: 4000,
+      disableOnIteration: true,
+    },
+  });
+
   // const review = new Swiper(".review", {
   //   slidesPerView: 1,
+  //   nested: false,
   //   allowTouchMove: false,
   //   loop: true,
   //   navigation: {
@@ -75,24 +79,9 @@ export const activateReviewSliders = () => {
   //     prevEl: ".review__changer-previous",
   //   },
   // });
-  const insideReview = new Swiper(".review-slider", {
-    slidesPerView: 1,
-    // allowTouchMove: false,
-    loop: true,
-    pagination: {
-      el: ".review-pagination",
-      clickable: true,
-    },
-
-    autoplay: {
-      delay: 4000,
-      disableOnIteration: true,
-    },
-  });
 
   if (document.querySelectorAll(".review-slider__changer").length !== 0) {
-    // console.log(true);
     activateInternal();
-    // activateGeneral();
+    activateGeneral();
   }
 };

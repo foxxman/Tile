@@ -1412,10 +1412,14 @@
       line-height: 18px;
     }
   }
-  &__track {
+  &__track.swiper-wrapper {
     display: flex;
     overflow: hidden;
     width: 100%;
+    min-width: 0;
+    .swiper-slide {
+      overflow: hidden;
+    }
   }
   &-slider {
     overflow: hidden;
@@ -1534,7 +1538,7 @@
 
     @media (max-width: 1495px) {
       width: 100%;
-      // margin-bottom: 15px;
+      padding-bottom: 15px;
     }
     @media (max-width: 840px) {
       padding: 25px 45px 0 45px;
