@@ -1011,6 +1011,9 @@
     justify-content: center;
     align-items: center;
 
+    @media (max-width: 500px) {
+      display: none;
+    }
     &::before {
       content: "";
       position: absolute;

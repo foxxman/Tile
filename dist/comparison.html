@@ -7,39 +7,39 @@
 
   <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20220624021018"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20220624030122"
   />
   <link
-    href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,800,800italic,900,900italic&_v=20220624021018"
+    href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,800,800italic,900,900italic&_v=20220624030122"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="css/style.min.css?_v=20220624021018" />
-  <link rel="stylesheet" href="css/normalize.css?_v=20220624021018" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20220624030122" />
+  <link rel="stylesheet" href="css/normalize.css?_v=20220624030122" />
   <link
     rel="stylesheet"
-    href="css/twentytwenty.css?_v=20220624021018"
+    href="css/twentytwenty.css?_v=20220624030122"
     type="text/css"
     media="screen"
   />
   <link
-    href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&_v=20220624021018"
+    href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&_v=20220624030122"
     rel="stylesheet"
   />
   <link
-    href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&_v=20220624021018"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&_v=20220624030122"
     rel="stylesheet"
   />
   <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&_v=20220624021018"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&_v=20220624030122"
     rel="stylesheet"
   />
   <link
-    href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&_v=20220624021018"
+    href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&_v=20220624030122"
     rel="stylesheet"
   />
   <link
     rel="stylesheet"
-    href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220624021018"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220624030122"
   />
 
   <!-- переменная title из параметров include -->
@@ -76,7 +76,11 @@
           placeholder="Поиск..."
         />
         <button type="submit">
-          <img class="lazy" src="img/header-icons/search-icon.svg" alt="search" />
+          <img
+            class="lazy"
+            src="img/header-icons/search-icon.svg"
+            alt="search"
+          />
         </button>
       </form>
       <!-- ./header-menuline__section -->
@@ -132,14 +136,20 @@
           data-ll-status="loading"
         />
       </button>
-      <a class="header-top__goods" href="tel:+79250463125"
+      <!-- <a class="header-top__goods" href="tel:+79250463125"
         ><img
           class="lazy entered loading"
           src="img/header-icons/call-icon.svg"
           alt="point"
           data-ll-status="loading"
-      /></a>
-
+      /></a> -->
+      <a href="comparison.html" class="header_connection-icon">
+        <img
+        class="lazy img-svg purple-svg"
+        src="img/favourite-scale-icon.svg"
+        alt="scales" /></a
+    >
+      </a>
       <a class="header-top__goods" href="favourites.html"
         ><img
           class="lazy entered loading"
@@ -171,14 +181,21 @@
       </div>
     </a>
     <div class="header-top__connection">
-      <a href="comparison.html" class="header_connection-icon">
+      <!-- <a href="comparison.html" class="header_connection-icon">
         <img
         class="lazy img-svg"
         src="img/favourite-scale-icon.svg"
         alt="scales" /></a
     >
-      </a>
-       <a href="#" class="header_connection-icon"
+      </a> -->
+      <a class="header-top__goods" href="tel:+79250463125"
+        ><img
+          class="lazy entered loading"
+          src="img/header-icons/call-icon.svg"
+          alt="point"
+          data-ll-status="loading"
+      /></a>
+      <a href="#" class="header_connection-icon"
         ><img
           class="lazy entered loading"
           src="img/header-icons/whatsapp-icon.svg"
@@ -469,9 +486,7 @@
       <div class="catalog__block__head">
         <div class="catalog__dropdown mb-sm-0">
           <button data-list="001">Плитка</button>
-          <button data-list="002" class="catalog__dropdown-active">
-            Коллекции плитки товарами
-          </button>
+
           <button data-list="003">Смесители</button>
           <button data-list="004">Ванные</button>
           <button data-list="005">Унитазы</button>
@@ -756,283 +771,7 @@
 <!-- .cd-products-table -->
 
       </div>
-      <div
-        data-list="002"
-        class="catalog__block__sales-list cd-products-comparison-table dropdown-item"
-      >
-        <div class="cd-products-table">
-  <div class="features">
-    <div class="top-info">Характеристики</div>
-    <ul class="cd-features-list">
-      <li>Производитель</li>
-      <li>Страна</li>
-      <li>Применение</li>
-      <li>Поверхность</li>
-      <li>Имитация</li>
-      <li>Стиль</li>
-      <li>Цвет</li>
-      <li>Форма</li>
-      <li>Назначение</li>
-      <li>Элемент</li>
-      <li>Тема дизайна</li>
-      <li>Коллекция</li>
-      <li>Товар</li>
-      <li>Назначение</li>
-      <li>Размер</li>
-    </ul>
-  </div>
-  <!-- .features -->
 
-  <div class="cd-products-wrapper">
-    <ul class="cd-products-columns">
-      <li class="product">
-  <div class="top-info">
-    
-    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
-    <div class="top-info__name">
-      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
-    </div>
-    <div class="top-info__cost">
-      <span>от 100 000 ₽/м2</span>
-    </div>
-    <button class="top-info__tocart">В корзину</button>
-  </div>
-  <!-- ./top-info -->
-
-  <ul class="cd-features-list">
-    <li>Керама Марацци</li>
-    <li>Россия</li>
-    <li>Керамогранит</li>
-    <li>Матовая</li>
-    <li>Под мрамор</li>
-    <li>Античный</li>
-    <li>Черный, белый, красный</li>
-    <li>Прямоугольник</li>
-    <li>для ванной, для кухни</li>
-    <li>настенная, бордюр</li>
-    <li>флора</li>
-    <li>Абингтон</li>
-    <li>наименование товара</li>
-    <li>Керамогранит</li>
-    <li>20x120</li>
-  </ul>
-</li>
-<!-- .product -->
- <li class="product">
-  <div class="top-info">
-    
-    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
-    <div class="top-info__name">
-      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
-    </div>
-    <div class="top-info__cost">
-      <span>от 100 000 ₽/м2</span>
-    </div>
-    <button class="top-info__tocart">В корзину</button>
-  </div>
-  <!-- ./top-info -->
-
-  <ul class="cd-features-list">
-    <li>Керама Марацци</li>
-    <li>Россия</li>
-    <li>Керамогранит</li>
-    <li>Матовая</li>
-    <li>Под мрамор</li>
-    <li>Античный</li>
-    <li>Черный, белый, красный</li>
-    <li>Прямоугольник</li>
-    <li>для ванной, для кухни</li>
-    <li>настенная, бордюр</li>
-    <li>флора</li>
-    <li>Абингтон</li>
-    <li>наименование товара</li>
-    <li>Керамогранит</li>
-    <li>20x120</li>
-  </ul>
-</li>
-<!-- .product -->
-
-      <li class="product">
-  <div class="top-info">
-    
-    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
-    <div class="top-info__name">
-      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
-    </div>
-    <div class="top-info__cost">
-      <span>от 100 000 ₽/м2</span>
-    </div>
-    <button class="top-info__tocart">В корзину</button>
-  </div>
-  <!-- ./top-info -->
-
-  <ul class="cd-features-list">
-    <li>Керама Марацци</li>
-    <li>Россия</li>
-    <li>Керамогранит</li>
-    <li>Матовая</li>
-    <li>Под мрамор</li>
-    <li>Античный</li>
-    <li>Черный, белый, красный</li>
-    <li>Прямоугольник</li>
-    <li>для ванной, для кухни</li>
-    <li>настенная, бордюр</li>
-    <li>флора</li>
-    <li>Абингтон</li>
-    <li>наименование товара</li>
-    <li>Керамогранит</li>
-    <li>20x120</li>
-  </ul>
-</li>
-<!-- .product -->
- <li class="product">
-  <div class="top-info">
-    
-    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
-    <div class="top-info__name">
-      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
-    </div>
-    <div class="top-info__cost">
-      <span>от 100 000 ₽/м2</span>
-    </div>
-    <button class="top-info__tocart">В корзину</button>
-  </div>
-  <!-- ./top-info -->
-
-  <ul class="cd-features-list">
-    <li>Керама Марацци</li>
-    <li>Россия</li>
-    <li>Керамогранит</li>
-    <li>Матовая</li>
-    <li>Под мрамор</li>
-    <li>Античный</li>
-    <li>Черный, белый, красный</li>
-    <li>Прямоугольник</li>
-    <li>для ванной, для кухни</li>
-    <li>настенная, бордюр</li>
-    <li>флора</li>
-    <li>Абингтон</li>
-    <li>наименование товара</li>
-    <li>Керамогранит</li>
-    <li>20x120</li>
-  </ul>
-</li>
-<!-- .product -->
-
-      <li class="product">
-  <div class="top-info">
-    
-    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
-    <div class="top-info__name">
-      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
-    </div>
-    <div class="top-info__cost">
-      <span>от 100 000 ₽/м2</span>
-    </div>
-    <button class="top-info__tocart">В корзину</button>
-  </div>
-  <!-- ./top-info -->
-
-  <ul class="cd-features-list">
-    <li>Керама Марацци</li>
-    <li>Россия</li>
-    <li>Керамогранит</li>
-    <li>Матовая</li>
-    <li>Под мрамор</li>
-    <li>Античный</li>
-    <li>Черный, белый, красный</li>
-    <li>Прямоугольник</li>
-    <li>для ванной, для кухни</li>
-    <li>настенная, бордюр</li>
-    <li>флора</li>
-    <li>Абингтон</li>
-    <li>наименование товара</li>
-    <li>Керамогранит</li>
-    <li>20x120</li>
-  </ul>
-</li>
-<!-- .product -->
- <li class="product">
-  <div class="top-info">
-    
-    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
-    <div class="top-info__name">
-      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
-    </div>
-    <div class="top-info__cost">
-      <span>от 100 000 ₽/м2</span>
-    </div>
-    <button class="top-info__tocart">В корзину</button>
-  </div>
-  <!-- ./top-info -->
-
-  <ul class="cd-features-list">
-    <li>Керама Марацци</li>
-    <li>Россия</li>
-    <li>Керамогранит</li>
-    <li>Матовая</li>
-    <li>Под мрамор</li>
-    <li>Античный</li>
-    <li>Черный, белый, красный</li>
-    <li>Прямоугольник</li>
-    <li>для ванной, для кухни</li>
-    <li>настенная, бордюр</li>
-    <li>флора</li>
-    <li>Абингтон</li>
-    <li>наименование товара</li>
-    <li>Керамогранит</li>
-    <li>20x120</li>
-  </ul>
-</li>
-<!-- .product -->
-
-      <li class="product">
-  <div class="top-info">
-    
-    <picture><source srcset="img/goods/goods-1.webp" type="image/webp"><img src="img/goods/goods-1.jpg" alt="goods" /></picture>
-    <div class="top-info__name">
-      <a href="#" id="sale1-1">Плитка настенная, 20x120</a>
-    </div>
-    <div class="top-info__cost">
-      <span>от 100 000 ₽/м2</span>
-    </div>
-    <button class="top-info__tocart">В корзину</button>
-  </div>
-  <!-- ./top-info -->
-
-  <ul class="cd-features-list">
-    <li>Керама Марацци</li>
-    <li>Россия</li>
-    <li>Керамогранит</li>
-    <li>Матовая</li>
-    <li>Под мрамор</li>
-    <li>Античный</li>
-    <li>Черный, белый, красный</li>
-    <li>Прямоугольник</li>
-    <li>для ванной, для кухни</li>
-    <li>настенная, бордюр</li>
-    <li>флора</li>
-    <li>Абингтон</li>
-    <li>наименование товара</li>
-    <li>Керамогранит</li>
-    <li>20x120</li>
-  </ul>
-</li>
-<!-- .product -->
-
-    </ul>
-    <!-- .cd-products-columns -->
-  </div>
-  <!-- .cd-products-wrapper -->
-
-  <ul class="cd-table-navigation">
-    <li><a href="#0" class="prev inactive">Prev</a></li>
-    <li><a href="#0" class="next">Next</a></li>
-  </ul>
-</div>
-<!-- .cd-products-table -->
-
-      </div>
       <div
         data-list="003"
         class="catalog__block__sales-list cd-products-comparison-table dropdown-item"
@@ -1956,7 +1695,7 @@
     </div>
   </nav>
 </footer>
- <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20220624021018"></script> -->
+ <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20220624030122"></script> -->
 <!--Load the AJAX API-->
 <!-- <script
       type="text/javascript"
@@ -1972,22 +1711,22 @@
   };
 </script>
 <!-- jQuery and circleType -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220624021018"></script>
-<!-- <script src="js/circletype.min.js?_v=20220624021018"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220624030122"></script>
+<!-- <script src="js/circletype.min.js?_v=20220624030122"></script> -->
 <!-- lazy load -->
-<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.2/dist/lazyload.min.js?_v=20220624021018"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.2/dist/lazyload.min.js?_v=20220624030122"></script>
 <!-- Swiper -->
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220624021018"></script>
-<script src="js/lazysizes.min.js?_v=20220624021018" async></script>
-<script src="js/wow.min.js?_v=20220624021018"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220624030122"></script>
+<script src="js/lazysizes.min.js?_v=20220624030122" async></script>
+<script src="js/wow.min.js?_v=20220624030122"></script>
 <script>
   new WOW().init();
   console.log("complete");
 </script>
 <!-- app -->
-<script src="js/app.min.js?_v=20220624021018"></script>
+<script src="js/app.min.js?_v=20220624030122"></script>
 
-    <!-- <script src="js/comparison.js?_v=20220624021018"></script> -->
+    <!-- <script src="js/comparison.js?_v=20220624030122"></script> -->
   </body>
 </html>
 <!-- https://ruseller.com/lessons.php?rub=2&id=2757 -->

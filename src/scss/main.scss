@@ -4193,6 +4193,14 @@
       .img-svg path {
         fill: white;
       }
+
+      &.small {
+        width: 14px;
+        height: 14px;
+        .img-svg {
+          padding: 3px;
+        }
+      }
     }
     &__check {
       background: none;
