@@ -96,12 +96,14 @@ const initInput = () => {
   const input = document.querySelector(
     ".desktop .header-menuline__search-input"
   );
+  // console.log(input);
   if (input) {
     const searchWindow = input.parentNode.querySelector(
       ".header-menuline__search-window"
     );
-
+    // console.log(searchWindow);
     input.oninput = function () {
+      // console.log(input.value);
       openInputWindow(input, searchWindow);
     };
   }

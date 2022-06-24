@@ -144,6 +144,9 @@ const doubleImg = new Swiper(".slider-2", {
   },
   breakpoints: {},
 });
+
+
+
 aboutShop.initAboutShopSlider();
 comparison.initTable(); //таблица
 

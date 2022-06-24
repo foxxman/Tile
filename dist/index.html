@@ -7,39 +7,39 @@
 
   <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20220624052806"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20220624072831"
   />
   <link
-    href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,800,800italic,900,900italic&_v=20220624052806"
+    href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,800,800italic,900,900italic&_v=20220624072831"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="css/style.min.css?_v=20220624052806" />
-  <link rel="stylesheet" href="css/normalize.css?_v=20220624052806" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20220624072831" />
+  <link rel="stylesheet" href="css/normalize.css?_v=20220624072831" />
   <link
     rel="stylesheet"
-    href="css/twentytwenty.css?_v=20220624052806"
+    href="css/twentytwenty.css?_v=20220624072831"
     type="text/css"
     media="screen"
   />
   <link
-    href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&_v=20220624052806"
+    href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&_v=20220624072831"
     rel="stylesheet"
   />
   <link
-    href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&_v=20220624052806"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&_v=20220624072831"
     rel="stylesheet"
   />
   <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&_v=20220624052806"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&_v=20220624072831"
     rel="stylesheet"
   />
   <link
-    href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&_v=20220624052806"
+    href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&_v=20220624072831"
     rel="stylesheet"
   />
   <link
     rel="stylesheet"
-    href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220624052806"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220624072831"
   />
 
   <!-- переменная title из параметров include -->
@@ -3575,296 +3575,72 @@
       </button>
     </div>
   </div>
-  <div class="review__track">
+  <div class="review__track swiper-wrapper">
     <div class="review__content">
-      <div class="review-slider__changer">
-        <button id="project-btn">Проект</button>
-        <button class="review-slider__changer-active" id="total-btn">
-          Итог
-        </button>
-      </div>
-      <!-- ./POS ABSOLUTE -->
-      <div
-        class="review-slider title-feature__slider swiper review-slider-hidden"
-        id="slider-project"
-      >
-        <div class="swiper-wrapper">
-          <div class="title-feature__slider-item swiper-slide">
-            <img
-              src="img/review-slider.jpg"
-              alt="img"
-              class="lazy slide__img"
-            />
-          </div>
-          <!-- ./swiper-slide -->
-          <div class="title-feature__slider-item swiper-slide">
-            <img
-              src="img/review-slider.jpg"
-              alt="img"
-              class="lazy slide__img"
-            />
-          </div>
-          <!-- ./swiper-slide -->
-          <div class="title-feature__slider-item swiper-slide">
-            <img
-              src="img/review-slider.jpg"
-              alt="img"
-              class="lazy slide__img"
-            />
-          </div>
-          <!-- ./swiper-slide -->
-          <div class="title-feature__slider-item swiper-slide">
-            <img
-              src="img/review-slider.jpg"
-              alt="img"
-              class="lazy slide__img"
-            />
-          </div>
-          <!-- ./swiper-slide -->
-        </div>
-
-        <div class="swiper-pagination"></div>
-      </div>
-      <!-- ./SLIDER -->
-      <div class="review-slider title-feature__slider swiper" id="slider-total">
-        <div class="swiper-wrapper">
-          <div class="title-feature__slider-item swiper-slide">
-            <img
-              src="img/review-slider.jpg"
-              alt="img"
-              class="lazy slide__img"
-            />
-          </div>
-          <!-- ./swiper-slide -->
-          <div class="title-feature__slider-item swiper-slide">
-            <img
-              src="img/review-slider.jpg"
-              alt="img"
-              class="lazy slide__img"
-            />
-          </div>
-          <!-- ./swiper-slide -->
-          <div class="title-feature__slider-item swiper-slide">
-            <img
-              src="img/review-slider.jpg"
-              alt="img"
-              class="lazy slide__img"
-            />
-          </div>
-          <!-- ./swiper-slide -->
-        </div>
-
-        <div class="swiper-pagination"></div>
-      </div>
-      <!-- ./SLIDER -->
-
-      <div class="review__body">
-        <div class="review__person">
-          <picture><source srcset="img/review-avatar.webp" type="image/webp"><img class="lazy" src="img/review-avatar.jpg" alt="avatar" /></picture>
-          <p class="review__person__name">Анна Верещагина</p>
-          <p class="review__person__work-name">Ванная с коллекцией Stones</p>
-        </div>
-        <div class="review__text">
-          <p>
-            Не жалею потраченного времени...не ожидала что так просто можно
-            решить вопрос не только с плиткой, но и с дизайном. Была во многих
-            магазинах, но только запуталась. Здесь оказалось все просто и
-            понятно. Дизайнер подсказал пару стандартных приемов оформления,
-            которые визуально сделали ванную более просторной.<br />
-            Спасибо большое.
-          </p>
-          <a href="#">Читать подробнее</a>
-        </div>
-      </div>
+  <div class="review-slider__changer">
+  <button id="project-btn">Проект</button>
+  <button class="review-slider__changer-active" id="total-btn">Итог</button>
+</div>
+<!-- ./POS ABSOLUTE -->
+ <div class="review-slider" id="slider-total">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <picture><source srcset="img/review-slider.webp" type="image/webp"><img src="img/review-slider.jpg" alt="img" class="lazy" /></picture>
     </div>
-    <div class="review__content">
-      <div class="review-slider__changer">
-        <button id="project-btn">Проект</button>
-        <button class="review-slider__changer-active" id="total-btn">
-          Итог
-        </button>
-      </div>
-      <!-- ./POS ABSOLUTE -->
-      <div
-        class="review-slider title-feature__slider swiper review-slider-hidden"
-        id="slider-project"
-      >
-        <div class="swiper-wrapper">
-          <div class="title-feature__slider-item swiper-slide">
-            <img
-              src="img/review-slider.jpg"
-              alt="img"
-              class="lazy slide__img"
-            />
-          </div>
-          <!-- ./swiper-slide -->
-          <div class="title-feature__slider-item swiper-slide">
-            <img
-              src="img/review-slider.jpg"
-              alt="img"
-              class="lazy slide__img"
-            />
-          </div>
-          <!-- ./swiper-slide -->
-          <div class="title-feature__slider-item swiper-slide">
-            <img
-              src="img/review-slider.jpg"
-              alt="img"
-              class="lazy slide__img"
-            />
-          </div>
-          <!-- ./swiper-slide -->
-          <div class="title-feature__slider-item swiper-slide">
-            <img
-              src="img/review-slider.jpg"
-              alt="img"
-              class="lazy slide__img"
-            />
-          </div>
-          <!-- ./swiper-slide -->
-        </div>
-
-        <div class="swiper-pagination"></div>
-      </div>
-      <!-- ./SLIDER -->
-      <div class="review-slider title-feature__slider swiper" id="slider-total">
-        <div class="swiper-wrapper">
-          <div class="title-feature__slider-item swiper-slide">
-            <img
-              src="img/review-slider.jpg"
-              alt="img"
-              class="lazy slide__img"
-            />
-          </div>
-          <!-- ./swiper-slide -->
-          <div class="title-feature__slider-item swiper-slide">
-            <img
-              src="img/review-slider.jpg"
-              alt="img"
-              class="lazy slide__img"
-            />
-          </div>
-          <!-- ./swiper-slide -->
-          <div class="title-feature__slider-item swiper-slide">
-            <img
-              src="img/review-slider.jpg"
-              alt="img"
-              class="lazy slide__img"
-            />
-          </div>
-          <!-- ./swiper-slide -->
-        </div>
-
-        <div class="swiper-pagination"></div>
-      </div>
-      <!-- ./SLIDER -->
-
-      <div class="review__body">
-        <div class="review__person">
-          <picture><source srcset="img/review-avatar.webp" type="image/webp"><img class="lazy" src="img/review-avatar.jpg" alt="avatar" /></picture>
-          <p class="review__person__name">Иван Иванов</p>
-          <p class="review__person__work-name">Ванная с коллекцией Stones</p>
-        </div>
-        <div class="review__text">
-          <p>Все круто, слов нет!</p>
-          <a href="#">Читать подробнее</a>
-        </div>
-      </div>
+    <!-- ./swiper-slide -->
+    <div class="swiper-slide">
+      <picture><source srcset="img/review-slider.webp" type="image/webp"><img src="img/review-slider.jpg" alt="img" class="lazy" /></picture>
     </div>
-    <div class="review__content">
-      <div class="review-slider__changer">
-        <button id="project-btn">Проект</button>
-        <button class="review-slider__changer-active" id="total-btn">
-          Итог
-        </button>
-      </div>
-      <!-- ./POS ABSOLUTE -->
-      <div
-        class="review-slider title-feature__slider swiper review-slider-hidden"
-        id="slider-project"
-      >
-        <div class="swiper-wrapper">
-          <div class="title-feature__slider-item swiper-slide">
-            <img
-              src="img/review-slider.jpg"
-              alt="img"
-              class="lazy slide__img"
-            />
-          </div>
-          <!-- ./swiper-slide -->
-          <div class="title-feature__slider-item swiper-slide">
-            <img
-              src="img/review-slider.jpg"
-              alt="img"
-              class="lazy slide__img"
-            />
-          </div>
-          <!-- ./swiper-slide -->
-          <div class="title-feature__slider-item swiper-slide">
-            <img
-              src="img/review-slider.jpg"
-              alt="img"
-              class="lazy slide__img"
-            />
-          </div>
-          <!-- ./swiper-slide -->
-          <div class="title-feature__slider-item swiper-slide">
-            <img
-              src="img/review-slider.jpg"
-              alt="img"
-              class="lazy slide__img"
-            />
-          </div>
-          <!-- ./swiper-slide -->
-        </div>
-
-        <div class="swiper-pagination"></div>
-      </div>
-      <!-- ./SLIDER -->
-      <div class="review-slider title-feature__slider swiper" id="slider-total">
-        <div class="swiper-wrapper">
-          <div class="title-feature__slider-item swiper-slide">
-            <img
-              src="img/review-slider.jpg"
-              alt="img"
-              class="lazy slide__img"
-            />
-          </div>
-          <!-- ./swiper-slide -->
-          <div class="title-feature__slider-item swiper-slide">
-            <img
-              src="img/review-slider.jpg"
-              alt="img"
-              class="lazy slide__img"
-            />
-          </div>
-          <!-- ./swiper-slide -->
-          <div class="title-feature__slider-item swiper-slide">
-            <img
-              src="img/review-slider.jpg"
-              alt="img"
-              class="lazy slide__img"
-            />
-          </div>
-          <!-- ./swiper-slide -->
-        </div>
-
-        <div class="swiper-pagination"></div>
-      </div>
-      <!-- ./SLIDER -->
-
-      <div class="review__body">
-        <div class="review__person">
-          <picture><source srcset="img/review-avatar.webp" type="image/webp"><img src="img/review-avatar.jpg" alt="avatar" class="lazy" /></picture>
-          <p class="review__person__name">Петр Петров</p>
-          <p class="review__person__work-name">Ванная с коллекцией Stones</p>
-        </div>
-        <div class="review__text">
-          <p>Наконец-то есть царская ванная</p>
-          <a href="#">Читать подробнее</a>
-        </div>
-      </div>
+    <!-- ./swiper-slide -->
+    <div class="swiper-slide">
+      <picture><source srcset="img/review-slider.webp" type="image/webp"><img src="img/review-slider.jpg" alt="img" class="lazy" /></picture>
     </div>
+    <!-- ./swiper-slide -->
+  </div>
+
+  <div class="review-pagination"></div>
+</div>
+<!-- ./SLIDER -->
+
+  <div class="review-slider review-slider-hidden" id="slider-project">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <picture><source srcset="img/review-slider.webp" type="image/webp"><img src="img/review-slider.jpg" alt="img" class="lazy slide__img" /></picture>
+    </div>
+    <!-- ./swiper-slide -->
+    <div class="swiper-slide">
+      <picture><source srcset="img/review-slider.webp" type="image/webp"><img src="img/review-slider.jpg" alt="img" class="lazy slide__img" /></picture>
+    </div>
+    <!-- ./swiper-slide -->
+    <div class="swiper-slide">
+      <picture><source srcset="img/review-slider.webp" type="image/webp"><img src="img/review-slider.jpg" alt="img" class="lazy slide__img" /></picture>
+    </div>
+    <!-- ./swiper-slide -->
+    <div class="swiper-slide">
+      <picture><source srcset="img/review-slider.webp" type="image/webp"><img src="img/review-slider.jpg" alt="img" class="lazy slide__img" /></picture>
+    </div>
+    <!-- ./swiper-slide -->
+  </div>
+
+  <div class="review-pagination"></div>
+</div>
+<!-- ./SLIDER -->
+ <div class="review__body">
+  <div class="review__person">
+    <picture><source srcset="img/review-avatar.webp" type="image/webp"><img src="img/review-avatar.jpg" alt="avatar" class="lazy" /></picture>
+    <p class="review__person__name">Петр Петров</p>
+    <p class="review__person__work-name">Ванная с коллекцией Stones</p>
+  </div>
+  <div class="review__text">
+    <p>Замечательное место, вернусь еще</p>
+    <a href="#">Читать подробнее</a>
+  </div>
+</div>
+
+</div>
+
+
+    
   </div>
 </section>
 
@@ -3957,7 +3733,7 @@
     </div>
   </nav>
 </footer>
- <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20220624052806"></script> -->
+ <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20220624072831"></script> -->
 <!--Load the AJAX API-->
 <!-- <script
       type="text/javascript"
@@ -3973,20 +3749,20 @@
   };
 </script>
 <!-- jQuery and circleType -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220624052806"></script>
-<!-- <script src="js/circletype.min.js?_v=20220624052806"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220624072831"></script>
+<!-- <script src="js/circletype.min.js?_v=20220624072831"></script> -->
 <!-- lazy load -->
-<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.2/dist/lazyload.min.js?_v=20220624052806"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.2/dist/lazyload.min.js?_v=20220624072831"></script>
 <!-- Swiper -->
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220624052806"></script>
-<script src="js/lazysizes.min.js?_v=20220624052806" async></script>
-<script src="js/wow.min.js?_v=20220624052806"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220624072831"></script>
+<script src="js/lazysizes.min.js?_v=20220624072831" async></script>
+<script src="js/wow.min.js?_v=20220624072831"></script>
 <script>
   new WOW().init();
   console.log("complete");
 </script>
 <!-- app -->
-<script src="js/app.min.js?_v=20220624052806"></script>
+<script src="js/app.min.js?_v=20220624072831"></script>
 
   </body>
 </html>

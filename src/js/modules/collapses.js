@@ -43,7 +43,7 @@ const activateCollapse = (block) => {
 
 export const initCollapses = () => {
   const colBlocks = document.querySelectorAll(".collapses");
-  console.log(colBlocks);
+  // console.log(colBlocks);
 
   colBlocks.forEach((block) => {
     activateCollapse(block);

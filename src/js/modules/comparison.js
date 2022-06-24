@@ -1,6 +1,6 @@
 export function initTable() {
   function productsTable(element) {
-    console.log("productsTable");
+    // console.log("productsTable");
     this.element = element;
     this.table = this.element.children(".cd-products-table");
     this.tableHeight = this.table.height();
@@ -25,7 +25,7 @@ export function initTable() {
   }
 
   productsTable.prototype.bindEvents = function () {
-    console.log("bindEvents");
+    // console.log("bindEvents");
     var self = this;
     //detect scroll left inside producst table
     self.productsWrapper.on("scroll", function () {
@@ -83,7 +83,7 @@ export function initTable() {
   };
 
   productsTable.prototype.upadteFilterBtn = function () {
-    console.log("upadteFilterBtn");
+    // console.log("upadteFilterBtn");
     //show/hide filter btn
     if (this.selectedproductsNumber >= 2) {
       this.filterActive = true;
@@ -95,7 +95,7 @@ export function initTable() {
   };
 
   productsTable.prototype.updateLeftScrolling = function () {
-    console.log("updateLeftScrolling");
+    // console.log("updateLeftScrolling");
     var totalTableWidth = parseInt(this.tableColumns.eq(0).outerWidth(true)),
       tableViewport = parseInt(this.element.width()),
       scrollLeft = this.productsWrapper.scrollLeft();
@@ -167,7 +167,7 @@ export function initTable() {
   };
 
   productsTable.prototype.updateProperties = function () {
-    console.log("updateProperties");
+    // console.log("updateProperties");
     this.tableHeight = this.table.height();
     this.productWidth = this.products.eq(0).width();
     this.topInfoHeight = this.featuresTopInfo.innerHeight() + 30;
@@ -178,13 +178,13 @@ export function initTable() {
   };
 
   productsTable.prototype.showSelection = function () {
-    console.log("showSelection");
+    // console.log("showSelection");
     this.element.addClass("filtering");
     this.filterProducts();
   };
 
   productsTable.prototype.resetSelection = function () {
-    console.log("resetSelection");
+    // console.log("resetSelection");
     this.tableColumns.css(
       "width",
       this.productWidth * this.productsNumber + "px"
@@ -194,7 +194,7 @@ export function initTable() {
   };
 
   productsTable.prototype.filterProducts = function () {
-    console.log("filterProducts");
+    // console.log("filterProducts");
     var self = this,
       containerOffsetLeft = self.tableColumns.offset().left,
       scrollLeft = self.productsWrapper.scrollLeft(),
@@ -246,7 +246,7 @@ export function initTable() {
   };
 
   productsTable.prototype.resetProductsVisibility = function () {
-    console.log("resetProductsVisibility");
+    // console.log("resetProductsVisibility");
     var self = this,
       containerOffsetLeft = self.tableColumns.offset().left,
       selectedProducts = this.products.filter(".selected"),
@@ -291,7 +291,7 @@ export function initTable() {
 
   var comparisonTables = [];
   $(".cd-products-comparison-table").each(function () {
-    console.log($(this));
+    // console.log($(this));
     //create a productsTable object for each .cd-products-comparison-table
     comparisonTables.push(new productsTable($(this)));
   });
@@ -299,7 +299,7 @@ export function initTable() {
   var windowScrolling = false;
   //detect window scroll - fix product top-info on scrolling
   // $(window).on("scroll", function () {
-  //   console.log("$(window).on('scroll', function ()");
+  //   // console.log("$(window).on('scroll', function ()");
   //   if (!windowScrolling) {
   //     windowScrolling = true;
   //     !window.requestAnimationFrame
@@ -311,7 +311,7 @@ export function initTable() {
   var windowResize = false;
   //detect window resize - reset .cd-products-comparison-table properties
   $(window).on("resize", function () {
-    console.log("$(window).on('resize'");
+    // console.log("$(window).on('resize'");
     if (!windowResize) {
       windowResize = true;
       !window.requestAnimationFrame
@@ -321,7 +321,7 @@ export function initTable() {
   });
 
   function checkScrolling() {
-    console.log("checkScrolling");
+    // console.log("checkScrolling");
     var scrollTop = $(window).scrollTop();
 
     comparisonTables.forEach(function (element) {
@@ -332,7 +332,7 @@ export function initTable() {
   }
 
   function checkResize() {
-    console.log("checkResize");
+    // console.log("checkResize");
     comparisonTables.forEach(function (element) {
       element.updateProperties();
     });
@@ -341,7 +341,7 @@ export function initTable() {
   }
 
   function checkMQ() {
-    console.log("checkMQ");
+    // console.log("checkMQ");
     //check if mobile or desktop device
     return window
       .getComputedStyle(comparisonTables[0].element.get(0), "::after")
@@ -351,7 +351,7 @@ export function initTable() {
   }
 
   function setTranformX(element, value) {
-    console.log("setTranformX");
+    // console.log("setTranformX");
     // element.css({
     //   "-moz-transform": "translateX(" + value + "px)",
     //   "-webkit-transform": "translateX(" + value + "px)",
