@@ -19,8 +19,6 @@
     column-gap: 20px;
   }
   @media (max-width: 1060px) {
-    display: flex;
-    justify-content: center;
     .slider__col {
       display: none;
     }
