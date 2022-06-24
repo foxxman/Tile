@@ -2387,15 +2387,17 @@
 
 .landing {
   &__title {
+    margin-top: 7%;
     text-align: center;
+    @media (max-width: 950px) {
+      margin-top: 0;
+    }
     span {
       font-family: "Raleway";
       font-weight: 600;
-      font-size: 45px;
-      line-height: 120%;
+      font-size: 55px;
       letter-spacing: -1.2px;
       text-transform: uppercase;
-      line-height: 45px;
       background: radial-gradient(
             55.24% 5793.61% at 72.51% 28.7%,
             #ffffff 0%,
@@ -2408,31 +2410,32 @@
       background-clip: text;
       text-fill-color: transparent;
 
-      @media (max-width: 500px) {
+      @media (max-width: 660px) {
         font-size: 32px;
       }
 
       &:first-child {
         text-transform: none;
         font-weight: 400;
-        font-size: 30px;
-        line-height: 30px;
+        font-size: 45px;
+        // line-height: 45px;
         color: #ffffff;
         margin-bottom: 20px;
         display: block;
         // background: white;
         text-fill-color: currentcolor;
         -webkit-text-fill-color: currentcolor;
-        @media (max-width: 500px) {
+        @media (max-width: 660px) {
           font-size: 20px;
+          margin-bottom: 10px;
         }
       }
       &:last-child {
         text-transform: none;
         font-family: "Open Sans";
         font-weight: 400;
-        font-size: 14px;
-        line-height: 14px;
+        font-size: 25px;
+        // line-height: 25px;
         // line-height: 150%;
         /* identical to box height, or 21px */
         margin-top: 13px;
@@ -2443,10 +2446,14 @@
         color: #f7f8ff;
         text-fill-color: currentcolor;
         -webkit-text-fill-color: currentcolor;
+        @media (max-width: 660px) {
+          font-size: 14px;
+        }
       }
     }
 
     &-block {
+      height: 100vh;
       position: relative;
       padding-top: 40px;
       padding-bottom: 136px;
@@ -2455,6 +2462,9 @@
       // display: flex;
       // flex-direction: column;
       // justify-content: center;
+      @media (max-width: 920px) {
+        height: fit-content;
+      }
       &.same-padding {
         padding-top: 88px;
         padding-bottom: 88px;
@@ -2511,6 +2521,7 @@
       }
       @media (max-width: 500px) {
         padding: 10px 40px 10px 49px;
+        // margin-bottom: 15px;
       }
 
       &__item {
@@ -2573,14 +2584,18 @@
     }
     &-subtitle {
       // font-weight: 500;
-      font-size: 14px;
+      font-size: 20px;
       text-align: center;
       letter-spacing: -0.332222px;
-      max-width: 500px;
+      max-width: 600px;
       line-height: 150%;
       color: #f7f8ff;
       margin: auto;
       margin-bottom: 27px;
+
+      @media (max-width: 660px) {
+        font-size: 14px;
+      }
     }
   }
 
