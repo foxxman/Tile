@@ -97,7 +97,7 @@ const swiper = new Swiper(".swiper", {
 });
 
 const view = new Swiper(".slider-1", {
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 10,
 
   loop: true,
