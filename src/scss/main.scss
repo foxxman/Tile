@@ -615,6 +615,9 @@
     border-radius: 5px;
     padding: 40px 15px 38px 15px;
     margin-bottom: 80px;
+    &.hidden {
+      display: none;
+    }
     &.plr-28 {
       padding-left: 28px;
       padding-right: 28px;
@@ -1658,9 +1661,39 @@
       height: 25px;
       margin-right: 15px;
     }
+
+    &-mini {
+      margin-top: 20px;
+
+      background: #facff9;
+      border-radius: 2px;
+      padding: 4px 15px;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      span {
+        font-size: 14px;
+        line-height: 120%;
+        color: #34363d;
+        margin-right: 10px;
+      }
+      button {
+        background: none;
+      }
+    }
+  }
+
+  &__collection {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  &.hidden {
+    display: none;
   }
 }
-
 
 .collapse {
   height: 0;
@@ -1702,7 +1735,6 @@
     }
   }
 }
-
 
 .product {
   &-info {
@@ -2577,7 +2609,7 @@
 
     &-title {
       grid-area: t;
-      font-family: "Alegreya Sans";
+      font-family: "Raleway";
       font-weight: 700;
       font-size: 55px;
       line-height: 66px;
@@ -2592,7 +2624,7 @@
     &-left {
       grid-area: l;
 
-      font-family: "Roboto";
+      // font-family: "Roboto";
       font-size: 25px;
       line-height: 29px;
       text-align: center;
@@ -2641,7 +2673,7 @@
     }
     &-subtitle {
       grid-area: s;
-      font-family: "Alegreya Sans";
+      font-family: "Raleway";
       font-weight: 700;
       font-size: 40px;
       line-height: 48px;

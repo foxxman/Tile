@@ -7,7 +7,7 @@
     // display: flex;
     // flex-wrap: wrap;
     width: 100%;
-    height: auto;
+    // height: auto;
     display: grid;
     // grid-template-columns: repeat(6, 1fr);
     grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
@@ -20,15 +20,6 @@
     justify-items: center;
   }
   &__select {
-    // убрать стрелку
-    // -moz-appearance: none;
-    // -webkit-appearance: none;
-    // appearance: none;
-    // for IE 11 and 10
-    // &::-ms-expand {
-    //   display: none;
-    // }
-
     text-align: left;
     background: none;
     border: none;
@@ -51,14 +42,24 @@
       &::after {
         content: url("../img/arrows/select-arrow.svg");
         position: absolute;
-        top: 13px;
+        top: 9px;
         right: 17px;
-        transform: translateY(-50%);
         width: 11px;
         height: 6px;
-        // background-color: red;
-        // деалем стрелочку прозрачной для клика
         pointer-events: none;
+      }
+      &.active {
+        border-top: 1px solid $purple-standart;
+        button {
+          color: $purple-standart;
+        }
+        &::after {
+          content: url("../img/arrows/select-arrow-active.svg");
+          position: absolute;
+          top: 24px;
+          right: 17px;
+          transform: rotate(180deg);
+        }
       }
     }
   }
@@ -73,7 +74,7 @@
     border: 1px solid #bcc2cb;
     z-index: 100;
     @media (max-width: 1775px) {
-      width: 100%;
+      //   width: 100%;
     }
     &-head {
       padding: 18px 10px;
@@ -120,6 +121,29 @@
       line-height: 14px;
       color: #2b2c31;
       opacity: 0.5;
+    }
+    &-search {
+      width: calc(100% - 2 * 10px);
+      justify-self: center;
+      height: 40px;
+      border: 1px solid #bcc2cb;
+      margin-top: 10px;
+      display: flex;
+      input {
+        width: 100%;
+        padding: 11px 20px;
+        font-size: 14px;
+        line-height: 120%;
+        color: #686d77;
+      }
+      button {
+        height: 100%;
+        width: 49px;
+        background: #bcc2cb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
     &.hidden {
       display: none;
