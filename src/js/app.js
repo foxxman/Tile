@@ -16,6 +16,7 @@ import * as custScroll from "./modules/custom-scrolling.js";
 import * as imgComp from "./modules/img-comparison.js";
 import * as aboutShop from "./modules/about-shop-slider.js";
 import * as modalCart from "./modules/modal-cart.js";
+import * as filters from "./modules/filter-item.js";
 
 $(document).ready(function () {
   new WOW().init();
@@ -145,8 +146,6 @@ const doubleImg = new Swiper(".slider-2", {
   breakpoints: {},
 });
 
-
-
 aboutShop.initAboutShopSlider();
 comparison.initTable(); //таблица
 
@@ -166,3 +165,4 @@ favourites.initButtons(); //кнопки добавления в избранн�
 yaMap.initMap(); //яндекс карта
 imgComp.initNewComparisons(); //сравнение двух картинок с ползунком
 modalCart.initOpenModalBtns(); // активация кнопок "в корзину" для открытия модалки
+filters.initFilters(); //всплывающие окна фильров в tile-catalog

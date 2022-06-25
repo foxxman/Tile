@@ -1661,72 +1661,7 @@
   }
 }
 
-.filters-block {
-  margin-top: 37px;
 
-  border-bottom: none;
-  &__line {
-    background: #fbfbfb;
-    // display: flex;
-    // flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    display: grid;
-    // grid-template-columns: repeat(6, 1fr);
-    grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
-    grid-template-rows: 42px;
-    gap: 30px 10px;
-
-    transition: 1s ease-in all;
-
-    align-items: center;
-    justify-items: center;
-  }
-  // .catalog__block__head {
-  // }
-  &__select {
-    // убрать стрелку
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    // for IE 11 and 10
-    &::-ms-expand {
-      display: none;
-    }
-
-    background: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
-
-    border-top: 1px solid #d7e1e8;
-    border-bottom: 1px solid #d7e1e8;
-    padding: 10px 16px 13px 15px;
-
-    font-family: "Open Sans";
-    font-size: 14px;
-    color: #2b2c31;
-    width: 100%;
-
-    &-wrapper {
-      width: 215px;
-      position: relative;
-
-      &::after {
-        content: url("../img/arrows/select-arrow.svg");
-        position: absolute;
-        top: 13px;
-        right: 17px;
-        transform: translateY(-50%);
-        width: 11px;
-        height: 6px;
-        // background-color: red;
-        // деалем стрелочку прозрачной для клика
-        pointer-events: none;
-      }
-    }
-  }
-}
 .collapse {
   height: 0;
   overflow: hidden;
@@ -1768,7 +1703,6 @@
   }
 }
 
-@import "collection";
 
 .product {
   &-info {
