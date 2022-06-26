@@ -126,4 +126,17 @@
       }
     }
   }
+
+  .mobile {
+    &-true {
+      @media (min-width: 500px) {
+        display: none;
+      }
+    }
+    &-none {
+      @media (max-width: 500px) {
+        display: none;
+      }
+    }
+  }
 }

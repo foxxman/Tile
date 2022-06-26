@@ -33,8 +33,8 @@ export const initAboutShopSlider = () => {
     mousewheel: true, // можно прокручивать изображения колёсиком мыши
     navigation: {
       // задаем кнопки навигации
-      nextEl: ".slider__next", // кнопка Next
-      prevEl: ".slider__prev", // кнопка Prev
+      nextEl: "#slider__btns-next", // кнопка Next
+      prevEl: "#slider__btns-prev", // кнопка Prev
     },
     grabCursor: true, // менять иконку курсора
     thumbs: {

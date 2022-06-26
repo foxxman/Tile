@@ -2671,6 +2671,15 @@
         padding: 5px 20px;
       }
     }
+    &-left,
+    &-right {
+      img {
+        @media (max-width: 380px) {
+          width: 150px;
+          margin: auto;
+        }
+      }
+    }
     &-subtitle {
       grid-area: s;
       font-family: "Raleway";
