@@ -82,6 +82,9 @@
   overflow: hidden;
   .swiper-slide {
   }
+  @media (max-width: 500px) {
+    height: fit-content;
+  }
 }
 .slider__images .slider__image img {
   transition: 3s;
